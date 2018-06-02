@@ -6,9 +6,8 @@ import './index.css';
 class NavBar extends Component {
   render() {
     return (
-
-        <div className="container">
-            <div className="navBar">
+        <div className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+            <div className="container">
                 <ul>
                     <div className="floatLeft">
                         <li><Link to='/'>HOME</Link></li>
@@ -26,6 +25,7 @@ class NavBar extends Component {
                 </ul>
             </div>
         </div>
+       
     );
   }
 }
