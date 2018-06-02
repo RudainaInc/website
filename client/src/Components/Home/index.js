@@ -7,7 +7,7 @@ class Home extends Component {
     };
     return (
         <div className="container">
-            <p>Hello</p>
+            <p>Home</p>
         </div>
     );
   }

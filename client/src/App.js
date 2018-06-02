@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-
-import NavBar from './components/layout/NavBar';
-import Home from './components/layout/Home';
+import { Header, NavBar, Home, Mission, News, ProgramServices, Volunteer, Footer } from './Components';
 
 import './App.css';
 
@@ -16,7 +12,16 @@ class App extends Component {
         <div className="App">
           <Header />
           <NavBar />
-          <Route exact path="/" component={Home} />
+
+          <Switch>
+            <Route path='/' component={Home} exact={true}/>
+            <Route path='/mission' component={Mission}/>
+            <Route path='/news' component={News}/>
+            <Route path='/program_services' component={ProgramServices}/>
+            <Route path='/volunteer' component={Volunteer}/>
+          </Switch>
+
+          <Footer />
           
         </div>
       </Router>

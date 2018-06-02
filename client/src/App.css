@@ -1,82 +1,6 @@
 * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif;}
 
 
-
-/*----- COMPANY NAME & SLOGAN STYLES BEGIN ---------*/
-.name-slogan{
-    font-weight: 700;
-    background-color: #F5F5F5;
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
-
-}
-/*----- COMPANY NAME & SLOGAN STYLES ENDS ---------*/
-
-/*----- NAVBAR STYLES BEGIN ---------*/
-.navBar{
-    background-color: #262C2E;
-    color: red;
-    height: 80px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-ul li a{
-    display: inline-block;
-    height: 100%;
-    background-color: transparent;
-    margin: 0;
-    cursor: pointer;
-    padding: 30px 11px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: auto;
-    letter-spacing: 0;
-}
-
-li {
-    float: left;
-    margin: 0px;
-    text-align: center;
-    height: 80px;
-}
-
-.active {
-    color: white;
-    background-color: #CF0A2C;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover  {
-    /*background-color: #CF0A2C;*/
-    transition: all 200ms ease-in;
-    transform: scale(1.03);
-    color: #CF0A2C;
-    text-decoration: none;
-}
-
-li .login a:hover  {
-    /*background-color: #CF0A2C;*/
-    transition: all 200ms ease-in;
-    transform: scale(1.03);
-    color: white;
-    text-decoration: none;
-}
-/*----- NAVBAR STYLES END ---------*/
-
 /*----- SOCIAL-LINK STYLES END ---------*/
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
@@ -169,23 +93,7 @@ li .login a:hover  {
 
 /*----- DONATE BUTTON STYLES BEGIN ---------*/
 
-/*----- FOOTER STYLES BEGIN ---------*/
-.container{
-    background-color: #FFB6ff;
-    height: 80px;
-}
-.footer{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /*padding: 1rem;*/
-    text-align: center;
-    background-color: #FFB600;
-    color: black;
-    height: 80px;
-}
-/*----- FOOTER STYLES ENDS  ---------*/
+
 
 /*----- CUSTOM STYLES BEGIN ---------*/
 .floatLeft{
