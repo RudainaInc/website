@@ -19,7 +19,7 @@ class NavBar extends Component {
                     </div>
                     
                     <div className="floatRight">
-                        <li className=" login active"><Link to='/'>LOGIN</Link></li>
+                        <li className=" login active"><Link to='/login'>LOGIN</Link></li>
                         <li><Link to='/'>FR</Link></li>
                     </div>
         
