@@ -6,26 +6,49 @@ import './index.css';
 class NavBar extends Component {
   render() {
     return (
-        <div className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
-            <div className="container">
-                <ul>
-                    <div className="floatLeft">
-                        <li><Link to='/'>HOME</Link></li>
-                        <li><Link to='/mission'>MISSION</Link></li>
-                        <li><Link to='/news'>NEWS</Link></li>
-                        <li><Link to='/program_services'>PROGRAM | SERVICES</Link></li>
-                        <li><Link to='/volunteer'>VOLUNTEER</Link></li>
-                    </div>
+
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mobile-nav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <Link class="nav-link" to='/'>HOME</Link>
+                        </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link" to='/mission'>MISSION</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" to='/news'>NEWS</Link>
+                        </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link" to='/program_services'>PROGRAM | SERVICES</Link>
+                        </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link" to='/volunteer'>VOLUNTEER</Link>
+                        </li>
+                    </ul>
                     
-                    <div className="floatRight">
-                        <li className=" login active"><Link to='/login'>LOGIN</Link></li>
-                        <li><Link to='/'>FR</Link></li>
-                    </div>
-        
-                </ul>
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <Link class="nav-link" to='/login'>LOGIN</Link>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <Link class="nav-link" to='/'>FR</Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-       
+        </nav>
     );
   }
 }

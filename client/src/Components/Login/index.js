@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Login extends Component {
 
@@ -32,37 +33,32 @@ class Login extends Component {
     render() {
         return (
             <div className="login">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-8 m-auto">
-                            <h1 className="display-4 text-center">Log In</h1>
+                <div class="container">
+                    <div class="jumbotron col-md-6 mx-auto">
+                        <h1 className="text-center">LOGIN</h1>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="unit" placeholder="Email Address"/>
+                            </div>
 
-                            <form onSubmit={this.onSubmit}>
-                                
-                                <div className="form-group">
-                                    <input 
-                                        type="email" 
-                                        className="form-control form-control-lg" 
-                                        placeholder="Email Address" 
-                                        name="email"
-                                        value={this.state.email}
-                                        onChange={this.onChange}
-                                    />
-                                </div>
-                                
-                                <div className="form-group">
-                                    <input 
-                                        type="password" 
-                                        className="form-control form-control-lg" 
-                                        placeholder="Password" 
-                                        name="password"
-                                        value={this.state.password}
-                                        onChange={this.onChange}
-                                    />
-                                </div>
-                                
-                                <input type="submit" className="btn btn-info btn-block mt-4" />
-                            </form>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="fname" placeholder="password"/>
+                            </div>
+
+                            <hr/>
+
+                            <input type="submit" class="btn btn-info btn-block mt-4" />
+
+                        </form>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <Link class="form-control btn btn-info btn-block mt-4" to='/register'>Become a volunteer</Link>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <Link class="form-control btn btn-info btn-block mt-4" to='/register'>Become a benefactor</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
