@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-import { 
-    Header, 
-    NavBar, 
-    Home,
-    Login,
-    Mission, 
-    News, 
-    ProgramServices,
-    Register, 
-    Volunteer,
-    Footer
-} from './Components';
-
+import { store } from './store';
+import { Admin } from './components';
+import { Profile } from './components';
+import { Header } from './components';
+import { NavBar } from './components';
+import { Home } from './components';
+import { Login } from './components';
+import { Mission } from './components';
+import { News } from './components';
+import { ProgramServices } from './components';
+import { Register } from './components';
+import { Volunteer } from './components';
+import { Footer } from './components';
 import './App.css';
+
+
 
 class App extends Component {
     render() {
@@ -27,19 +30,23 @@ class App extends Component {
                 <Route path='/volunteer' component={Volunteer}/>
                 <Route path='/login' component={Login}/>
                 <Route path='/register' component={Register}/>
+                <Route path='/admin' component={Admin}/>
+                <Route path='/profile' component={Profile}/>
             </Switch>
         );
 
         return (
             <React.Fragment>
-                <Router>
-                    <div className="App">
-                        <Header />
-                        <NavBar />
-                        {routes}
-                        <Footer />
-                    </div>
-                </Router>
+                <Provider store={store}>
+                    <Router>
+                        <div className="App">
+                            <Header />
+                            <NavBar />
+                            {routes}
+                            <Footer />
+                        </div>
+                    </Router>
+                </Provider>
             </React.Fragment>
         );
     }

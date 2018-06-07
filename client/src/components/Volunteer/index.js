@@ -4,11 +4,11 @@ class Vounteer extends Component {
     render() {
         return (
             <div className="volunteer">
-                <div class="container">
+                <div className="container">
 
-                    <div class="jumbotron">
+                    <div className="jumbotron">
 
-                        <h2 class="text-center">Volunteer Description</h2>
+                        <h2 className="text-center">Volunteer Description</h2>
                         <p>
                             If you are seeking a supportive, interactive, and a dynamic organization, then Rudaina Foundation should be your choice to volunteer. 
                             Your enthusiasm, innovative approaches and new ideas will be very valuable to us. Benefits to joining our team include ongoing and 
@@ -21,36 +21,36 @@ class Vounteer extends Component {
 
                         <form>
 
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="fname" placeholder="First Name"/>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="fname" placeholder="First Name"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="lname" placeholder="Last Name"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="lname" placeholder="Last Name"/>
                                 </div>
                             </div>
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-8">
-                                    <input type="text" class="form-control" id="addr" placeholder="Home Address"/>
+                                <div className="form-group col-md-8">
+                                    <input type="text" className="form-control" id="addr" placeholder="Home Address"/>
                                 </div>
 
-                                <div class="form-group col-md-4">
-                                    <input type="text" class="form-control" id="unit" placeholder="Apt./Unit"/>
+                                <div className="form-group col-md-4">
+                                    <input type="text" className="form-control" id="unit" placeholder="Apt./Unit"/>
                                 </div>
 
                             </div>
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="city" placeholder="City/Town"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="city" placeholder="City/Town"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <select class="form-control" id="prov">
+                                <div className="form-group col-md-6">
+                                    <select className="form-control" id="prov">
                                         <option>Province</option>
 
 
@@ -74,14 +74,14 @@ class Vounteer extends Component {
 
                             </div>
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="pcode" placeholder="Postal Code"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="pcode" placeholder="Postal Code"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <select class="form-control" id="country">
+                                <div className="form-group col-md-6">
+                                    <select className="form-control" id="country">
                                         <option>Canada</option>
                                     </select>
                                 </div>
@@ -90,22 +90,22 @@ class Vounteer extends Component {
 
                             
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="addr" placeholder="Phone Number"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="addr" placeholder="Phone Number"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="unit" placeholder="Email Address"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="unit" placeholder="Email Address"/>
                                 </div>
 
                             </div>
 
-                            <div class="form-group">
+                            <div className="form-group">
                                 <input 
                                     type="text" 
-                                    class="form-control" 
+                                    className="form-control" 
                                     placeholder="Date Of Birth"
                                     name="city"
                                 />
@@ -113,11 +113,11 @@ class Vounteer extends Component {
 
                             <hr/>
 
-                            <div class="form-group">
-                                <label for="comment">Why Do You Want To Volunteer</label>
+                            <div className="form-group">
+                                <label>Why Do You Want To Volunteer</label>
                                     
                                 <textarea 
-                                    class="form-control" 
+                                    className="form-control" 
                                     rows="5" 
                                     id="comment"
                                     placeholder="Tell us about yourself and your goals as a volunteer."
@@ -126,18 +126,18 @@ class Vounteer extends Component {
 
                             <hr/>
 
-                            <div class="form-group">
-                                <label for="comment">How Can You Help</label>
+                            <div className="form-group">
+                                <label>How Can You Help</label>
                                     
                                 <textarea 
-                                    class="form-control" 
+                                    className="form-control" 
                                     rows="5" 
                                     id="comment"
                                     placeholder="Tell us what you're interested in working on with Rudaina! (i.e. Social Media, Fundraising, Program Development, etc.)"
                                 />
                             </div> 
 
-                            <input type="submit" class="btn btn-info btn-block mt-4"/>
+                            <input type="submit" className="btn btn-info btn-block mt-4"/>
 
 
                         </form>

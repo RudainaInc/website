@@ -4,11 +4,11 @@ class ProgramServices extends Component {
     render() {
         return (
             <div className="program-services">
-                <div class="container">
+                <div className="container">
 
-                    <div class="jumbotron">
+                    <div className="jumbotron">
 
-                        <h2 class="text-center">Program Services</h2>
+                        <h2 className="text-center">Program Services</h2>
                         <p>
                            lalallalalalallalal lallal llallal llal llala lall alal llalalla la lla lall all al al lal about
                            alalla l lalla la lla lla l allal all al alla la llalall al lal al all al allalalla l alla l la'
@@ -21,36 +21,36 @@ class ProgramServices extends Component {
 
                         <form>
 
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="fname" placeholder="First Name"/>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="fname" placeholder="First Name"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="lname" placeholder="Last Name"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="lname" placeholder="Last Name"/>
                                 </div>
                             </div>
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-8">
-                                    <input type="text" class="form-control" id="addr" placeholder="Home Address"/>
+                                <div className="form-group col-md-8">
+                                    <input type="text" className="form-control" id="addr" placeholder="Home Address"/>
                                 </div>
 
-                                <div class="form-group col-md-4">
-                                    <input type="text" class="form-control" id="unit" placeholder="Apt./Unit"/>
+                                <div className="form-group col-md-4">
+                                    <input type="text" className="form-control" id="unit" placeholder="Apt./Unit"/>
                                 </div>
 
                             </div>
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="city" placeholder="City/Town"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="city" placeholder="City/Town"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <select class="form-control" id="prov">
+                                <div className="form-group col-md-6">
+                                    <select className="form-control" id="prov">
                                         <option>Province</option>
 
 
@@ -74,14 +74,14 @@ class ProgramServices extends Component {
 
                             </div>
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="pcode" placeholder="Postal Code"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="pcode" placeholder="Postal Code"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <select class="form-control" id="country">
+                                <div className="form-group col-md-6">
+                                    <select className="form-control" id="country">
                                         <option>Canada</option>
                                     </select>
                                 </div>
@@ -90,22 +90,22 @@ class ProgramServices extends Component {
 
                             
 
-                            <div class="form-row">
+                            <div className="form-row">
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="addr" placeholder="Phone Number"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="addr" placeholder="Phone Number"/>
                                 </div>
 
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="unit" placeholder="Email Address"/>
+                                <div className="form-group col-md-6">
+                                    <input type="text" className="form-control" id="unit" placeholder="Email Address"/>
                                 </div>
 
                             </div>
 
-                            <div class="form-group">
+                            <div className="form-group">
                                 <input 
                                     type="text" 
-                                    class="form-control" 
+                                    className="form-control" 
                                     placeholder="Date Of Birth"
                                     name="city"
                                 />
@@ -113,11 +113,11 @@ class ProgramServices extends Component {
 
                             <hr/>
 
-                            <div class="form-group">
-                                <label for="comment">Nutritional Information</label>
+                            <div className="form-group">
+                                <label>Nutritional Information</label>
                                     
                                 <textarea 
-                                    class="form-control" 
+                                    className="form-control" 
                                     rows="5" 
                                     id="comment"
                                     placeholder="Is there anything your alergic to? What kind of food do you typically eay?"
@@ -126,7 +126,7 @@ class ProgramServices extends Component {
 
                             <hr/>
 
-                            <input type="submit" class="btn btn-info btn-block mt-4"/>
+                            <input type="submit" className="btn btn-info btn-block mt-4"/>
 
 
                         </form>
