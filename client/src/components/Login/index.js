@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import PropTypes from 'prop-types';
+
+import { connect } from 'react-redux';
+import { loginUserData } from '../../actions/authActions';
+
 class Login extends Component {
 
     constructor() {
@@ -80,4 +85,16 @@ class Login extends Component {
     }
 }
 
-export default Login;
+Login.PropTypes = {
+    loginUserData: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+}
+
+const mapStateToProps = state => ({
+    auth: state.auth,
+    errors: state.errors
+});
+
+
+export default connect(mapStateToProps, { loginUserData })(Login);
