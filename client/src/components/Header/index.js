@@ -31,7 +31,7 @@ class Header extends Component {
                     </div>
                     
                     <div className="header--topnav">
-                        <NavLink className="header--leftnav_borde" exact to="/">HOME</NavLink>
+                        <NavLink className="header--leftnav_border" exact to="/">HOME</NavLink>
                         <NavLink to="/about">ABOUT US</NavLink>
                         <NavLink to="/news">NEWS</NavLink>
                         <NavLink to="/program_services">PROGRAM SERVICES</NavLink>
