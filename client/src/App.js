@@ -6,10 +6,9 @@ import { store } from './store';
 import { Admin } from './components';
 import { Profile } from './components';
 import { Header } from './components';
-import { NavBar } from './components';
 import { Home } from './components';
 import { Login } from './components';
-import { Mission } from './components';
+import { About } from './components';
 import { News } from './components';
 import { ProgramServices } from './components';
 import { Register } from './components';
@@ -24,7 +23,7 @@ class App extends Component {
         const routes = (
             <Switch>
                 <Route path='/' component={Home} exact={true}/>
-                <Route path='/mission' component={Mission}/>
+                <Route path='/about' component={About}/>
                 <Route path='/news' component={News}/>
                 <Route path='/program_services' component={ProgramServices}/>
                 <Route path='/volunteer' component={Volunteer}/>
@@ -41,7 +40,6 @@ class App extends Component {
                     <Router>
                         <div className="App">
                             <Header />
-                            <NavBar />
                             {routes}
                             <Footer />
                         </div>

@@ -1,9 +1,115 @@
-/*----- COMPANY NAME & SLOGAN STYLES BEGIN ---------*/
-.name-slogan{
-    font-weight: 700;
-    background-color: #F5F5F5;
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
+/*****************************************************************
+                        Header
+*******************************************************************/
 
+.header--smoke_color{
+    background-color: #F5F5F5;
 }
-/*----- COMPANY NAME & SLOGAN STYLES ENDS ---------*/
+
+/* Logo Styles */
+.header--logo{
+    width: 100%;
+    height: auto;
+}
+
+
+hr.style15 {
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
+
+/* Login | fr styles */
+.header--login_fr {
+    overflow: hidden;
+    padding : auto;
+    margin : auto;
+    display : inline-block;
+    text-align : center;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.login--fr_center{
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.header--center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.header--login_fr a {
+    float: left;
+    display: block;
+    color : red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 3px solid transparent;
+}
+
+.header--login_fr_login :hover {
+    color : #BB0000;
+    background-color : red;
+    color : white;
+}
+
+.header--login_fr_fr :hover {
+    color : #990F02;
+    transition: transform .5s;
+    transform: scale(1.5);
+}
+
+.header--login_fr .fr a:hover {
+    color : #BB0000;
+}
+
+.header--login_fr a.active {
+    border: 3px solid red;
+}
+
+/* Header Styles */
+.header--topnav {
+    overflow: hidden;
+    background-color: #F5F5F5;
+    padding : auto;
+    margin : auto;
+    display : inline-block;
+    text-align : center;
+    display: flex;
+    justify-content: center;
+}
+
+.header--topnav a {
+    float: left;
+    width: 100%;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* border-bottom: 3px solid transparent; */
+    border-right: 1.5px solid red;
+}
+
+.header--topnav a:hover {
+    /* transition: all 200ms ease-in;
+    transform: scale(1.03); */
+    font-weight: 700;
+    color: #CF0A2C;
+}
+
+.header--leftnav_border{
+    border-left: 1px solid red;
+}
+
+.header--topnav a.active {
+    font-weight: 700;
+    color: #CF0A2C;
+}

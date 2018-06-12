@@ -27,7 +27,8 @@ export const registerUser = (userData) => dispatch =>  {
 }
 
 export const loginUserData = (userData) => dispatch => {
-    axios.post('/api/uses/login', userData)
+    axios
+        .post('/api/users/login', userData)
         .then(res => {
 
             const { token } = res.data;
