@@ -11,6 +11,8 @@ const validateLoginInput = require('../../validation/login');
 
 // Load User model
 const User = require('../../models/User');
+const Volunteer = require('../../models/Volunteer');
+const Benificiary = require('../../models/Benificiary');
 
 // @route   GET api/users/test
 // @desc    Tests users route
@@ -117,4 +119,77 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
     });
 });
 
+// @route   POST api/users/add_Benificiary
+// @desc    Return current user
+// @access  Private
+router.post('/add_Benificiary', passport.authenticate('jwt', { session: false }), (req, res) => {
+    
+    const fname = req.body.fname;
+    const lname = req.body.lname;
+    const userId = req.user.id;
+    
+    Benificiary
+        .findOne({user:userId})
+        .then(user => {
+            if(user) {
+                res.json({
+                    error: "User already Volunteer"
+                })
+            } else{
+                const benificiary = new Benificiary();
+                benificiary.user = userId;
+                benificiary.fname = fname;
+                benificiary.lname = lname;
+                benificiary.save()
+                    .then(ben =>{
+                        res.json(ben);
+                    })
+                        .catch(err => {
+                        res.json(err);
+                    })
+        }
+    })
+    .catch(err => {
+        res.json(err)
+    });
+    
+});
+
+// @route   POST api/users/add_volunteer
+// @desc    add volinteer role to user
+// @access  Private
+router.post('/add_volunteer', passport.authenticate('jwt', { session: false }), (req, res) => {
+    const fname = req.body.fname;
+    const lname = req.body.lname;
+    const userId = req.user.id;
+
+    Volunteer
+        .findOne({ user: userId })
+        .then( user => {
+
+            if (user) {
+                res.json({
+                    error: "User already Volunteer"
+                });
+            } else {
+
+                const volunteer = new Volunteer();
+                volunteer.user = userId;
+                volunteer.fname = fname;
+                volunteer.lname = lname;
+                volunteer.save()
+                    .then(vol => {
+                        res.json(vol);
+                    })
+                    .catch(err => {
+                        res.json(err);
+                    })
+            }
+
+
+        })
+        .catch(err => {
+            res.json(err)
+        });
+});
 module.exports = router;
