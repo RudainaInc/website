@@ -78,6 +78,13 @@ router.post('/addBenefactor', (req, res) => {
     const prov = req.body.prov;
     const pcode = req.body.pcode;
     const phone = req.body.phone;
+
+    const newUser = new User({
+        fname: fname,
+        lname: lname,
+        email: email,
+        password: password,
+    });
     
     User
         .findOne({ email })
@@ -88,18 +95,11 @@ router.post('/addBenefactor', (req, res) => {
             }
             return bcrypt.genSalt(10);
 
-        }).then( (err, salt) => {
+        }).then( salt => {
 
             return bcrypt.hash(newUser.password, salt);
 
         }).then( hash => {
-
-            const newUser = new User({
-                fname: fname,
-                lname: lname,
-                email: email,
-                password: password,
-            });
 
             newUser.password = hash;
             return newUser.save();

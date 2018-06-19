@@ -17,4 +17,4 @@ const BenefactorSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('users', BenefactorSchema);
+module.exports = mongoose.model('benefactor', BenefactorSchema);
