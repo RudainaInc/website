@@ -15,6 +15,8 @@ import { Register } from './components';
 import { Volunteer } from './components';
 import { Footer } from './components';
 import './App.css';
+import { RegisterVolunteer } from './components';
+import { RegisterBenefactor } from './components';
 
 
 
@@ -31,6 +33,8 @@ class App extends Component {
                 <Route path='/register' component={Register}/>
                 <Route path='/admin' component={Admin}/>
                 <Route path='/profile' component={Profile}/>
+                <Route path='/register_vounteer' component={RegisterVolunteer}/>
+                <Route path='/register_benefactor' component={RegisterBenefactor}/>
             </Switch>
         );
 

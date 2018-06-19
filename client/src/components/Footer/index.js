@@ -5,7 +5,6 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                
                 <div class="footer--blackShade_color">
                     <div class="container">
                         <div class="row">

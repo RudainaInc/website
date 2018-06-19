@@ -9,3 +9,5 @@ export { default as Profile } from './Profile';
 export { default as ProgramServices } from './ProgramServices';
 export { default as Register } from './Register';
 export { default as Volunteer } from './Volunteer';
+export { default as RegisterVolunteer } from './RegisterVolunteer';
+export { default as RegisterBenefactor } from './RegisterBenefactor';

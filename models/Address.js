@@ -3,6 +3,10 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const AddressSchema = new Schema({
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'users'
+    },
     addr: {
         type: String,
         required: true
@@ -23,7 +27,7 @@ const AddressSchema = new Schema({
         type: String,
         required: true
     },
-    code: {
+    phone: {
         type: String,
         required: true
     },

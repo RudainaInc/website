@@ -11,6 +11,8 @@ const validateLoginInput = require('../../validation/login');
 
 // Load User model
 const User = require('../../models/User');
+const Benefactor = require('../../models/Benefactor');
+const Address = require('../../models/Address');
 
 // @route   GET api/users/test
 // @desc    Tests users route
@@ -52,6 +54,74 @@ router.post('/register', (req, res) => {
                         .catch(err => console.log(err));
                 });
             });
+        })
+        .catch(err => console.log(err));
+});
+
+
+router.post('/addBenefactor', (req, res) => {
+    const { errors, isValid } = validateRegisterInput(req.body);
+    if (!isValid) return res.status(400).json(errors);
+
+    const fname = req.body.fname;
+    const lname = req.body.lname;
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const addr = req.body.addr;
+    const apt = req.body.apt;
+    const city = req.body.city;
+    const prov = req.body.prov;
+    const pcode = req.body.pcode;
+    const phone = req.body.phone;
+    
+    User
+        .findOne({ email })
+        .then(user => {
+            if (user) {
+                errors.email = 'Email already exists'
+                return res.status(400).json(errors);
+            }
+            return bcrypt.genSalt(10);
+
+        }).then( (err, salt) => {
+
+            return bcrypt.hash(newUser.password, salt);
+
+        }).then( hash => {
+
+            const newUser = new User({
+                fname: fname,
+                lname: lname,
+                email: email,
+                password: password,
+            });
+
+            newUser.password = hash;
+            return newUser.save();
+
+        }).then( user => {
+
+            const newBenefactor = new Benefactor({
+                user: user,
+                info: "tepm"
+            });
+
+            const newAddress = new Address({
+                user: user,
+                addr: addr,
+                unit: apt,
+                city: city,
+                provance: prov,
+                code: pcode,
+                phone: phone,
+
+            });
+
+            newBenefactor.save();
+            newAddress.save();
+            res.json(user);
+
         })
         .catch(err => console.log(err));
 });

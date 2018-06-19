@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
-
-import classnames from 'classnames';
 import { connect } from 'react-redux';
 import { loginUserData } from '../../actions/authActions';
+
+import { TextFieldGroup } from '../common';
 
 class Login extends Component {
 
@@ -63,43 +63,35 @@ class Login extends Component {
                         <h1 className="text-center">LOGIN</h1>
 
                         <form onSubmit={this.onSubmit}>
-                            <div className="form-group">
-                                <input 
-                                    className={classnames("form-control", {
-                                        'is-invalid': errors.email
-                                    })}
-                                    type="text" 
-                                    name="email"
-                                    placeholder="Email Address"
-                                    value={this.state.email}
-                                    onChange={this.onChange}
-                                />
-                                {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-                            </div>
 
-                            <div className="form-group">
-                                <input 
-                                    className={classnames("form-control", {
-                                        'is-invalid': errors.password
-                                    })}
-                                    type="password" 
-                                    name="password" 
-                                    placeholder="password"
-                                    value={this.state.password}
-                                    onChange={this.onChange}
-                                />
-                                {errors.password && <div className="invalid-feedback">{errors.password}</div>}
-                            </div>
+                            <TextFieldGroup
+                                type="text" 
+                                name="email"
+                                placeholder="Email Address"
+                                value={this.state.email}
+                                onChange={this.onChange}
+                                error={errors.email}
+                            />
+
+                            <TextFieldGroup
+                                type="password" 
+                                name="password" 
+                                placeholder="password"
+                                value={this.state.password}
+                                onChange={this.onChange}
+                                error={errors.password}
+                            />
+
                             <hr/>
                             <input type="submit" className="btn btn-info btn-block mt-4" />
                         </form>
 
                         <div className="form-row">
                             <div className="form-group col-md-6">
-                                <Link className="form-control btn btn-info btn-block mt-4" to='/register'>Become a volunteer</Link>
+                                <Link className="form-control btn btn-info btn-block mt-4" to='/volunteer'>Become a volunteer</Link>
                             </div>
                             <div className="form-group col-md-6">
-                                <Link className="form-control btn btn-info btn-block mt-4" to='/register'>Become a benefactor</Link>
+                                <Link className="form-control btn btn-info btn-block mt-4" to='/program_services'>Become a benefactor</Link>
                             </div>
                         </div>
 
