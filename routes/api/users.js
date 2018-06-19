@@ -11,6 +11,8 @@ const validateLoginInput = require('../../validation/login');
 
 // Load User model
 const User = require('../../models/User');
+const Volunteer = require('../../models/Volunteer');
+const Benificiary = require('../../models/Benificiary');
 
 const Benefactor = require('../../models/Benefactor');
 const Address = require('../../models/Address');
