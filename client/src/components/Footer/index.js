@@ -5,49 +5,104 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <div class="footer--blackShade_color">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-7 footer--center">
-                                <span class="left">
-                                    <img class="footer--logo_bird" src="img/Rudiana_Logo_footer-bird.png" alt=""/>
-                                </span>
-                                <span class="footer--text_subtext blue">
-                                    <span class="righ">
-                                            <h3 class="footer--logo_text ">Rudaina Foundation</h3>
-                                            <h6 class="footer--logo_text_num ">registered Foundation ... <a href="#">4562 345 4323</a></h6>
-                                    </span>
-                                </span>
-                            </div>
-
-                            <div class="col-5">
-                                <div class="footer--follow_us">
-                                    <p>CONNECT WITH US :</p>
-                                    <p/>
-                                    <div class="">
-                                            <a href="#" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-google"></a>
-                                            <a href="#" class="fa fa-linkedin"></a>
-                                            <a href="#" class="fa fa-instagram"></a>
+                <div className="">
+                    <div className="footer">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-4 navlinks show-right-border">
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <div className="row">
+                                                <div className="col-md-4 icon-container">
+                                                    <i className="fas fa-file-alt"></i>
+                                                </div>
+                                                <div className="col-md-8 icon-text">
+                                                    <a href="footer-section.html">Terms</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    <p/>
+                                        <div className="col-md-6">
+                                            <div className="row">
+                                                <div className="col-md-4 icon-container">
+                                                    <i className="fas fa-user-shield"></i>
+                                                </div>
+                                                <div className="col-md-8 icon-text">
+                                                    <a href="footer-section.html">Privacy</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="row footer-navlinks">
+                                        <div className="col-md-6 ">
+                                            <div className="row">
+                                                <div className="col-md-4 icon-container">
+                                                    <i className="fas fa-envelope"></i>
+                                                </div>
+                                                <div className="col-md-8 icon-text">
+                                                    <a href="footer-section.html">Contact Us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="row">
+                                                <div className="col-md-4 icon-container">
+                                                    <i className="fas fa-door-open"></i>
+                                                </div>
+                                                <div className="col-md-8 icon-text">
+                                                    <a href="footer-section.html">Accesibility</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div className="col-md-4 show-right-border">
+                                    <p className="follow-us">FOLLOW US :</p>
+                                    <div>
+                                        <div className="wrapper">
+                                            <ul>
+                                                <li className="facebook"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+                                                <li className="twitter"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+                                                <li className="instagram"><i className="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                                                <li className="linkedin"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="container-fluid ">
+                                        <div className="row app-download-links">
+                                            <div className="col-md-6">
+                                                <a href="footer-section.html"><img src="../img/ios_app_store.PNG" alt="download app on ios app store"/></a>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <a href="footer-section.html"><img src="../img/google_play_store.PNG" alt="download app on ios app store"/></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-4 footer_rudaina_logo_reg ">
+                                    <div className="container-fluid ">
+                                        <div className="">
+                                            <div className="col-md-4 footer-rudaina-logo">
+                                                <img className="footer--logo_bird remove-right-border" src="../img/footer-logo-bird.jpg" alt=""/>
+                                            </div>
+                                            <div className="col-md-8">
+                                                    <p className="footer-rudaina-name_rudaina">Rudaina</p>
+                                                    <p className="footer-rudaina-name_foundation">Foundation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p className="footer--company-reg">Rigistration Number : <a href="https://apps.cra-arc.gc.ca/ebci/haip/srch/charity-eng.action?&bn=792154882RR0001">792154882RR0001</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class=" footer footer--blackShade_color">
-                    <div class="container">
-                        <div class=" footer--center">
-                            <ul class="ul_top_hypers ">
-                                <li>Copyright © 2018 Rudaina Foundation. All Rights Reserved.</li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Accesibility</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
+                    <div className="copyright-section">
+                        <div className="container">
+                            <p>Copyright © 2018 Rudaina Foundation. All Rights Reserved</p>
                         </div>
                     </div>
                 </div>

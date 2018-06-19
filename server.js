@@ -8,11 +8,6 @@ const events  = require('./routes/api/events');
 const news    = require('./routes/api/news');
 const profile = require('./routes/api/profile');
 const users   = require('./routes/api/users');
-<<<<<<< HEAD
-const policy  = require('./routes/api/policy');
-=======
-const policy = require('/routes/api/policy');
->>>>>>> 24593fc1022fd58d4f943452639dd67a34275e15
 const app     = express();
 
 // Body parser middleware
@@ -40,7 +35,6 @@ app.use('/api/events', events);
 app.use('/api/news', news);
 app.use('/api/profile', profile);
 app.use('/api/users', users);
-app.use('/api/policy',policy)
 
 // Use Build
 app.use(express.static('client/build'));

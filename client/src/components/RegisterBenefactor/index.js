@@ -71,7 +71,8 @@ class RegisterBenefactor extends Component {
     }
 
     render() {
-        const { errors } = this.state;
+
+        const { errors } = this.state
 
         return (
             <div className="register">
@@ -87,14 +88,14 @@ class RegisterBenefactor extends Component {
                             <AccountGroup
                                 values={this.state.account}
                                 onChange={this.onAccountChange}
-                                errors={this.errors}
+                                errors={errors}
                             />
                             <hr/>
 
                             <AddressGroup
                                 values={this.state.contact}
                                 onChange={this.onContactChange}
-                                errors={this.errors}
+                                errors={errors}
                             />
 
                             <hr/>

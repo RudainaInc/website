@@ -7,7 +7,9 @@ const AddressGroup = ({
     values,
     errors,
 }) => {
+    const { addr } = errors;
     return (
+
         <div>
             <p>Contact Information</p>
             <div className="form-row">

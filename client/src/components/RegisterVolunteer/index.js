@@ -71,6 +71,7 @@ class RegisterVolunteer extends Component {
     }
 
     render() {
+
         const { errors } = this.state;
 
         return (
@@ -87,14 +88,14 @@ class RegisterVolunteer extends Component {
                             <AccountGroup
                                 values={this.state.account}
                                 onChange={this.onAccountChange}
-                                errors={{}}
+                                errors={errors}
                             />
                             <hr/>
 
                             <AddressGroup
                                 values={this.state.contact}
                                 onChange={this.onContactChange}
-                                errors={{}}
+                                errors={errors}
                             />
 
                             <hr/>
