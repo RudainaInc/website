@@ -9,12 +9,60 @@ class Vounteer extends Component {
 
                     <div className="jumbotron">
 
-                        <h2 className="text-center">Volunteer Description</h2>
+                        <h2 className="text-center">Volunteer Today!</h2>
                         <p>
-                            If you are seeking a supportive, interactive, and a dynamic organization, then Rudaina Foundation should be your choice to volunteer. 
-                            Your enthusiasm, innovative approaches and new ideas will be very valuable to us. Benefits to joining our team include ongoing and 
-                            interactive work with a chance to develop a wealth of contacts and networks. Your career goals and work objectives are important to us.
+                            If you are seeking a supportive, interactive, and a dynamic workplace, then Rudaina
+                            Foundation should be your choice of to where you will volunteer. Your enthusiasm,
+                            innovative approaches and new ideas will be very valuable to us. Benefits to joining our
+                            team include ongoing and interactive work with a chance to develop a wealth of contacts
+                            and networks. Your life goals and work objectives are important to us.
+
+                            With our online system, all you need to do is fill out the sign up application and wait to be
+                            approved. Once approved, you will be able to see an interface only available to the
+                            volunteers.
                         </p>
+
+                        <h2>
+                            Why we NEED You! (Any one of these and you’re in!)
+                        </h2>
+
+                        <p>
+                            You have good analysis and decision making skills, project management, excellent written and communication skills and a passion for enhancing patron experience
+                            You are able to manage multiple projects and work collaboratively with others to deliver results
+                            You are a self-starter who can take ownership for projects in a fast-changing, growth-oriented environment
+                            You understand popular B2B Social Media channels to be leveraged within client projects
+                            Must be fluent in English and familiar with marketing concepts and communication flows
+                            You have excellent organizational, written and verbal skills
+                            You are detail oriented and committed to meeting deadlines
+                            You have good interpersonal skills
+                            You can work well independently and as part of a team
+                            You have the ability to adapt to shifting priorities and manage multiple deadlines
+                            You have the ability to problem-solve in a fast paced work environment
+                            You have Knowledge of Microsoft Office programs, including Outlook, Word, and Excel
+
+                        </p>
+
+                        <h2>
+                            Why You might NEED Us! (Any one of these and you’re welcome!)
+                        </h2>
+
+                        <p>
+                            You will gain a unique opportunity to work with a good cause and impact other people’s lives
+                            You will undertake research in a number of areas pertaining to health and development
+                            You will have the opportunity to contribute your opinions and inputs to your work unit
+                            You will have the benefit of enhancing your learning experience by interacting with supportive staff and volunteers
+                            You will gain job experience and develop your knowledge base in many different areas related to research, pregnancy, mental health, charitable organizations, any more..
+                            You will make use of your creativity in developing new and innovative approaches to the project at hand
+                            You will have a chance to participate in many internal courses about conflict resolution and public speaking
+
+                        </p>
+
+                        <p>
+                            By clicking sign up, you will be redirected to the application process. The
+                            wait time before being approved and contacted is usually 2-3 business
+                            days.
+                        </p>
+
 
                         <hr/>
 

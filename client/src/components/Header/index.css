@@ -1,15 +1,18 @@
-/*****************************************************************
-                        Header
-*******************************************************************/
-
 .header--smoke_color{
-    background-color: #F5F5F5;
+    background-color: #fff;
 }
 
 /* Logo Styles */
+
 .header--logo{
-    width: 100%;
-    height: auto;
+    width: 85%;
+    height: 140px;
+}
+
+.bar{
+    margin: 8px 0px;
+    height: 30px;
+    background-color: #005475;
 }
 
 
@@ -21,12 +24,10 @@ hr.style15 {
 /* Login | fr styles */
 .header--login_fr {
     overflow: hidden;
-    padding : auto;
-    margin : auto;
+    padding : 0px 0px auto auto;
+    margin : 0px;
     display : inline-block;
-    text-align : center;
     display: flex;
-    justify-content: center;
     font-weight: 700;
 }
 
@@ -36,21 +37,34 @@ hr.style15 {
     padding-top: 20px;
 }
 
+.header--login_fr-button{
+    float: right;
+    color: black;
+}
+
+.header--buttons ul li{
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.header--buttons ul li :hover{
+    color: red;
+    transform: scaleY(1.2);
+    text-decoration: none;
+}
+
 .header--center {
     margin: auto;
     width: 60%;
     padding: 10px;
+
 }
 
 .header--login_fr a {
-    float: left;
-    display: block;
-    color : red;
-    text-align: center;
-    padding: 14px 16px;
+    color : black;
     text-decoration: none;
-    font-size: 17px;
-    border: 3px solid transparent;
 }
 
 .header--login_fr_login :hover {
@@ -59,10 +73,10 @@ hr.style15 {
     color : white;
 }
 
-.header--login_fr_fr :hover {
+.header--login_fr :hover {
     color : #990F02;
     transition: transform .5s;
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .header--login_fr .fr a:hover {
@@ -76,7 +90,7 @@ hr.style15 {
 /* Header Styles */
 .header--topnav {
     overflow: hidden;
-    background-color: #F5F5F5;
+    background-color: #fff;
     padding : auto;
     margin : auto;
     display : inline-block;
@@ -91,7 +105,7 @@ hr.style15 {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 3px 16px;
     text-decoration: none;
     font-size: 17px;
     /* border-bottom: 3px solid transparent; */
@@ -106,7 +120,7 @@ hr.style15 {
 }
 
 .header--leftnav_border{
-    border-left: 1px solid red;
+    border-left: 1.5px solid red;
 }
 
 .header--topnav a.active {

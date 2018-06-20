@@ -1,153 +1,300 @@
-/*****************************************************************
-                        Footer
-*******************************************************************/
+/********************************************
+                Footer Styles
+****************************************/
+
 .footer{
-    color: white;
+    background-color: #323232;/* #222222 #0A122A*/
 }
 
-.footer--black_color{
-    background-color: #000;
+.navlinks{
+    padding-top: 30px;
 }
 
-.footer--blackShade_color{
-    background-color: #323232
-    ;
+.navlinks .row{
+    height: 60px;
 }
 
-
-.fa {
-    padding: 20px;
-    font-size: 1em;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
+.navlinks .row .icon-container {
+    height: 100%;
 }
 
-.fa:hover {
-    opacity: 0.7;
-    text-decoration: none;
-    color: white;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-google {
-    background: red;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.footer--follow_us{
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-    color: white;
-    padding: 10px;
-    margin: 0px;
-    
-}
-
-.footer--center{
+.navlinks .row .icon-container i {
+    font-size: 30px;
+    padding: auto;
     margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.navlinks .row .icon-text{
+    float: left;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    color: white;
+}
+
+.icon-text a{
+    float: left;
+    padding-left: 0pc;
+}
+
+
+/********************************************
+                Footer Navlinks Styles
+****************************************/
+
+.show-right-border{
+    border-right: 1.0px solid grey;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.footer li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.footer li a:hover {
+    color: white;
+    color: red;
+}
+
+/********************************************
+                Footer Social-links Styles
+****************************************/
+
+.follow-us{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0px 0px 0px;
+}
+
+.wrapper {
     width: 80%;
     padding: auto;
-    display : inline-block;
-    text-align : center;
-    display: flex;
-    justify-content: center;
+    margin: auto;
 }
 
-.footer--logo_bird{
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    margin: 0px;
-}
-
-.col-7 p {
-    display: inline;
-}
-
-.footer--logo_text{
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
-    color: red;
-}
-
-.footer--logo_text_num{
-    font-family:  sans-serif;
-    font-size: 15px;
-    color: white;
-}
-
-.footer--logo_text_num a:hover{
-    text-decoration: none;
-}
-
-.footer__links {
-    overflow: hidden;
-    width : 100%;
-    margin: 0px;
-    font-size: 6px;
-}
-
-.footer__links a {
-    float: left;
-    display: inline-block;
-    box-sizing: border-box;
-    color: white;
-    margin: 0px;
+.wrapper ul {
+    list-style: none;
     text-align: center;
-    width : 33%;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 12px;
 }
 
-.footer__links a:hover {
+.wrapper ul li {
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    
+    display:inline-block;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa {
+    color: #D8E2DC;
+    margin-top: 6px;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa-facebook {
+    color: #3b5998;
+}
+
+.wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrapper ul li .fa-twitter {
+    color: #00aced;
+}
+
+.wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li .fa-instagram {
+    color: #bc2a8d;
+}
+
+.wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.wrapper ul li .fa-linkedin {
+    color: #0077B5;
+}
+
+.wrapper ul li:hover.linkedin {
+    border: 5px solid #0077B5;
+    box-shadow: 0 0 15px #0077B5;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-linkedin {
+    color: #0077B5;
+    text-shadow: 0 0 15px #0077B5;
+    transition: all 0.5s ease;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 640px){
+.wrapper {
+    width: 350px;
+}
+.wrapper ul li{
+    margin-top: 10px;
+}
+.wrapper ul li.google{
+    margin-left: 60px;
+}
+}
+
+
+@media screen and (max-width: 340px){
+.wrapper {
+    width: 150px;
+}
+.wrapper ul li{
+    margin:15px;
+}
+.wrapper ul li.google{
+    margin-left: 15px;
+}
+}
+
+.download-links-container{
+    width: 100%;
+}
+
+.download-links-android{
+    width: 50%;
+}
+
+.badge {
+    font-family: system, -apple-system, '.SFNSDisplay-Regular', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+/**************************************************
+                Rudiana Logo & Reg Number
+***********************************************/
+.footer_rudaina_logo_reg .container-fluid{
+    width: 100%;
+    padding: 15px;
+    margin: 0px;
+}
+
+.footer-rudaina-logo img{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+}
+
+.footer-rudaina-name_rudaina{
+    font-size: 50px;
+    height: 40px;
+    color: white;
+    font-family: 'Arizonia', cursive;
+}
+
+.footer-rudaina-name_foundation{
+    font-size: 40px;
+    height: 40px;
+    color: white;
+    font-family: 'Encode Sans Condensed', sans-serif;
+
+}
+
+.footer--company-reg{
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    padding: 1px;
+}
+
+.footer--company-reg a{
+    color: white;
+}
+
+.footer--company-reg a:hover{
     color: red;
-    text-decoration: none;
 }
 
-/* 2nd Footer */
-.ul_top_hypers li  {
-    display: inline;
-    padding : 0px 13px;
-    text-decoration: none;
-    font-size : 14px;
+/*************************************************
+            App Download links
+************************************************/
+
+.app-download-links a img{
+    width: 100%;
+    padding: 10px 0px;
+    margin: auto;
 }
 
-.ul_top_hypers a {
-    text-decoration: none;
-    color : white;
+/********************************************
+                Copyright Styles
+****************************************/
+
+.copyright-section{
+    background-color: black;
 }
 
-.ul_top_hypers a:hover {
-    color : red;
+.copyright-section p{
+    text-align: center;
+    color: white;
+    padding-top: 7px;
 }
 
-.left{
-    float: left; 
+.three{
+    background-color: red;
 }
 
-.right{
-    float: right; 
+/*********************************
+        Extra Styles
+************************************/
+.remove-right-border{
+    border-right: 1.0px solid #323232;
 }

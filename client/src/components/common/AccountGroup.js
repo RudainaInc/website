@@ -7,6 +7,9 @@ const AccountGroup = ({
     values,
     errors,
 }) => {
+
+    const { fname } = errors;
+
     return ( 
         <div>
             <p>Account Information</p>
