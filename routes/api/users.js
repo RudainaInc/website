@@ -16,12 +16,6 @@ const Volunteer = require('../../models/Volunteer');
 const Benefactor = require('../../models/Benefactor');
 const Address = require('../../models/Address');
 
-<<<<<<< HEAD
-//const Volunteer = require('../../models/Volunteer');
-//const Benificiary = require('../../models/Benificiary');
-
-=======
->>>>>>> e50a33734b3debcee81dccba8c920a8aa7f2159d
 // @route   GET api/users/test
 // @desc    Tests users route
 // @access  Public
