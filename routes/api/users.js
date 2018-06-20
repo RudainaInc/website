@@ -17,8 +17,8 @@ const Benificiary = require('../../models/Benificiary');
 const Benefactor = require('../../models/Benefactor');
 const Address = require('../../models/Address');
 
-const Volunteer = require('../../models/Volunteer');
-const Benificiary = require('../../models/Benificiary');
+//const Volunteer = require('../../models/Volunteer');
+//const Benificiary = require('../../models/Benificiary');
 
 // @route   GET api/users/test
 // @desc    Tests users route
