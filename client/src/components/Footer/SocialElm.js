@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css';
 
-const SocialElm = ({}) => {
+const SocialElm = () => {
 
     return(
         <div className="col-md-4 show-right-border">

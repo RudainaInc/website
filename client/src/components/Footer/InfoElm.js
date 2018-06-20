@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css';
 
-const InfoElm = ({}) => {
+const InfoElm = () => {
 
     return(
         <div className="col-md-4 navlinks show-right-border">
