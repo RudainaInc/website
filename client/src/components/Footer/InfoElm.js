@@ -12,7 +12,7 @@ const InfoElm = () => {
                             <i className="fas fa-file-alt"></i>
                         </div>
                         <div className="col-md-8 icon-text">
-                            <a href="footer-section.html">Terms</a>
+                            <a href="https://drive.google.com/open?id=1xMrnexs1Yp6NAWiJQPn13cf9l37VUD_P" target="_blank">Terms</a>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ const InfoElm = () => {
                             <i className="fas fa-user-shield"></i>
                         </div>
                         <div className="col-md-8 icon-text">
-                            <a href="footer-section.html">Privacy</a>
+                            <a href="https://drive.google.com/open?id=1MY4GgJsiTXc4VqRfVWNps-8zNjO-ZoiV" target="_blank">Privacy</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const InfoElm = () => {
                             <i className="fas fa-door-open"></i>
                         </div>
                         <div className="col-md-8 icon-text">
-                            <a href="footer-section.html">Accesibility</a>
+                            <a href="https://drive.google.com/open?id=1KcaKEYi1ide5k9uQzXSYmIW7P9a3Chjs" target="_blank">Accesibility</a>
                         </div>
                     </div>
                 </div>

@@ -77,6 +77,7 @@ router.post('/addBenefactor', (req, res) => {
     const pcode = req.body.pcode;
     const phone = req.body.phone;
 
+    
     const newUser = new User({
         fname: fname,
         lname: lname,
@@ -159,7 +160,7 @@ router.post('/login', (req, res) => {
                         jwt.sign(
                             payload, 
                             keys.secretOrKey, 
-                            { expiresIn: 3600 }, 
+                            { expiresIn: 3600 },
                             (err, token) => {
                                 res.json({ 
                                     seccess: true,
