@@ -9,25 +9,31 @@ class News extends Component {
             <div className="container">
 
                 <div>
-                    <h1>test</h1>
+                    <h1 className="news-section_name"> Relevant News </h1>
+                    <hr className="style"/>
 
                     <div className="row">
 
                         <CardElm 
-                            img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
-                            title="Card title"
-                            content="Some quick example text to build on the card title and make up the bulk of the card's content"
-                            url="#"
+                            img="/img/donation_cheque.jpg"
+                            title="Maximize Your Giving"
+                            content="If your inbox was bursting this week with a deluge of e-mail solicitations from dozens of charities, you’re not alone. Indeed, nearly every major charity seemed to have…"
+                            url="http://business.financialpost.com/personal-finance/taxes/how-to-make-the-most-of-your-charitable-giving-come-tax-time"
                         />
 
-                        <CardElm 
-                            img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
-                            title="Card title"
-                            content="Some quick example text to build on the card title and make up the bulk of the card's content"
-                            url="#"
-                        />
+                        <div className="news-load_more">
+                            <p className="news-load_more_prev"><a href="news-section.html#">Prev</a></p>
+                            <p className="news-load_more_next"><a href="news-section.html#">Next</a></p>
+                        </div>
 
-                        <CardElm 
+                    </div>
+
+                    <h1 className="news-section_name"> Pregnancy News </h1>
+                    <hr className="style"/>
+
+                    <div className="row">
+
+                         <CardElm 
                             img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
                             title="Card title"
                             content="Some quick example text to build on the card title and make up the bulk of the card's content"
@@ -38,88 +44,30 @@ class News extends Component {
                             <p className="news-load_more_prev"><a href="news-section.html#">Prev</a></p>
                             <p className="news-load_more_next"><a href="news-section.html#">Next</a></p>
                         </div>
-
                     </div>
 
-                    <h1>test</h1>
+                    <h1 className="news-section_name"> Charity News </h1>
+                    <hr className="style"/>
 
                     <div className="row">
-                        <div className="card col-4" style={{width:"18rem"}}>
-                            <img className="card-img-top" src="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png" alt="Card cap"/>
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-                                <p className="text-center">    
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </p>
-                            </div>
-                        </div>
+                         <CardElm 
+                            img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
+                            title="Card title"
+                            content="Some quick example text to build on the card title and make up the bulk of the card's content"
+                            url="#"
+                        />
 
-                        <div className="card col-4" style={{width:"18rem"}}>
-                            <img className="card-img-top" src="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png" alt="Card cap"/>
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         <CardElm 
+                            img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
+                            title="Card title"
+                            content="Some quick example text to build on the card title and make up the bulk of the card's content"
+                            url="#"
+                        />
 
-                                <p className="text-center">    
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <div className="card col-4" style={{width:"18rem"}}>
-                            <img className="card-img-top" src="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png" alt="Card cap"/>
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                                <p className="text-center">    
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1>test</h1>
-
-                    <div className="row">
-                        <div className="card col-4" style={{width:"18rem"}}>
-                            <img className="card-img-top" src="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png" alt="Card cap"/>
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                                <p className="text-center">    
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="card col-4" style={{width:"18rem"}}>
-                            <img className="card-img-top" src="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png" alt="Card cap"/>
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                                <p className="text-center">    
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <div className="card col-4" style={{width:"18rem"}}>
-                            <img className="card-img-top" src="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png" alt="Card cap"/>
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                                <p className="text-center">    
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
-                                </p>
-                            </div>
+                        <div className="news-load_more">
+                            <p className="news-load_more_prev"><a href="news-section.html#">Prev</a></p>
+                            <p className="news-load_more_next"><a href="news-section.html#">Next</a></p>
                         </div>
                     </div>
                 </div>

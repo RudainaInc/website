@@ -22,8 +22,8 @@ const CardElm = ({
                     <p>{content}</p>
                 </div>
                 <div className="news-button">
-                    <button type="button" className="btn btn-primary"> <
-                        Link target="_blank" to={url}>READ MORE</Link>
+                    <button type="button" className="btn btn-primary"> 
+                        <Link target="_blank" to={url}>READ MORE</Link>
                     </button>
                 </div>
             </div>
