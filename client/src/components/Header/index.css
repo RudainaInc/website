@@ -1,5 +1,6 @@
 .header--smoke_color{
-    background-color: #fff;
+    /* background-color: #f0f0f0; */
+    background: linear-gradient(to right,#94A2E3, #fd9bb9)
 }
 
 /* Logo Styles */
@@ -10,9 +11,11 @@
 }
 
 .bar{
-    margin: 8px 0px;
+    margin: 0px 0px;
     height: 30px;
-    background-color: #005475;
+    
+    background: linear-gradient(to right,#94A2E3, #fd9bb9);
+    border-bottom: 3px solid black ;
 }
 
 
@@ -90,7 +93,8 @@ hr.style15 {
 /* Header Styles */
 .header--topnav {
     overflow: hidden;
-    background-color: #fff;
+    background-color: transparent;
+    
     padding : auto;
     margin : auto;
     display : inline-block;
@@ -126,4 +130,11 @@ hr.style15 {
 .header--topnav a.active {
     font-weight: 700;
     color: #CF0A2C;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
 }

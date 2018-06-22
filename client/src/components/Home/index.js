@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './home.css'
 
+import NewsFeed from './NewsFeed';
+
 class Home extends Component {
 
     constructor() {
         super();
         this.state = {
-            currdeg: 0
+            currdeg: 0,
+            img: "",
+            text: "",
+            imgarr: []
         }
 
         this.onChange = this.onChange.bind(this);
@@ -42,6 +47,8 @@ class Home extends Component {
                     <input type="submit" style={{marginRight: 300+'px'}} name='n' onClick={this.onChange} className="nextButton" value="&raquo" />
                     <input type="submit" style={{marginLeft: 300+'px'}} name='p' onClick={this.onChange} className="prevButton" value="&laquo" />
                 </div>
+
+                <NewsFeed text={this.state.text} img={this.state.img} />
 
             </div>
         );

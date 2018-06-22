@@ -8,36 +8,91 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <div className="">
-                    <div className="footer">
-                        <div className="container">
+                <div className="footer">
+                    <div className="container">
+                        <div className="">
                             <div className="row">
-                                
-                                <InfoElm/>
-                                <SocailElm/>
 
-                                <div className="col-md-4 footer_rudaina_logo_reg ">
-                                    <div className="container-fluid ">
-                                        <div className="">
-                                            <div className="col-md-4 footer-rudaina-logo">
+
+                                <div className="col-md-4 show-right-border">
+                                    <div className="row">
+                                        <div className="col-4">
+                                            <span className="footer-rudaina-logo">
                                                 <img className="footer--logo_bird remove-right-border" src="../img/footer-logo-bird.jpg" alt=""/>
-                                            </div>
-                                            <div className="col-md-8">
-                                                    <p className="footer-rudaina-name_rudaina">Rudaina</p>
-                                                    <p className="footer-rudaina-name_foundation">Foundation</p>
-                                            </div>
+                                            </span>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <p className="footer--company-reg">Rigistration Number : <a href="https://apps.cra-arc.gc.ca/ebci/haip/srch/charity-eng.action?&bn=792154882RR0001">792154882RR0001</a></p>
+                                        <div className="col-8">
+                                            <div className="row">
+                                                
+                                                <div className="col-12 icon-app-text">
+                                                    <p>
+                                                        <span>Rudaina</span><span>Foundation</span>      
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <p class="footer--company-reg">Rigistration Number : <a href="https://apps.cra-arc.gc.ca/ebci/haip/srch/charity-eng.action?&amp;bn=792154882RR0001">792154882RR0001</a></p>
+                                                </div>
+
+                                            </div>
+
+                                            
+                                            
+                                            
+                                        </div>
+                                        
                                     </div>
                                 </div>
+                                
+                                <div className="col-md-4 show-right-border">
+                                    <span className="icon-app-text text-center">
+                                       <p>Donwnload Our App</p> 
+                                    </span>
+                                    
+                                    <div className="row">
+                                        
+                                        <div className="col-6 border-right download-icon">
+                                        <a>
+                                        <i class="fa fa-apple" style={{color: "white"}} aria-hidden="true"></i>
+                                        </a>
+                                            
+                                        </div>
+
+                                        <div className="col-6 download-icon">
+                                        <a>
+                                        <i class="fa fa-android" style={{color: "green"}} aria-hidden="true"></i>
+                                        </a>
+                                            
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <SocailElm/>
+
                             </div>
                         </div>
                     </div>
-                    <div className="copyright-section">
-                        <div className="container">
-                            <p>Copyright © 2018 Rudaina Foundation. All Rights Reserved</p>
+
+                    <div className="container">
+                        <div className="footer-copyright_sec">
+                            <div className="footer-copyright_navlinks">
+                                <ul>
+                                    <span className="footer-copyright">
+                                        <li><a href="">Copyright © 2018 Rudaina Foundation. All Rights Reserved</a></li>
+                                    </span>
+                                    <span className="footer-navlinks">
+                                        <li><a href="">Privacy</a></li>
+                                        <li><a href="">Terms</a></li>
+                                        <li><a href="">Accessibility</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                    </span>
+                                
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </div>

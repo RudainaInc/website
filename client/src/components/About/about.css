@@ -1,0 +1,14 @@
+.test3{
+    position: relative;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.test2 {
+    position: fixed;
+    vertical-align: top;
+}
+
+.test {
+    height: 600px;
+}

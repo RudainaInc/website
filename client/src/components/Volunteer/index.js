@@ -7,9 +7,11 @@ class Vounteer extends Component {
             <div className="volunteer">
                 <div className="container">
 
-                    <div className="jumbotron">
-
-                        <h2 className="text-center">Volunteer Today!</h2>
+                        <h2 className="text-center news-section_name">
+                            Volunteer Today!
+                        </h2>
+                        <hr className="style"/>
+                        
                         <p>
                             If you are seeking a supportive, interactive, and a dynamic workplace, then Rudaina
                             Foundation should be your choice of to where you will volunteer. Your enthusiasm,
@@ -22,9 +24,11 @@ class Vounteer extends Component {
                             volunteers.
                         </p>
 
-                        <h2>
+                        <h2 className="news-section_name">
                             Why we NEED You! (Any one of these and you’re in!)
                         </h2>
+                        <hr className="style"/>
+                        
 
                         <p>
                             You have good analysis and decision making skills, project management, excellent written and communication skills and a passion for enhancing patron experience
@@ -42,9 +46,11 @@ class Vounteer extends Component {
 
                         </p>
 
-                        <h2>
+                        <h2 className="news-section_name">
                             Why You might NEED Us! (Any one of these and you’re welcome!)
                         </h2>
+                        <hr className="style"/>
+                        
 
                         <p>
                             You will gain a unique opportunity to work with a good cause and impact other people’s lives
@@ -68,9 +74,10 @@ class Vounteer extends Component {
 
                         
 
+                        
+
                         <Link className="form-control btn btn-info btn-block mt-4" to='/register_vounteer'>Become a volunteer</Link>
                     </div>
-                </div>
             </div>
         );
     }

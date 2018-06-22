@@ -4,9 +4,11 @@ import './footer.css';
 const SocialElm = () => {
 
     return(
-        <div className="col-md-4 show-right-border">
-            <p className="follow-us">FOLLOW US :</p>
-            <div>
+        <div className="col-md-4">
+            <div className="">
+                <span className="icon-app-text text-center">
+                    <p>Follow Us On</p> 
+                </span>
                 <div className="wrapper">
                     <ul>
                         <li className="facebook"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
@@ -16,16 +18,7 @@ const SocialElm = () => {
                     </ul>
                 </div>
             </div>
-            <div className="container-fluid ">
-                <div className="row app-download-links">
-                    <div className="col-md-6">
-                        <a href="footer-section.html"><img src="../img/ios_app_store.PNG" alt="download app on ios app store"/></a>
-                    </div>
-                    <div className="col-md-6">
-                        <a href="footer-section.html"><img src="../img/google_play_store.PNG" alt="download app on ios app store"/></a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     )
 

@@ -15,7 +15,7 @@ class News extends Component {
                     <div className="row">
 
                         <CardElm 
-                            img="/img/donation_cheque.jpg"
+                            img="../img/donation_cheque.jpg"
                             title="Maximize Your Giving"
                             content="If your inbox was bursting this week with a deluge of e-mail solicitations from dozens of charities, you’re not alone. Indeed, nearly every major charity seemed to have…"
                             url="http://business.financialpost.com/personal-finance/taxes/how-to-make-the-most-of-your-charitable-giving-come-tax-time"
@@ -34,9 +34,9 @@ class News extends Component {
                     <div className="row">
 
                          <CardElm 
-                            img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
-                            title="Card title"
-                            content="Some quick example text to build on the card title and make up the bulk of the card's content"
+                            img="../img/pubmed.png"
+                            title="6-weeks Post birth support"
+                            content="Research suggests women find the first 2 to 6 weeks to be the most difficult time for breastfeeding. It has been identified that women need and seek support with breastfeeding during this time…"
                             url="#"
                         />
 
@@ -52,16 +52,16 @@ class News extends Component {
                     <div className="row">
 
                          <CardElm 
-                            img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
-                            title="Card title"
-                            content="Some quick example text to build on the card title and make up the bulk of the card's content"
+                            img="../img/canada_summer_jobs.png"
+                            title="Summer Job approval"
+                            content="2018/05/01 – Rudaina Foundation has been approved to receive its first grant from the Canada Summer Jobs program offered by the Government of Canada!"
                             url="#"
                         />
 
                          <CardElm 
-                            img="http://www.imgworlds.com/wp-content/themes/IMG/img/phase3/welcome/trex.png"
-                            title="Card title"
-                            content="Some quick example text to build on the card title and make up the bulk of the card's content"
+                            img="../img/government_of_canada.png"
+                            title="We've been Approved"
+                            content="2017/09/29 - Rudaina Foundation has officially been approved by the Canada Revenue Agency as a Chartiable Organization!"
                             url="#"
                         />
 

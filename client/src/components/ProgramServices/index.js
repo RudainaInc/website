@@ -7,13 +7,10 @@ class ProgramServices extends Component {
             <div className="program-services">
                 <div className="container">
 
-                    <div className="jumbotron">
-
-                        <h2 className="text-center">Program Services</h2>
-
-                        <h2>
+                        <h2 className="news-section_name">
                             Our Life Basket Program:
                         </h2>
+                        {/* <hr className="style"/> */}
                         <p>
                             An expecting person will be able to register on our website to start receiving a “life
                             basket” every trimester that will provide tailored information to the individual woman. After
@@ -23,9 +20,10 @@ class ProgramServices extends Component {
                             dietary lifestyle, and household income.
                         </p>
 
-                        <h2>
+                        <h2 className="news-section_name">
                             Our App:
                         </h2>
+                        {/* <hr className="style"/> */}
 
                         <p>
                             We offer two versions of our App. The app is available on all
@@ -39,9 +37,10 @@ class ProgramServices extends Component {
                             flappy stork the game!...
                         </p>
 
-                        <h2>
+                        <h2 className="news-section_name">
                             Our Community:
                         </h2>
+                        {/* <hr className="style"/> */}
 
                         <p>
                             By signing up, you get the chance to be part of a community that
@@ -50,9 +49,10 @@ class ProgramServices extends Component {
                             conversation. The support is there for whomever seeks it.
                         </p>
 
-                        <h2>
+                        <h2 className="news-section_name">
                             What Happens After Birth?
                         </h2>
+                        {/* <hr className="style"/> */}
 
                         <p>
                             Rudaina Foundation will provide health-related support to women and families
@@ -79,9 +79,10 @@ class ProgramServices extends Component {
                             insurance benefits. This will be done by requesting a copy of their insurance policy
                         </p>
 
-                        <h2>
+                        <h2 className="news-section_name">
                             Sign Up Today:
                         </h2>
+                        {/* <hr className="style"/> */}
 
                         <p>
                             Every birth is different. Sign up now to start receiving life basketstailored to your specific
@@ -99,7 +100,6 @@ class ProgramServices extends Component {
 
                         <Link className="form-control btn btn-info btn-block mt-4" to='/register_benefactor'>Become a Benefactor</Link>
                     </div>
-                </div>
             </div>
         );
     }
