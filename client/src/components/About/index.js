@@ -8,7 +8,7 @@ class About extends Component {
             <div className="container" >
 
                 <div className="container-fluid " data-spy="scroll" data-target="#myScrollspy" data-offset="1">
-                    {/* <div className="row">
+                    <div className="row">
                         <nav className="col-sm-2" id="myScrollspy">
                             <ul className="nav nav-pills flex-column test2">
                                 
@@ -91,9 +91,9 @@ class About extends Component {
                             </div>
                             
                         </div>
-                    </div> */}
+                    </div>
                 </div> 
-                <div className="bd-example bd-example-tabs">
+                {/* <div className="bd-example bd-example-tabs">
                     <div class="row">
                         <div class="col-3">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -171,7 +171,7 @@ class About extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 
             </div>

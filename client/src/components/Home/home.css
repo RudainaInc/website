@@ -1,6 +1,10 @@
 /************************************
             Basket Stles
 *******************************************/
+.home {
+    height: 1500px;
+}
+
 .basket-section{
     height: 300px;
     background-color: #fff;

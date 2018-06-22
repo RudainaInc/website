@@ -3,10 +3,7 @@
 ****************************************/
 
 .footer{
-    background-color: #323232;/* #222222 #0A122A*/
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    background-color: #3f435a;/* #222222 #0A122A*/
     width: 100%;
 }
 

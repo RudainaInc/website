@@ -31,25 +31,27 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="basket-section">
+            <div className="home">
+                <div className="container">
+                    <div className="basket-section">
 
-                    <div className="basketContainer">
+                        <div className="basketContainer">
 
-                        <div id="carousel" style={{transform: "rotateY("+this.state.currdeg+"deg)" }}>
-                            <div className="item a"><img src="../img/basket-remake.png" alt=""/></div>
-                            <div className="item b"><img src="../img/basket-remake.png" alt=""/></div>
-                            <div className="item c"><img src="../img/basket-remake.png" alt=""/></div>
+                            <div id="carousel" style={{transform: "rotateY("+this.state.currdeg+"deg)" }}>
+                                <div className="item a"><img src="../img/basket-remake.png" alt=""/></div>
+                                <div className="item b"><img src="../img/basket-remake.png" alt=""/></div>
+                                <div className="item c"><img src="../img/basket-remake.png" alt=""/></div>
+                            </div>
+
                         </div>
 
+                        <input type="submit" style={{marginRight: 300+'px'}} name='n' onClick={this.onChange} className="nextButton" value="&raquo" />
+                        <input type="submit" style={{marginLeft: 300+'px'}} name='p' onClick={this.onChange} className="prevButton" value="&laquo" />
                     </div>
 
-                    <input type="submit" style={{marginRight: 300+'px'}} name='n' onClick={this.onChange} className="nextButton" value="&raquo" />
-                    <input type="submit" style={{marginLeft: 300+'px'}} name='p' onClick={this.onChange} className="prevButton" value="&laquo" />
+                    <NewsFeed text={this.state.text} img={this.state.img} />
+
                 </div>
-
-                <NewsFeed text={this.state.text} img={this.state.img} />
-
             </div>
         );
     }

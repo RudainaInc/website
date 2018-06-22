@@ -1,6 +1,7 @@
 .header--smoke_color{
     /* background-color: #f0f0f0; */
-    background: linear-gradient(to right,#94A2E3, #fd9bb9)
+    background: linear-gradient(to bottom,#94A2E3, #fd9bb9);
+    border-bottom: 3px solid black ;
 }
 
 /* Logo Styles */
@@ -14,8 +15,9 @@
     margin: 0px 0px;
     height: 30px;
     
-    background: linear-gradient(to right,#94A2E3, #fd9bb9);
-    border-bottom: 3px solid black ;
+    /* background: linear-gradient(to right,#94A2E3, #fd9bb9); */
+    background: transparent;
+    
 }
 
 
