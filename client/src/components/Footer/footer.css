@@ -3,8 +3,9 @@
 ****************************************/
 
 .footer{
-    background-color: #3f435a;/* #222222 #0A122A*/
+    background-color:  #222222; /* #0A122A*/
     width: 100%;
+    padding: 50px;
 }
 
 .navlinks{
@@ -376,4 +377,21 @@ NEW CSS
     padding: auto;
     text-align: center;
     color: white;
+}
+
+.rf-wrapper{
+    background-color: red;
+}
+
+.rf{
+    background-color: #005475;
+    text-align: center;
+    height: 120px;
+    width: 120px;
+    padding-top : 30px;
+    padding-right: 7px;
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    border-radius: 10px;
 }

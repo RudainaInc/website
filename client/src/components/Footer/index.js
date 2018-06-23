@@ -17,30 +17,33 @@ class Footer extends Component {
                                 <div className="col-md-4 show-right-border">
                                     <div className="row">
                                         <div className="col-4">
-                                            <span className="footer-rudaina-logo">
-                                                <img className="footer--logo_bird remove-right-border" src="../img/footer-logo-bird.jpg" alt=""/>
-                                            </span>
+                                            
                                         </div>
-                                        <div className="col-8">
-                                            <div className="row">
+                                        <div className="col-8"
+
+                                        >
+                                            {/* <div className="row">
                                                 
                                                 <div className="col-12 icon-app-text">
                                                     <p>
                                                         <span>Rudaina</span><span>Foundation</span>      
                                                     </p>
                                                 </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-12">
-                                                    <p class="footer--company-reg">Rigistration Number : <a href="https://apps.cra-arc.gc.ca/ebci/haip/srch/charity-eng.action?&amp;bn=792154882RR0001">792154882RR0001</a></p>
-                                                </div>
-
-                                            </div>
+                                            </div> */}
 
                                             
+                                            
+                                            <p className="rf"> 
+                                                RF
+                                            </p>
                                             
                                             
                                         </div>
+                                        {/* <div className="row">
+                                            <div className="col-12">
+                                                <p class="footer--company-reg">Rigistration Number : <a href="https://apps.cra-arc.gc.ca/ebci/haip/srch/charity-eng.action?&amp;bn=792154882RR0001">792154882RR0001</a></p>
+                                            </div>
+                                        </div> */}
                                         
                                     </div>
                                 </div>
@@ -61,7 +64,7 @@ class Footer extends Component {
 
                                         <div className="col-6 download-icon">
                                         <a>
-                                        <i class="fa fa-android" style={{color: "green"}} aria-hidden="true"></i>
+                                        <i class="fa fa-android" style={{color: "#a4c639"}} aria-hidden="true"></i>
                                         </a>
                                             
                                         </div>

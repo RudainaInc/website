@@ -7,27 +7,31 @@ class About extends Component {
         return (
             <div className="container" >
 
-                <div className="container-fluid " data-spy="scroll" data-target="#myScrollspy" data-offset="1">
-                    <div className="row">
-                        <nav className="col-sm-2" id="myScrollspy">
-                            <ul className="nav nav-pills flex-column test2">
+                
+
+                {/* <div className="jumbotron container-fluid" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+                    <div className="row ">
+                        <nav className="col-sm-2 test123" id="myScrollspy">
+                            <ul className=" nav nav-pills flex-column test2">
                                 
-                                <li className="nav-item">
+                                <li className="nav-item btn-info">
                                     <a className="nav-link" href="#section1">Section 1</a>
                                 </li>
 
-                                <li className="nav-item">
+                                <li className="nav-item btn-info">
                                     <a className="nav-link" href="#section2">Section 2</a>
                                 </li>
 
-                                <li className="nav-item">
+                                <li className="nav-item btn-info">
                                     <a className="nav-link" href="#section3">Section 3</a>
                                 </li>
                                 
                             </ul>
                         </nav>
-                        <div className="col-sm-10">
-                            <div id="section1" className="test">    
+                        
+                        <div className="  col-sm-10 hieghtlite">
+                            
+                            <div id="section1" className="test ">    
 
                                 <h2 className="news-section_name">
                                         Our mission is to
@@ -91,20 +95,25 @@ class About extends Component {
                             </div>
                             
                         </div>
+
+                        
                     </div>
-                </div> 
-                {/* <div className="bd-example bd-example-tabs">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Our mission</a>
-                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">long term</a>
-                                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Story</a>
+                </div>  */}
+
+
+                
+                <div className="jumbotron bd-example bd-example-tabs">
+                    <div className="row">
+                        <div className="col-3">
+                            <div className="nav flex-column nav-pills test34" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a className="nav-link active test1234" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Our mission</a>
+                                <a className="nav-link test1234" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">long term</a>
+                                <a className="nav-link test1234" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Story</a>
                             </div>
                         </div>
-                        <div class="col-9">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div className="col-9">
+                            <div className="tab-content" id="v-pills-tabContent">
+                                <div className=" test tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
                                     <h2 className="news-section_name text-center">
                                         Our mission is to
@@ -128,7 +137,7 @@ class About extends Component {
                                     </p>
                                     
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div className=" test tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 
                                     <h2 className="news-section_name">
                                         Out long term goal
@@ -141,7 +150,7 @@ class About extends Component {
                                     </p>
                                 
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <div className=" test tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                     
                                     <h2 className="news-section_name">
                                         Our Story
@@ -171,7 +180,7 @@ class About extends Component {
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
                 
             </div>
