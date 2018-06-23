@@ -115,6 +115,7 @@ hr.style15 {
     font-size: 17px;
     /* border-bottom: 3px solid transparent; */
     border-right: 1.5px solid red;
+    border-left: 1.5px solid red;
 }
 
 .header--topnav a:hover {
