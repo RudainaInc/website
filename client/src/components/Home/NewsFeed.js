@@ -13,7 +13,7 @@ const NewsFeed = ({
                         <td width="30%">
                             <body onLoad="slide('image1',arr);changeText();"/>
                             <div id="img" >
-                                <img id="image1" height="400px" width="600px" align="middle" border="5" style={{"border-color":"white;"}} src={img} />
+                                <img id="image1" height="400px" width="600px" align="middle" border="5" style={{"border-color":"white;"}} src={img} alt="test"/>
                             </div>
                         </td>
 

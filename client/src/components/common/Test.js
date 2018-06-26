@@ -14,7 +14,7 @@ const Test = ({
                         
                         {
                             lables.map( (x, i) => {
-                                const a = i==0 ?  "nav-link test1234 active" : "nav-link test1234";
+                                const a = i===0 ?  "nav-link test1234 active" : "nav-link test1234";
                                 return[<a 
                                     className={a}
                                     role="tab"
@@ -42,7 +42,7 @@ const Test = ({
 
                         {
                             pages.map( (x, i) => {
-                                const a = i==0 ? "test tab-pane fade show active" : "test tab-pane fade";
+                                const a = i===0 ? "test tab-pane fade show active" : "test tab-pane fade";
                                 return[<div 
                                     className={a} 
                                     role="tabpanel" 

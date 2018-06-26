@@ -8,8 +8,6 @@ const AccountGroup = ({
     errors,
 }) => {
 
-    const { fname } = errors;
-
     return ( 
         <div>
             <p>Account Information</p>

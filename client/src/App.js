@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
+import './App.css';
+
 import { store } from './store';
 import { Admin } from './components';
 import { Profile } from './components';
@@ -14,10 +16,10 @@ import { ProgramServices } from './components';
 import { Register } from './components';
 import { Volunteer } from './components';
 import { Footer } from './components';
-import './App.css';
 import { RegisterVolunteer } from './components';
 import { RegisterBenefactor } from './components';
 import { ContactUs } from './components';
+
 
 
 
@@ -47,6 +49,11 @@ class App extends Component {
                         <div className="App">
                             <Header />
                             {routes}
+                            <div class="">
+                                <div class="stickToTheRight">
+                                    <button class="donateButton swing"><i class="fa fa-hand-holding-usd"></i></button>
+                                </div>
+                            </div>
                             <Footer />
                         </div>
                     </Router>

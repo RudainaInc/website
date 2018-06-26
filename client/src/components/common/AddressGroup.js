@@ -7,7 +7,6 @@ const AddressGroup = ({
     values,
     errors,
 }) => {
-    const { addr } = errors;
     return (
 
         <div>

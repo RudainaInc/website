@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import Basket from './Basket';
 import OurApp from './OurApp';
@@ -15,7 +14,7 @@ class ProgramServices extends Component {
             <div className="program-services">
                 <div className="container">
                     <Test
-                        lables={["Program", "Our App", "Our Community", "B", "S"]}
+                        lables={["Program", "Our App", "Our Community", "After Birth", "Sign Up"]}
                         pages={[<Basket/>, <OurApp/>, <OurCommunity/>, <Birth/>, <SignUpToday/>]}
                     />
                 </div>

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './home.css'
 
-import NewsFeed from './NewsFeed';
+import Basket from './Basket';
+import Stats from './Stats';
+import OurSponsors from './OurSponsors';
 
 class Home extends Component {
 
@@ -19,11 +21,11 @@ class Home extends Component {
 
     onChange(e) {
         let currdeg = this.state.currdeg;
-        console.log(currdeg)
-        if(e.target.name =="n"){
+        console.log(currdeg, e.target)
+        if(e.target.id === "n"){
             currdeg = currdeg - 120;
         }
-        if(e.target.name=="p"){
+        if(e.target.id === "p"){
             currdeg = currdeg + 120;
         }
         this.setState({currdeg});
@@ -33,25 +35,31 @@ class Home extends Component {
         return (
             <div className="home">
                 <div className="container">
-                    <div className="basket-section">
 
-                        <div className="basketContainer">
-
-                            <div id="carousel" style={{transform: "rotateY("+this.state.currdeg+"deg)" }}>
-                                <div className="item a"><img src="../img/basket-remake.png" alt=""/></div>
-                                <div className="item b"><img src="../img/basket-remake.png" alt=""/></div>
-                                <div className="item c"><img src="../img/basket-remake.png" alt=""/></div>
+                    <div>
+                        <div className="section-header">
+                            <span className="text" >The Various Baskets We Offer</span>
+                        </div>
+                        
+                        <div className="basket-section">
+                                
+                            <div className="basketContainer">
+                                <div id="carousel" style={{transform: "rotateY("+this.state.currdeg+"deg)" }}>
+                                    <div className="item a"><img src="img/basket.jpeg" alt=""/></div>
+                                    <div className="item b"><img src="img/basket2.jpeg" alt=""/></div>
+                                    <div className="item c"><img src="img/basket3.jpeg" alt=""/></div>
+                                </div>
                             </div>
 
+                            <div id='n' onClick={this.onChange} className="nextButton"><i id='n' className="fa fa-angle-double-right"></i></div>
+                            <div id='p' onClick={this.onChange} className="prevButton"><i id='p' className="fa fa-angle-double-left"></i></div>
+
                         </div>
-
-                        <input type="submit" style={{marginRight: 300+'px'}} name='n' onClick={this.onChange} className="nextButton" value="&raquo" />
-                        <input type="submit" style={{marginLeft: 300+'px'}} name='p' onClick={this.onChange} className="prevButton" value="&laquo" />
                     </div>
-
-                    <NewsFeed text={this.state.text} img={this.state.img} />
-
                 </div>
+                    
+                <OurSponsors/>
+                <Stats/>
             </div>
         );
     }

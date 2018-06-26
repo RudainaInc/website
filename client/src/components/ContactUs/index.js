@@ -12,7 +12,7 @@ class ContactUs extends Component {
                         <div class="col-lg-8">
 
                             <h1>Contact Us</h1>                            
-                            <form id="contact-form" method="post" action="" role="form">
+                            <form id="contact-form" method="post" action="">
 
                                 <div class="controls">
 
