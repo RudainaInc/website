@@ -1,0 +1,80 @@
+/*****************************************************************
+                        Header
+*******************************************************************/
+.header{
+    background-color: #f0f0f0;
+    border-bottom: 2.5rem solid #000;
+    padding: .8rem;
+}
+
+.imgContainer{
+    height: 14rem;
+}
+
+.header-logo{
+    /* width: 100%; */
+    height: 100%;
+    float: left;
+}
+
+.loginFranciasbutton{
+    font-weight: 700;
+}
+
+.loginFranciasbutton a{
+    color: black;
+}
+
+.loginFranciasbutton li{
+    display: inline-block;
+    padding: .5rem;
+}
+
+.loginFranciasbutton a:hover{
+    text-decoration: none;
+    color: #BB0000;
+    transition: transform .3s;
+    transform: scale(1.1);
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
+}
+
+.navLinks ul{
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    padding-left: 0%;
+}
+
+.navLinks li {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    
+    padding: auto;
+    text-align: center;
+    list-style: none;
+    font-size: 2.5rem;
+    
+    width: 20%;
+}
+
+.navLinks li a {
+    color: black;
+    
+}
+
+.navLinks li a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    color: red;
+}
+
+.navLinks li a.active {
+    font-weight: 700;
+    color: red;
+}
+

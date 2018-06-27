@@ -5,7 +5,7 @@ const VolunteerToday = () => {
     return ( 
         <div>
 
-            <h2 className="text-center news-section_name">
+            <h2>
                 Volunteer Today!
             </h2>
             <hr className="style"/>

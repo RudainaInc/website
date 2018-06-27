@@ -1,20 +1,25 @@
 import React from 'react'
 
-const Test = ({
+const GenericBody = ({
     lables,
     pages
 }) => {
 
-    return ( 
-        <div className="jumbotron bd-example bd-example-tabs">
-            <div className="row">
+    return (
 
+        <div className="generic-body-template jumbotron bd-example bd-example-tabs">
+            <div className="row">
                 <div className="col-3">
-                    <div className="nav flex-column nav-pills test34" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div 
+                        className="nav flex-column nav-pills generic-body-template-nav" 
+                        id="v-pills-tab" 
+                        role="tablist" 
+                        aria-orientation="vertical"
+                    >
                         
                         {
                             lables.map( (x, i) => {
-                                const a = i===0 ?  "nav-link test1234 active" : "nav-link test1234";
+                                const a = i===0 ?  "nav-link generic-body-template-nav-link active" : "nav-link generic-body-template-nav-link";
                                 return[<a 
                                     className={a}
                                     role="tab"
@@ -42,7 +47,7 @@ const Test = ({
 
                         {
                             pages.map( (x, i) => {
-                                const a = i===0 ? "test tab-pane fade show active" : "test tab-pane fade";
+                                const a = i===0 ? "generic-body-template-text tab-pane fade show active" : "generic-body-template-text tab-pane fade";
                                 return[<div 
                                     className={a} 
                                     role="tabpanel" 
@@ -64,4 +69,4 @@ const Test = ({
     )
 }
 
-export default Test;
+export default GenericBody;

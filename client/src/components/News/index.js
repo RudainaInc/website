@@ -6,7 +6,7 @@ import RelevantNews from './RelevantNews';
 import PregnancyNews from "./PregnancyNews";
 import CharityNews from './CharityNews';
 
-import { Test } from '../common';
+import { GenericBody } from '../common';
 
 
 class News extends Component {
@@ -14,7 +14,7 @@ class News extends Component {
         return (
             <div className="container">
 
-                <Test
+                <GenericBody
                     lables={["Relevant News", "Pregnancy News", "Charity News"]}
                     pages={[<RelevantNews/>, <PregnancyNews/>, <CharityNews/>]}
                 />

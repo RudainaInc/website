@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './home.css'
 
-import Basket from './Basket';
 import Stats from './Stats';
 import OurSponsors from './OurSponsors';
 
@@ -43,23 +42,47 @@ class Home extends Component {
                         
                         <div className="basket-section">
                                 
-                            <div className="basketContainer">
+                            <div className="basket-container">
                                 <div id="carousel" style={{transform: "rotateY("+this.state.currdeg+"deg)" }}>
-                                    <div className="item a"><img src="img/basket.jpeg" alt=""/></div>
-                                    <div className="item b"><img src="img/basket2.jpeg" alt=""/></div>
-                                    <div className="item c"><img src="img/basket3.jpeg" alt=""/></div>
+                                    <div className="basket-container-item a"><img src="img/basket.jpeg" alt=""/></div>
+                                    <div className="basket-container-item b"><img src="img/basket2.jpeg" alt=""/></div>
+                                    <div className="basket-container-item c"><img src="img/basket3.jpeg" alt=""/></div>
                                 </div>
                             </div>
 
-                            <div id='n' onClick={this.onChange} className="nextButton"><i id='n' className="fa fa-angle-double-right"></i></div>
-                            <div id='p' onClick={this.onChange} className="prevButton"><i id='p' className="fa fa-angle-double-left"></i></div>
+                            <div id='n' onClick={this.onChange} className="basket-next-button"><i id='n' className="fa fa-angle-double-right"></i></div>
+                            <div id='p' onClick={this.onChange} className="basket-prev-button"><i id='p' className="fa fa-angle-double-left"></i></div>
 
                         </div>
                     </div>
                 </div>
                     
-                <OurSponsors/>
+                
                 <Stats/>
+                <OurSponsors/>
+                <div class="subscribe">
+                    <div class="container">
+                        <div class="section-header">
+                            <span class="white text" >Subsribe Now</span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-sm-10 col-md-10">
+                                <form class="">
+                                    <input type="email" id="email"/>
+                                    <label for="email">email address</label>
+                                    <button id="button">OK</button>
+                                </form>
+                            </div>
+                            <div class="col-md-1">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

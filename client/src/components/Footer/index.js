@@ -4,6 +4,8 @@ import AppElm from './AppElm';
 import SocailElm from './SocialElm';
 import SubFooter from './SubFooter';
 
+import './footer.css';
+
 class Footer extends Component {
     render() {
         return (
@@ -37,6 +39,7 @@ class Footer extends Component {
                         </div>
                     </div>
                     <SubFooter/>
+
                 </div>
             </div>
         );

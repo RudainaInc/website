@@ -5,7 +5,7 @@ import WhyWeNeed from "./WhyWeNeed";
 import WhyYouNeed from './WhyYouNeed';
 import SignUp from './SignUp'
 
-import { Test } from '../common';
+import { GenericBody } from '../common';
 
 
 class Vounteer extends Component {
@@ -14,7 +14,7 @@ class Vounteer extends Component {
             <div className="volunteer">
                 <div className="container">
 
-                    <Test
+                    <GenericBody
                         lables={["Volunteer", "Why Us", "Why You", "Sign Up"]}
                         pages={[<VolunteerToday/>, <WhyWeNeed/>, <WhyYouNeed/>, <SignUp/>]}
                     />

@@ -6,14 +6,14 @@ import OurCommunity from './OurCommunity';
 import Birth from './Birth';
 import SignUpToday from './SignUpToday';
 
-import { Test } from '../common';
+import { GenericBody } from '../common';
 
 class ProgramServices extends Component {
     render() {
         return (
             <div className="program-services">
                 <div className="container">
-                    <Test
+                    <GenericBody
                         lables={["Program", "Our App", "Our Community", "After Birth", "Sign Up"]}
                         pages={[<Basket/>, <OurApp/>, <OurCommunity/>, <Birth/>, <SignUpToday/>]}
                     />

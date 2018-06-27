@@ -5,7 +5,7 @@ const OurMission = () => {
     return ( 
         <div>
 
-            <h2 className="news-section_name text-center">
+            <h2>
                 Our mission is to
             </h2>
             <hr className="style"/>

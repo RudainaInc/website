@@ -3,16 +3,29 @@ import React from 'react'
 const SocialElm = () => {
     return(
         <div className="">
-            <span className="icon-app-text text-center">
+            <span className="footer-icon-app-text text-center">
                 <p>Follow Us On</p> 
             </span>
-            <div className="wrapper">
+            <div className="footer-social-icons">
                 <ul>
-                    <li className="facebook"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
-                    <li className="twitter"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
-                    <li className="instagram"><i className="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-                    <li className="linkedin"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></li>
+
+                    <li className="facebook">
+                        <i className="fab fa-facebook fa-2x" aria-hidden="true"/>
+                    </li>
+
+                    <li className="twitter">
+                        <i className="fab fa-twitter fa-2x" aria-hidden="true"/>
+                    </li>
+
+                    <li className="instagram">
+                        <i className="fab fa-instagram fa-2x" aria-hidden="true"/>
+                    </li>
+
+                    <li className="linkedin">
+                        <i className="fab fa-linkedin fa-2x" aria-hidden="true"/>
+                    </li>
                 </ul>
+
             </div>
         </div>  
     )

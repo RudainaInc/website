@@ -10,9 +10,11 @@ class Header extends Component {
             <div className="header">
                 <div className="container">
                     <div className="row">
+
                         <div className="imgContainer col-sm-12 col-md-10">
                             <img className="header-logo" src="img/rf-full-logo.png" alt="rudaina foundation full logo"/>
                         </div>
+                        
                         <div className="col-md-2">
                             <div className="row loginFranciasbutton">
                                 <div className="showRightBorder col-md-6">

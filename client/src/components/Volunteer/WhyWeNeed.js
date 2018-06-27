@@ -5,7 +5,7 @@ const WhyWeNeed = () => {
     return ( 
         <div>
 
-            <h2 className="news-section_name">
+            <h2>
                 Why we NEED You! (Any one of these and you’re in!)
             </h2>
             <hr className="style"/>
