@@ -9,7 +9,9 @@ class ContactUs extends Component {
 
                     <div class="row">
 
-                        <div class="col-lg-8">
+                        <div class="col-2"/>
+
+                        <div class="col-8">
 
                             <h1>Contact Us</h1>                            
                             <form id="contact-form" method="post" action="">
@@ -37,9 +39,9 @@ class ContactUs extends Component {
                                             <label for="form_email">Email *</label>
                                             <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."/>
                                         </div>
-                                        </div>
-                                            <div class="col-md-6">
-                                        <   div class="form-group">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
                                             <label for="form_phone">Phone(Optional)</label>
                                             <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone"/>
                                         </div>
