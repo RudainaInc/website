@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-import './App.css';
+
 
 import { store } from './store';
 import { Admin } from './components';
@@ -21,7 +21,7 @@ import { RegisterBenefactor } from './components';
 import { ContactUs } from './components';
 
 
-
+import './App.css';
 
 class App extends Component {
     render() {
