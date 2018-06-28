@@ -10,8 +10,11 @@ class ContactUs extends Component {
     constructor() {
         super();
         this.state = {
-            name: '',
             message: '',
+            fname:'',
+            lname:'',
+            phone:'',
+            email:'',
             errors: {}
         }
 
