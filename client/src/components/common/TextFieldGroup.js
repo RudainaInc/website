@@ -2,6 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+const lab = (lable) => {
+    if (lable) {
+        return <lable>{lable}</lable>
+    }
+}
+
 const TextFieldGroup = ({
     name,
     placeholder,
@@ -10,10 +16,12 @@ const TextFieldGroup = ({
     error,
     type,
     onChange,
-    disabled
+    disabled, 
+    lable,
 }) => {
     return (
         <div className="form-group">
+            {lab(lable)}
             <input 
                 className={classnames("form-control", {
                     'is-invalid': error

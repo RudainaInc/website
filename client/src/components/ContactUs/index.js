@@ -1,8 +1,30 @@
 import React, { Component } from 'react';
+
+import { TextFieldGroup } from '../common';
+
 import './contactUs.css'
 
+
 class ContactUs extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            name: '',
+            message: '',
+            errors: {}
+        }
+
+        this.onChange = this.onChange.bind(this);
+        // this.onSubmit = this.onSubmit.bind(this);
+    }
+
+    onChange(e) {
+        this.setState({[e.target.name]: e.target.value});
+    }
+
     render() {
+        const { errors } = this.state;
         return (
             <div>
                 <div class="container">
@@ -20,31 +42,51 @@ class ContactUs extends Component {
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_name">First Name *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required."/>
-                                        </div>
+                                    <TextFieldGroup
+                                         type="text" 
+                                         name="fname"
+                                         placeholder="First Name"
+                                         value={this.state.fname}
+                                         onChange={this.onChange}
+                                         error={errors.fname}
+                                         lable="First Name*"
+                                     />
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_lastname">Last Name *</label>
-                                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."/>
-                                        </div>
+                                    <TextFieldGroup
+                                        type="text" 
+                                        name="lname"
+                                        placeholder="Last Name"
+                                        value={this.state.lname}
+                                        onChange={this.onChange}
+                                        error={errors.lname}
+                                        lable="Last Name*"
+                                    />
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_email">Email *</label>
-                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."/>
-                                        </div>
+                                    <TextFieldGroup
+                                        type="email" 
+                                        name="email"
+                                        placeholder="Email Address"
+                                        value={this.state.email}
+                                        onChange={this.onChange}
+                                        error={errors.email}
+                                        lable="Email*"
+                                    />
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="form_phone">Phone(Optional)</label>
-                                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone"/>
-                                        </div>
+                                    <TextFieldGroup
+                                        type="tel" 
+                                        name="phone"
+                                        placeholder="Please enter your phone"
+                                        value={this.state.phone}
+                                        onChange={this.onChange}
+                                        error={errors.phone}
+                                        lable="Phone(Optional)"
+                                    />
                                     </div>
                                 </div>
 
@@ -52,8 +94,15 @@ class ContactUs extends Component {
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="form_message">Message *</label>
-                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" ></textarea>
-                                            <div class="help-block with-errors"></div>
+                                            <textarea  
+                                                name="message" 
+                                                class="form-control" 
+                                                placeholder="Message for me *" 
+                                                rows="5" 
+                                                required="required"
+                                                value={this.state.message}
+                                                onChange={this.onChange}
+                                            />
                                         </div>
                                     </div>
                                     <div class="col-md-12">
