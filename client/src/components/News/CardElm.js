@@ -16,7 +16,7 @@ const CardElm = ({
             <div class="card-body">
                 <h2 class="card-title">{title}</h2>
                 <p class="card-text">{content}</p>
-                <a href={url} class="btn btn-primary">Read More</a>
+                <Link to={url} target="_blank" class="btn btn-primary">Read More</Link>
             </div>
         </div>
 

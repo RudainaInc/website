@@ -3,6 +3,7 @@ import './home.css'
 
 import Stats from './Stats';
 import OurSponsors from './OurSponsors';
+import NewsFeed from './NewsFeed';
 
 class Home extends Component {
 
@@ -10,12 +11,32 @@ class Home extends Component {
         super();
         this.state = {
             currdeg: 0,
-            img: "",
-            text: "",
-            imgarr: []
+            img: "https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg",
+            text: "Our New Website and App have Officially Launched!",
+            imgarr: [
+                {
+                    img: "https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg",
+                    text: "Our New Website and App have Officially Launched"
+                },{
+                    img: "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350",
+                    text: "Something else Happened"
+                },{
+                    img: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+                    text: "Rudaina kicks Abortions ass"
+                }
+            ],
+            i: 0,
         }
 
         this.onChange = this.onChange.bind(this);
+        this.slide = this.slide.bind(this);
+    }
+
+    componentDidMount() {
+        const a = (b, c) => {
+            setTimeout(function(){ c.slide(); return b(b, c)},5000)
+        }
+        a(a,this);
     }
 
     onChange(e) {
@@ -28,6 +49,14 @@ class Home extends Component {
             currdeg = currdeg + 120;
         }
         this.setState({currdeg});
+    }
+
+    slide() {
+        const prev = {...this.state};
+        prev.i = (prev.i+1)%(prev.imgarr.length);
+        prev.img = prev.imgarr[prev.i].img;
+        prev.text = prev.imgarr[prev.i].text;
+        this.setState(prev);
     }
 
     render() {
@@ -56,7 +85,11 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                    
+
+                <NewsFeed
+                    img={this.state.img}
+                    textRange={this.state.text}
+                />
                 
                 <Stats/>
                 <OurSponsors/>

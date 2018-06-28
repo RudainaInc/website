@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const SignUpToday = () => {
 
@@ -15,6 +16,9 @@ const SignUpToday = () => {
                 wait time before being approved and contacted is usually 2-3 business
                 days.
             </p>
+
+            <Link to="/register_vounteer" class="btn btn-primary">Become a Volunteer</Link>
+
             
         </div>
     )

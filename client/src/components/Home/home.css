@@ -327,3 +327,24 @@
     width: 100%;
     opacity: 1;
 }
+
+/***************************
+            NEWS FEED
+ ****************************/
+.news-feed table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.news-feed th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.news-feed tr {background-color: #790002}
+
+.news-feed th {
+	font-size: 30px;
+    background-color: #790002;
+    color: #790002;
+}

@@ -51,12 +51,13 @@ const AddressGroup = ({
                     />
                 </div>
 
-                <div className="form-group col-md-6">
+                <div className="form-group col-md-6" >
                     <select 
                         className="form-control" 
                         name="prov"
                         value={values.prov}
                         onChange={onChange}
+                        style={{fontSize:"2.2rem", height:"100%"}}
                     >
                         <option value='' disabled selected>Province</option>
 
@@ -97,7 +98,7 @@ const AddressGroup = ({
                 </div>
 
                 <div className="form-group col-md-6">
-                    <select className="form-control" id="country">
+                    <select className="form-control" id="country" style={{fontSize:"2.2rem", height:"100%"}}>
                         <option>Canada</option>
                     </select>
                 </div>
@@ -122,11 +123,15 @@ const AddressGroup = ({
                 </div>
 
                 <div className="form-group col-md-6">
-                    <input 
-                        type="text" 
-                        className="form-control" 
+                    <TextFieldGroup
+                        type="text"
                         placeholder="Date Of Birth"
-                        name="city"
+                        onChange={onChange}
+
+                        name="dob"
+                        value={values.dob}
+                        onChange={onChange}
+                        error={errors.dob}
                     />
                 </div>
 

@@ -20,12 +20,13 @@ const TextFieldGroup = ({
     lable,
 }) => {
     return (
-        <div className="form-group">
+        <div className="form-group" >
             {lab(lable)}
             <input 
                 className={classnames("form-control", {
                     'is-invalid': error
                 })}
+                style={{fontSize:"2.2rem"}}
                 type={type} 
                 name={name}
                 placeholder={placeholder}

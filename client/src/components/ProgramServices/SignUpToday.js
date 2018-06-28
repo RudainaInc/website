@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const SignUpToday = () => {
 
@@ -21,6 +22,8 @@ const SignUpToday = () => {
                 any problems occur during pregnancy, there will be an easy-to-follow procedure for an
                 applicant to benefit from our supportive health care programs.
             </p>
+
+            <Link to="/register_benefactor" class="btn btn-primary">Become a Benefactor</Link>
             
         </div>
     )
