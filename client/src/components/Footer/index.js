@@ -19,9 +19,7 @@ class Footer extends Component {
                                     <div className="row">
                                         <div className="col-4"/>
                                         <div className="col-4">
-                                            <p className="rf"> 
-                                                RF
-                                            </p>
+                                            <img src="../img/footer-logo-bird.jpg" />
                                         </div>
                                         <div className="col-4"/>
                                     </div>

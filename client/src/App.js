@@ -23,6 +23,25 @@ import { ContactUs } from './components';
 
 import './App.css';
 
+import ScriptTag from 'react-script-tag';
+class Donate extends Component {
+
+    render() {
+        return(
+            <ScriptTag
+                id="ch_cdn_embed" 
+                src="https://www.canadahelps.org/services/wa/js/apps/donatenow/embed.min.js" 
+                type="text/javascript" 
+                data-cfasync="false" 
+                data-formtype="1" 
+                data-page-id="32254"
+                dangerouslySetInnerHTML={{__html:<div></div>}}
+            />
+        )
+    }
+}
+    
+
 class App extends Component {
     render() {
         const routes = (
@@ -39,6 +58,7 @@ class App extends Component {
                 <Route path='/register_vounteer' component={RegisterVolunteer}/>
                 <Route path='/register_benefactor' component={RegisterBenefactor}/>
                 <Route path='/contact_us' component={ContactUs}/>
+                <Route path='/donate' component={Donate}/>
             </Switch>
         );
 

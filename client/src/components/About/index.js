@@ -14,11 +14,12 @@ class About extends Component {
                 <GenericBody
                     lables={["Our Mission", "Long Term", "Our Stroy"]}
                     pages={[<OurMission/>, <LongTermGoal/>, <OurStory/>]}
+                    icons={["","",""]}
                 />
 
             </div>
         );
-    }
+    }s
 }
 
 export default About;

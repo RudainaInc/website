@@ -4,7 +4,9 @@
 .basket-section{
     height: 30rem;
     position: relative;
+    
 }
+
 
 .basket-container {
     margin: 0 auto;
@@ -12,6 +14,8 @@
     height: 20rem;
     position: relative;
     perspective: 100rem;
+    
+    
 }
 
 #carousel {
@@ -132,6 +136,7 @@
 .sponsor{
     background-color: #f0f0f0;
     padding-bottom: 30px;
+    border-top: 3px solid #BB0000;
 }
 
 .heroSlider-fixed img {
@@ -223,17 +228,19 @@
             Subscribe Styles
 *********************************************/
 .subscribe {
-    background: #2a7cd3;
-    font-family: "Arial";
+    background: #f0f0f0;
     text-align: center;
+    color: #000;
+    border-bottom: 3px solid #BB0000;
 }
 
 .subscribe p {
-    color: #fff;
+    color: #000;
 }
 
 .subscribe  p a {
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
+    color: #000;
 }
 
 .subscribe form {
@@ -331,20 +338,46 @@
 /***************************
             NEWS FEED
  ****************************/
-.news-feed table {
-    border-collapse: collapse;
-    width: 100%;
-}
 
 .news-feed th, td {
     text-align: left;
     padding: 8px;
 }
 
-.news-feed tr {background-color: #790002}
+.news-feed {
+    background-color: #222222;
+    
+}
 
 .news-feed th {
 	font-size: 30px;
-    background-color: #790002;
-    color: #790002;
+    background-color: #222222;
+    color: #222222;
+}
+
+.news-feed-comp-img {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px
+}
+
+.news-feed-comp-height {
+    height: 100%;
+}
+
+.news-feed-comps, .col-4, .col-8 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.fullWidth{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tab-content{
+    padding: 0px;
 }
