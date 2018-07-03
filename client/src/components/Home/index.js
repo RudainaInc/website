@@ -42,13 +42,8 @@ class Home extends Component {
 
     onChange(e) {
         let currdeg = this.state.currdeg;
-        console.log(currdeg, e.target)
-        if(e.target.id === "n"){
-            currdeg = currdeg - 120;
-        }
-        if(e.target.id === "p"){
-            currdeg = currdeg + 120;
-        }
+        if(e.target.id === "n") currdeg = currdeg - 120;
+        if(e.target.id === "p") currdeg = currdeg + 120;
         this.setState({currdeg});
     }
 

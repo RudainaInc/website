@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { registerUser } from '../../actions/authActions';
+import { registerVolunteerUser } from '../../actions/authActions';
 
 import { AccountGroup } from '../common';
 import { AddressGroup } from '../common';
@@ -22,7 +22,7 @@ class RegisterVolunteer extends Component {
 
             contact: {
                 addr: '', 
-                apt: '',
+                unit: '',
                 city: '',
                 prov: '',
                 pcode: '',
@@ -36,6 +36,12 @@ class RegisterVolunteer extends Component {
         this.onSubmit = this.onSubmit.bind(this);
         this.onAccountChange = this.onAccountChange.bind(this);
         this.onContactChange = this.onContactChange.bind(this);
+    }
+
+    componentDidMount() {
+        if (this.props.auth.isAuthenticated) {
+            this.props.history.push('/dashboard');
+        }
     }
 
     onContactChange(e) {
@@ -54,18 +60,27 @@ class RegisterVolunteer extends Component {
         e.preventDefault();
 
         const newUser = {
-            fname: this.state.fname,
-            lname: this.state.lname,
-            email: this.state.email,
-            password: this.state.password,
-            password2: this.state.password2
+            fname: this.state.account.fname,
+            lname: this.state.account.lname,
+            email: this.state.account.email,
+            password: this.state.account.password,
+            password2: this.state.account.password2,
+
+            addr: this.state.contact.addr,
+            unit: this.state.contact.unit,
+            city: this.state.contact.city,
+            prov: this.state.contact.prov,
+            pcode: this.state.contact.pcode,
+            phone: this.state.contact.phone,
+
         };
 
-        this.props.registerUser(newUser);
+        this.props.registerVolunteerUser(newUser, this.props.history);
     }
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.errors) {
+            console.log(nextProps.errors);
             this.setState({ errors: nextProps.errors });
         }
     }
@@ -106,7 +121,7 @@ class RegisterVolunteer extends Component {
                                 <textarea 
                                     className="form-control" 
                                     rows="5" 
-                                    id="comment"
+                                    id="comment1"
                                     placeholder="Tell us about yourself and your goals as a volunteer."
                                 />
                                 </div> 
@@ -119,7 +134,7 @@ class RegisterVolunteer extends Component {
                                 <textarea 
                                     className="form-control" 
                                     rows="5" 
-                                    id="comment"
+                                    id="comment2"
                                     placeholder="Tell us what you're interested in working on with Rudaina! (i.e. Social Media, Fundraising, Program Development, etc.)"
                                 />
                             </div> 
@@ -137,7 +152,7 @@ class RegisterVolunteer extends Component {
 }
 
 RegisterVolunteer.propTypes = {
-    registerUser: PropTypes.func.isRequired,
+    registerVolunteerUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired
 }
@@ -147,4 +162,4 @@ const mapStateToProps = state => ({
     errors: state.errors
 });
 
-export default connect(mapStateToProps, { registerUser })(RegisterVolunteer);
+export default connect(mapStateToProps, { registerVolunteerUser })(RegisterVolunteer);

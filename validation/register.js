@@ -4,10 +4,19 @@ const isEmpty = require('./is-empty');
 module.exports = function validateRegisterInput(data) {
     let errors = {};
 
-    data.name = !isEmpty(data.name) ? data.name : '';
+    data.fname = !isEmpty(data.fname) ? data.fname : '';
+    data.lname = !isEmpty(data.lname) ? data.lname : '';
     data.email = !isEmpty(data.email) ? data.email : '';
     data.password = !isEmpty(data.password) ? data.password : '';
     data.password2 = !isEmpty(data.password2) ? data.password2 : '';
+
+    data.addr = !isEmpty(data.addr) ? data.addr : '';
+    data.unit = !isEmpty(data.unit) ? data.unit : '';
+    data.city = !isEmpty(data.city) ? data.city : '';
+    data.prov = !isEmpty(data.prov) ? data.prov : '';
+    data.pcode = !isEmpty(data.pcode) ? data.pcode : '';
+    data.phone = !isEmpty(data.phone) ? data.phone : '';
+
 
     // Fisrt Name
     if (!Validator.isLength(data.fname, { min: 2, max: 30 })) {
@@ -48,6 +57,26 @@ module.exports = function validateRegisterInput(data) {
     if (!Validator.equals(data.password, data.password2)) {
         errors.password2 = 'Passwords must match';
     }
+    
+
+    if (Validator.isEmpty(data.addr)) {
+        errors.addr = "addr field is required";
+    } 
+    if (Validator.isEmpty(data.unit)) {
+        errors.unit = "unit field is required";
+    } 
+    if (Validator.isEmpty(data.city)) {
+        errors.city = "city field is required";
+    } 
+    if (Validator.isEmpty(data.prov)) {
+        errors.prov = "prov field is required";
+    } 
+    if (Validator.isEmpty(data.pcode)) {
+        errors.pcode = "pcode field is required";
+    } 
+    if (Validator.isEmpty(data.phone)) {
+        errors.phone = "phone field is required";
+    } 
 
     // Return
     return {

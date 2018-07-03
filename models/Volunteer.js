@@ -3,20 +3,18 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const VolunteerSchema = new Schema({
-
     user: {
         type: Schema.Types.ObjectId,
         ref: 'users'
     },
-
-    fname: {
+    info: {
         type: String,
         required: true
     },
-    lname: {
-        type: String,
-        required: true
-    },
+    date: {
+        type: Date,
+        default: Date.now
+    }
 });
 
 module.exports = mongoose.model('volunteer', VolunteerSchema);

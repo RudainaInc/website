@@ -29,9 +29,9 @@ const AddressGroup = ({
                         type="text"
                         placeholder="Apt./Unit"
                         name="apt"
-                        value={values.apt}
+                        value={values.unit}
                         onChange={onChange}
-                        error={errors.apt}
+                        error={errors.unit}
                     />
                 </div>
 
@@ -43,7 +43,6 @@ const AddressGroup = ({
                     <TextFieldGroup
                         type="text"
                         placeholder="City/Town"
-                        onChange={onChange}
                         name="city"
                         value={values.city}
                         onChange={onChange}
@@ -88,7 +87,6 @@ const AddressGroup = ({
                     <TextFieldGroup
                         type="text"
                         placeholder="Postal Code"
-                        onChange={onChange}
 
                         name="pcode"
                         value={values.pcode}
@@ -113,7 +111,6 @@ const AddressGroup = ({
                     <TextFieldGroup
                         type="text"
                         placeholder="Phone Number"
-                        onChange={onChange}
 
                         name="phone"
                         value={values.phone}
@@ -126,8 +123,6 @@ const AddressGroup = ({
                     <TextFieldGroup
                         type="text"
                         placeholder="Date Of Birth"
-                        onChange={onChange}
-
                         name="dob"
                         value={values.dob}
                         onChange={onChange}

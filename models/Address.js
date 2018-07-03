@@ -19,7 +19,7 @@ const AddressSchema = new Schema({
         type: String,
         required: true
     },
-    provance: {
+    prov: {
         type: String,
         required: true
     },

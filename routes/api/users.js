@@ -24,7 +24,8 @@ router.get('/test', (req, res) => res.json({ msg: 'Users Works' }));
 // @route   POST api/users/register
 // @desc    Register user
 // @access  Public
-router.post('/register', (req, res) => {
+
+router.post('/registerBenefactor', (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
     if (!isValid) return res.status(400).json(errors);
 
@@ -32,50 +33,6 @@ router.post('/register', (req, res) => {
     const lname = req.body.lname;
     const email = req.body.email;
     const password = req.body.password;
-
-    User
-        .findOne({ email })
-        .then(user => {
-            if (user) {
-                errors.email = 'Email already exists'
-                return res.status(400).json(errors);
-            }
-            const newUser = new User({
-                fname: fname,
-                lname: lname,
-                email: email,
-                password: password,
-            });
-
-            bcrypt.genSalt(10, (err, salt) => {
-                bcrypt.hash(newUser.password, salt, (err, hash) => {
-                    if (err) throw err;
-                    newUser.password = hash;
-                    newUser.save()
-                        .then(user => res.json(user))
-                        .catch(err => console.log(err));
-                });
-            });
-        })
-        .catch(err => console.log(err));
-});
-
-
-router.post('/addBenefactor', (req, res) => {
-    const { errors, isValid } = validateRegisterInput(req.body);
-    if (!isValid) return res.status(400).json(errors);
-
-    const fname = req.body.fname;
-    const lname = req.body.lname;
-    const email = req.body.email;
-    const password = req.body.password;
-
-    const addr = req.body.addr;
-    const apt = req.body.apt;
-    const city = req.body.city;
-    const prov = req.body.prov;
-    const pcode = req.body.pcode;
-    const phone = req.body.phone;
 
     const newUser = new User({
         fname: fname,
@@ -104,6 +61,13 @@ router.post('/addBenefactor', (req, res) => {
 
         }).then( user => {
 
+            const addr = req.body.addr;
+            const unit = req.body.unit;
+            const city = req.body.city;
+            const prov = req.body.prov;
+            const pcode = req.body.pcode;
+            const phone = req.body.phone;
+
             const newBenefactor = new Benefactor({
                 user: user,
                 info: "tepm"
@@ -112,17 +76,85 @@ router.post('/addBenefactor', (req, res) => {
             const newAddress = new Address({
                 user: user,
                 addr: addr,
-                unit: apt,
+                unit: unit,
                 city: city,
-                provance: prov,
+                prov: prov,
                 code: pcode,
                 phone: phone,
 
             });
 
-            newBenefactor.save();
+            newBenefactor.save()
+            .then(() => newAddress.save())
+            .then(() => res.json(user));
+
+        })
+        .catch(err => console.log(err));
+});
+
+router.post('/registerVolunteer', (req, res) => {
+    const { errors, isValid } = validateRegisterInput(req.body);
+    if (!isValid) return res.status(400).json(errors);
+
+    const fname = req.body.fname;
+    const lname = req.body.lname;
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const addr = req.body.addr;
+    const unit = req.body.unit;
+    const city = req.body.city;
+    const prov = req.body.prov;
+    const pcode = req.body.pcode;
+    const phone = req.body.phone;
+
+    
+    const newUser = new User({
+        fname: fname,
+        lname: lname,
+        email: email,
+        password: password,
+    });
+    
+    User
+        .findOne({ email })
+        .then(user => {
+            if (user) {
+                errors.email = 'Email already exists'
+                return res.status(400).json(errors);
+            }
+            return bcrypt.genSalt(10);
+
+        }).then( salt => {
+
+            return bcrypt.hash(newUser.password, salt);
+
+        }).then( hash => {
+
+            newUser.password = hash;
+            return newUser.save();
+
+        }).then( user => {
+
+            const newVolunteer = new Volunteer({
+                user: user,
+                info: "tepm"
+            });
+
+            const newAddress = new Address({
+                user: user,
+                addr: addr,
+                unit: unit,
+                city: city,
+                prov: prov,
+                code: pcode,
+                phone: phone
+            });
+
+            newVolunteer.save();
             newAddress.save();
             res.json(user);
+            
 
         })
         .catch(err => console.log(err));

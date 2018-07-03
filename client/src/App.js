@@ -46,7 +46,7 @@ class App extends Component {
     render() {
         const routes = (
             <Switch>
-                <Route exact path='/' component={Home} exact={true}/>
+                <Route exact={true} path='/' component={Home}/>
                 <Route path='/about' component={About}/>
                 <Route path='/news' component={News}/>
                 <Route path='/program_services' component={ProgramServices}/>
@@ -69,9 +69,9 @@ class App extends Component {
                         <div className="App">
                             <Header />
                             {routes}
-                            <div class="">
-                                <div class="stickToTheRight">
-                                    <button class="donateButton swing"><i class="fa fa-hand-holding-usd"></i></button>
+                            <div className="">
+                                <div className="stickToTheRight">
+                                    <button className="donateButton swing"><i className="fa fa-hand-holding-usd"/></button>
                                 </div>
                             </div>
                             <Footer />

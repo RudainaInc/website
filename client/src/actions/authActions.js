@@ -10,14 +10,12 @@ import jwt_decode from 'jwt-decode';
 //     })
 //     .catch(err => this.setState({ errors: err.response.data }));
 
+
 // register user 
-export const registerUser = (userData) => dispatch =>  {
+export const registerUser = (userData, history) => dispatch =>  {
     axios
         .post('/api/users/register', userData)
-        .then(res => {
-            console.log(res.data);
-            
-        })
+        .then(res => history.push('/login'))
         .catch(err =>
             dispatch({
                 type: GET_ERRORS,
@@ -25,6 +23,31 @@ export const registerUser = (userData) => dispatch =>  {
             })
         );
 }
+
+export const registerBenefactorUser = (userData, history) => dispatch =>  {
+    axios
+        .post('/api/users/registerBenefactor', userData)
+        .then(res => history.push('/login'))
+        .catch(err =>
+            dispatch({
+                type: GET_ERRORS,
+                payload: err.response.data
+            })
+        );
+}
+
+export const registerVolunteerUser = (userData, history) => dispatch =>  {
+    axios
+        .post('/api/users/registerVolunteer', userData)
+        .then(res => history.push('/login'))
+        .catch(err =>
+            dispatch({
+                type: GET_ERRORS,
+                payload: err.response.data
+            })
+        );
+}
+
 
 export const loginUserData = (userData) => dispatch => {
     axios

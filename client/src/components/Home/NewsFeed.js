@@ -17,15 +17,17 @@ const GenericBody = ({
                         {
                             pages.map( (x, i) => {
                                 const a = i===0 ? "tab-pane fade show active" : "tab-pane fade";
-                                return[<div 
-                                    className={a} 
-                                    role="tabpanel" 
-                                    id={"v-pills-"+i}
-                                    aria-labelledby={"v-pills-"+i+"-tab"}
-                                    key={i}
-                                >
-                                    {x}
-                                </div>]
+                                return[
+                                    <div 
+                                        className={a} 
+                                        role="tabpanel" 
+                                        id={"v-pills-"+i}
+                                        aria-labelledby={"v-pills-"+i+"-tab"}
+                                        key={i}
+                                    >
+                                        {x}
+                                    </div>
+                                ]
 
                             })
                         }
@@ -37,7 +39,7 @@ const GenericBody = ({
                     <div 
                         className="nav flex-column nav-pills generic-body-template-nav news-feed-comp-height" 
                         id="v-pills-tab" 
-                        role="tablist" s
+                        role="tablist"
                         aria-orientation="vertical"
                     >
                         
@@ -45,23 +47,21 @@ const GenericBody = ({
                             lables.map( (x, i) => {
                                 const a = i===0 ?  "nav-link generic-body-template-nav-link active" : "nav-link generic-body-template-nav-link";
                                 return[
-                                    <div className="" style={{height:"33.3%"}}>
-                                        
-                                        <a 
-                                            className={"news-feed-comp-height " + a}
-                                            role="tab"
-                                            data-toggle="pill"
-                                            aria-selected="true"
+                                    <a 
+                                        style={{height:"33.3%"}}
+                                        className={"news-feed-comp-height " + a}
+                                        role="tab"
+                                        data-toggle="pill"
+                                        aria-selected="true"
 
-                                            id={"v-pills-"+i+"-tab"}
-                                            href={"#v-pills-"+i} 
-                                            aria-controls={"v-pills-"+i} 
-                                            
-                                            key={i}
-                                        >
+                                        id={"v-pills-"+i+"-tab"}
+                                        href={"#v-pills-"+i} 
+                                        aria-controls={"v-pills-"+i} 
+                                        
+                                        key={i}
+                                    >
                                         {x}
-                                        </a>
-                                    </div>
+                                    </a>
                                 ]
                             })
                         }
@@ -75,7 +75,6 @@ const GenericBody = ({
 }
 
 const Temp = ({text}) => {
-    console.log({text});
     return(<div><p>{text}</p></div>)
 };
 const TempImg = ({img}) => {

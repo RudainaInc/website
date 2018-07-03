@@ -12,7 +12,7 @@ const CardElm = ({
     return(
 
         <div class="card" style={{width:"400px"}}>
-            <img class="card-img-top" src={img} alt="Card image" style={{width:"100%"}}/>
+            <img class="card-img-top" src={img} alt="Card" style={{width:"100%"}}/>
             <div class="card-body">
                 <h2 class="card-title">{title}</h2>
                 <p class="card-text">{content}</p>

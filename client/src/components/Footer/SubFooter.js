@@ -11,9 +11,9 @@ const SubFooter = () => {
                             <li>Copyright © 2018 Rudaina Foundation. All Rights Reserved</li>
                         </span>
                         <span className="sub-footer-navlinks">
-                            <li><a href="https://drive.google.com/file/d/1MY4GgJsiTXc4VqRfVWNps-8zNjO-ZoiV/view" target="_blank">Privacy</a></li>
-                            <li><a href="https://drive.google.com/file/d/1xMrnexs1Yp6NAWiJQPn13cf9l37VUD_P/view" target="_blank">Terms</a></li>
-                            <li><a href="https://drive.google.com/file/d/1KcaKEYi1ide5k9uQzXSYmIW7P9a3Chjs/view" target="_blank">Accessibility</a></li>
+                            <li><a href="https://drive.google.com/file/d/1MY4GgJsiTXc4VqRfVWNps-8zNjO-ZoiV/view" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+                            <li><a href="https://drive.google.com/file/d/1xMrnexs1Yp6NAWiJQPn13cf9l37VUD_P/view" target="_blank" rel="noopener noreferrer">Terms</a></li>
+                            <li><a href="https://drive.google.com/file/d/1KcaKEYi1ide5k9uQzXSYmIW7P9a3Chjs/view" target="_blank" rel="noopener noreferrer">Accessibility</a></li>
                             <li><Link to="/contact_us">Contact Us</Link></li>
                         </span>
                     </ul>

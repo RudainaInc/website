@@ -52,7 +52,7 @@ class Subscribe extends Component {
                         <div className="col-sm-10 col-md-10">
                             <form onSubmit={this.onClick}>
                                 <input type="email" id="email" name="email" value={this.state.email} onChange={this.onChange}/>
-                                <label for="email">email address</label>
+                                <label htmlFor="email">email address</label>
                                 <button className={this.state.className} type="submit">{this.state.button}</button>
                             </form>
                         </div>

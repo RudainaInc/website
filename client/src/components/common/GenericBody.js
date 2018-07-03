@@ -28,24 +28,21 @@ const GenericBody = ({
                             lables.map( (x, i) => {
                                 const a = i===0 ?  "nav-link generic-body-template-nav-link active" : "nav-link generic-body-template-nav-link";
                                 return[
-                                    <div>
-                                        
-                                        <a 
-                                            className={a}
-                                            role="tab"
-                                            data-toggle="pill"
-                                            aria-selected="true"
+                                    <a 
+                                        className={a}
+                                        role="tab"
+                                        data-toggle="pill"
+                                        aria-selected="true"
 
-                                            id={"v-pills-"+i+"-tab"}
-                                            href={"#v-pills-"+i} 
-                                            aria-controls={"v-pills-"+i} 
-                                            
-                                            key={i}
-                                        >
+                                        id={"v-pills-"+i+"-tab"}
+                                        href={"#v-pills-"+i} 
+                                        aria-controls={"v-pills-"+i} 
+                                        
+                                        key={i}
+                                    >
                                         {icon_check(icons, i)}
                                         {x}
-                                        </a>
-                                    </div>
+                                    </a>
                                 ]
                             })
                         }
