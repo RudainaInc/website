@@ -17,7 +17,7 @@ const SignUpToday = () => {
                 days.
             </p>
 
-            <Link to="/register_vounteer" class="btn btn-primary">Become a Volunteer</Link>
+            <Link to="/register_vounteer" class="big-font btn btn-primary">Become a Volunteer</Link>
 
             
         </div>

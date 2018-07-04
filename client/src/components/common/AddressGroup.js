@@ -28,7 +28,7 @@ const AddressGroup = ({
                     <TextFieldGroup
                         type="text"
                         placeholder="Apt./Unit"
-                        name="apt"
+                        name="unit"
                         value={values.unit}
                         onChange={onChange}
                         error={errors.unit}
@@ -52,11 +52,11 @@ const AddressGroup = ({
 
                 <div className="form-group col-md-6" >
                     <select 
-                        className="form-control" 
+                        className="big-font form-control" 
                         name="prov"
                         value={values.prov}
                         onChange={onChange}
-                        style={{fontSize:"2.2rem", height:"100%"}}
+                        style={{height:"4.3rem"}}
                     >
                         <option value='' disabled selected>Province</option>
 
@@ -96,7 +96,7 @@ const AddressGroup = ({
                 </div>
 
                 <div className="form-group col-md-6">
-                    <select className="form-control" id="country" style={{fontSize:"2.2rem", height:"100%"}}>
+                    <select className="big-font form-control" id="country" style={{height:"4.3rem"}}>
                         <option>Canada</option>
                     </select>
                 </div>

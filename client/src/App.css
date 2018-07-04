@@ -24,6 +24,10 @@ body {
     margin: 0;
 }
 
+.big-font {
+    font-size: 2.2rem;
+}
+
 .right{
     float: right;
 }
@@ -205,7 +209,8 @@ body {
 }
 
 .generic-body-template-text {
-    height: 500px;
+    min-height: 500px;
+    height: 100%; 
     text-align: justify;
     font-size: 2rem;
     color: #000;

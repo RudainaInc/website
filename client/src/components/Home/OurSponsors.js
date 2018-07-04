@@ -61,7 +61,7 @@ const OurSponsors = () => {
         <div className="sponsor">
             <div className="container">
                 <div className="section-header">
-                    <span className="text" >Our Sponsors</span>
+                    <span className="text" >Our Support</span>
                 </div>
                 <div className="row">
                     <div className="col-md-12 heroSlider-fixed">

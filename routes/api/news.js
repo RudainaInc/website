@@ -6,4 +6,9 @@ const router = express.Router();
 // @access  Public
 router.get('/test', (req, res) => res.json({ msg: 'News Works' }));
 
+
+router.post('add', (req, res) => {
+    
+})
+
 module.exports = router;

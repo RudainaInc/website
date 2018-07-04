@@ -23,7 +23,7 @@ const SignUpToday = () => {
                 applicant to benefit from our supportive health care programs.
             </p>
 
-            <Link to="/register_benefactor" class="btn btn-primary">Become a Benefactor</Link>
+            <Link to="/register_benefactor" className="big-font btn btn-primary">Become a Benefactor</Link>
             
         </div>
     )

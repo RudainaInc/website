@@ -3,7 +3,19 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const NewsSchema = new Schema({
-    name: {
+    title: {
+        type: String,
+        required: true
+    },
+    content: {
+        type: String,
+        required: true
+    },
+    url: {
+        type: String,
+        required: true
+    },
+    img: {
         type: String,
         required: true
     },

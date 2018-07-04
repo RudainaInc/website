@@ -5,6 +5,7 @@ import { registerVolunteerUser } from '../../actions/authActions';
 
 import { AccountGroup } from '../common';
 import { AddressGroup } from '../common';
+import { TextAreaGroup } from '../common';
 
 
 class RegisterVolunteer extends Component {
@@ -29,11 +30,15 @@ class RegisterVolunteer extends Component {
                 phone: '',
             },
 
+            goal: '',
+            intreset: '',
+
             errors: {}
         };
 
         
         this.onSubmit = this.onSubmit.bind(this);
+        this.onChange = this.onChange.bind(this);
         this.onAccountChange = this.onAccountChange.bind(this);
         this.onContactChange = this.onContactChange.bind(this);
     }
@@ -42,6 +47,12 @@ class RegisterVolunteer extends Component {
         if (this.props.auth.isAuthenticated) {
             this.props.history.push('/dashboard');
         }
+    }
+
+    onChange(e) {
+        let prev = {...this.state}
+        prev[e.target.name] = e.target.value
+        this.setState(prev);
     }
 
     onContactChange(e) {
@@ -115,33 +126,27 @@ class RegisterVolunteer extends Component {
 
                             <hr/>
 
-                            <div className="form-group">
-                                <label>Why Do You Want To Volunteer</label>
-                                    
-                                <textarea 
-                                    className="form-control" 
-                                    rows="5" 
-                                    id="comment1"
-                                    placeholder="Tell us about yourself and your goals as a volunteer."
-                                />
-                                </div> 
+                            <TextAreaGroup
+                                 name="goals"
+                                 placeholder="Tell us about yourself and your goals as a volunteer."
+                                 value={this.state.goals}
+                                 error={errors.goals}
+                                 onChange={this.onChange}
+                                 lable="Why Do You Want To Volunteer"
+                            />
 
-                                <hr/>
-
-                                <div className="form-group">
-                                <label>How Can You Help</label>
-                                    
-                                <textarea 
-                                    className="form-control" 
-                                    rows="5" 
-                                    id="comment2"
-                                    placeholder="Tell us what you're interested in working on with Rudaina! (i.e. Social Media, Fundraising, Program Development, etc.)"
-                                />
-                            </div> 
+                             <TextAreaGroup
+                                 name="intreset"
+                                 placeholder="Tell us what you're interested in working on with Rudaina! (i.e. Social Media, Fundraising, Program Development, etc.)"
+                                 value={this.state.intreset}
+                                 error={errors.intreset}
+                                 onChange={this.onChange}
+                                 lable="How Can You Help"
+                            />
 
                             <hr/>
 
-                            <input type="submit" className="btn btn-info btn-block mt-4 " />
+                            <input type="submit" className="big-font btn btn-info btn-block mt-4 "/>
 
                         </form>
                     </div>

@@ -91,20 +91,27 @@ const NewsFeed = ({
 }) => {
 
     return(
-        <div className="news-feed">
-            <div className="container">
-                <GenericBody 
-                    lables= {[
-                        <Temp text={text}/>, 
-                        <Temp text={text}/>,
-                        <Temp text={text}/>
-                    ]}
-                    pages={[
-                        <TempImg img={img}/>,
-                        <TempImg img={img}/>,
-                        <TempImg img={img}/>
-                    ]}
-                />
+        <div>
+            
+            <div className="news-feed">
+                <div className="section-header" style={{padding:"0px"}}>
+                    <span className="text white" >News Feed</span>
+                </div>
+                <div className="container">
+                    
+                    <GenericBody 
+                        lables= {[
+                            <Temp text={text}/>, 
+                            <Temp text={text}/>,
+                            <Temp text={text}/>
+                        ]}
+                        pages={[
+                            <TempImg img={img}/>,
+                            <TempImg img={img}/>,
+                            <TempImg img={img}/>
+                        ]}
+                    />
+                </div>
             </div>
         </div>
     )

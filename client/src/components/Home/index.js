@@ -87,6 +87,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                
 
                 <NewsFeed
                     img={this.state.img}
