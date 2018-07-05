@@ -11,11 +11,15 @@ const NewsSchema = new Schema({
         type: String,
         required: true
     },
-    url: {
+    source: {
         type: String,
         required: true
     },
-    img: {
+    image: {
+        type: String,
+        required: true
+    },
+    category: {
         type: String,
         required: true
     },

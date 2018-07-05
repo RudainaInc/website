@@ -3,11 +3,18 @@
 *******************************************************************/
 
 
+
 @import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
 @import url("https://fonts.googleapis.com/css?family=Markazi+Text:400,700");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
+@import url('https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css');
+
+
+.test .btn-group-sm {
+    font-size: 2rem;
+}
 
 html {
     font-size: 62.5%; 
@@ -17,7 +24,7 @@ html {
 body {
     font-family: 'Markazi Text', serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.7;
     color: #000;
     background-color: #f0f0f0;
