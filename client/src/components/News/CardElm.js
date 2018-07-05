@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 
 
 const CardElm = ({
-    img,
+    image,
     title,
     content,
-    url
+    source
 }) => {
 
     return(
 
         <div class="card" style={{width:"400px"}}>
-            <img class="card-img-top" src={img} alt="Card" style={{width:"100%"}}/>
+            <img class="card-img-top" src={image} alt="Card" style={{width:"100%"}}/>
             <div class="card-body">
                 <h2 class="card-title">{title}</h2>
                 <p class="card-text">{content}</p>
-                <Link to={url} target="_blank" class="btn btn-primary">Read More</Link>
+                <Link to={source} target="_blank" class="btn btn-primary">Read More</Link>
             </div>
         </div>
 
