@@ -11,10 +11,16 @@ const BenefactorSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'users'
     },
+    status:{
+        type:Boolean,
+        require: true,
+        default:false
+    },
     date: {
         type: Date,
         default: Date.now
     }
+
 });
 
 module.exports = mongoose.model('benefactor', BenefactorSchema);
