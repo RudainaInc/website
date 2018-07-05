@@ -11,6 +11,11 @@ const VolunteerSchema = new Schema({
         type: String,
         required: true
     },
+    status:{
+        type:String,
+        require: true,
+        default:"Pending"
+    },
     date: {
         type: Date,
         default: Date.now

@@ -11,7 +11,6 @@ const User = require('../../models/User');
 
 router.get('/getBenefactor', (req, res) =>{
     const benefactor = [];
-
     Benefactor.find()
     .populate("user")
     .then( users => {
@@ -22,29 +21,34 @@ router.get('/getBenefactor', (req, res) =>{
     });
 })
 
-
 router.post('/approveBenefactor', (req, res)=>{
     const benefactorId = req.body.ids;
-    //console.log(typeof benefactorId);
-
-    //console.log(bId);
     Benefactor.findOne({"_id":benefactorId})
     .then(user=>{
         console.log(user);
-        user.status=true;
+        user.status="Approved";
         user.save();
     }).catch(
         err => null
     )
-
-
     res.json({msg:"test"})
+})
 
+router.post('/disableBenefactor', (req, res)=>{
+    const benefactorId = req.body.ids;
+    Benefactor.findOne({"_id":benefactorId})
+    .then(user=>{
+        console.log(user);
+        user.status="Disabled";
+        user.save();
+    }).catch(
+        err => null
+    )
+    res.json({msg:"disableBenefactor test"})
 })
 
 router.get('/getVolunteer', (req, res) =>{
     const volunteer = [];
-
     Volunteer.find()
     .populate("user")
     .then( users => {
@@ -57,19 +61,28 @@ router.get('/getVolunteer', (req, res) =>{
 
 router.post('/approveVolunteer', (req, res)=>{
     const volunteerId = req.body.ids;
-    //console.log(typeof benefactorId);
-
-    //console.log(bId);
     Volunteer.findOne({"_id":volunteerId})
     .then(user=>{
         console.log(user);
-        user.status=true;
+        user.status="Approved";
         user.save();
     }).catch(
         err => null
     )
+    res.json({msg:"test"})
 
+})
 
+router.post('/disableVolunteer', (req, res)=>{
+    const volunteerId = req.body.ids;
+    Volunteer.findOne({"_id":volunteerId})
+    .then(user=>{
+        console.log(user);
+        user.status="Disabled";
+        user.save();
+    }).catch(
+        err => null
+    )
     res.json({msg:"test"})
 
 })

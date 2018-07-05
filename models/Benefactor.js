@@ -12,9 +12,9 @@ const BenefactorSchema = new Schema({
         ref: 'users'
     },
     status:{
-        type:Boolean,
+        type:String,
         require: true,
-        default:false
+        default:"Pending"
     },
     date: {
         type: Date,
