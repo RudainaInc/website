@@ -20,7 +20,7 @@ const GenericBody = ({
                     <div 
                         className="nav flex-column nav-pills generic-body-template-nav" 
                         id="v-pills-tab" 
-                        role="tablist" s
+                        role="tablist"
                         aria-orientation="vertical"
                     >
                         
