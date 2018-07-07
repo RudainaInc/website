@@ -19,7 +19,7 @@ class Footer extends Component {
                                     <div className="row">
                                         <div className="col-4"/>
                                         <div className="col-4">
-                                            <img src="../img/footer-logo-bird.jpg" alt="logo" />
+                                            <img src="../img/Rudiana_Logo_footer-bird.png" alt="logo" style={{height:"200px"}}/>
                                         </div>
                                         <div className="col-4"/>
                                     </div>

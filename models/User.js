@@ -19,6 +19,22 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
+    isVolunteer: {
+        type: Boolean,
+        default: false
+    },
+    isBenefactor: {
+        type: Boolean,
+        default: false
+    },
+    isRep: {
+        type: Boolean,
+        default: false
+    },
     date: {
         type: Date,
         default: Date.now

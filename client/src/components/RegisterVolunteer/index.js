@@ -43,11 +43,11 @@ class RegisterVolunteer extends Component {
         this.onContactChange = this.onContactChange.bind(this);
     }
 
-    componentDidMount() {
-        if (this.props.auth.isAuthenticated) {
-            this.props.history.push('/dashboard');
-        }
-    }
+    // componentDidMount() {
+    //     if (this.props.auth.isAuthenticated) {
+    //         this.props.history.push('/profile');
+    //     }
+    // }
 
     onChange(e) {
         let prev = {...this.state}

@@ -69,7 +69,7 @@ const OurSponsors = () => {
 
                         <Slider {...settings}>
                             <div>
-                                <img src="img/green_energy.png" title="They helped provide funds for the charity" alt=" " />
+                                <img src="img/tcclogo.png" alt="" />
                             </div>
                             <div>
                                 <img src="img/wk.png" alt="" />
@@ -83,19 +83,9 @@ const OurSponsors = () => {
                             <div>
                                 <img src="img/green_energy.png" alt="" />
                             </div>
-                            <div>
-                                <img src="img/wk.png" alt="" />
-                            </div>
-                            <div>
-                                <img src="img/wi.png" alt="" />
-                            </div>
-                            <div>
-                                <img src="img/cs.png" alt="" />
-                            </div>
-                            <div>
-                                <img src="img/green_energy.png" alt="" />
-                            </div>
+                           
                         </Slider>
+                        
 
                     </div>
                 </div>

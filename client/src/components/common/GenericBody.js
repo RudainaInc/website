@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const icon_check = (icons, i) => {
     if (icons) {
@@ -9,7 +10,8 @@ const icon_check = (icons, i) => {
 const GenericBody = ({
     icons,
     lables,
-    pages
+    pages,
+    logout
 }) => {
 
     return (
@@ -27,6 +29,7 @@ const GenericBody = ({
                         {
                             lables.map( (x, i) => {
                                 const a = i===0 ?  "nav-link generic-body-template-nav-link active" : "nav-link generic-body-template-nav-link";
+
                                 return[
                                     <a 
                                         className={a}
@@ -46,6 +49,10 @@ const GenericBody = ({
                                 ]
                             })
                         }
+
+                        { logout ? <Link className="nav-link generic-body-template-nav-link" to="/" onClick={logout} >Logout</Link> : null }
+
+
 
                     </div>
                 </div>

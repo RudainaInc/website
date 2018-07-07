@@ -12,3 +12,4 @@ export { default as Volunteer } from './Volunteer';
 export { default as RegisterVolunteer } from './RegisterVolunteer';
 export { default as RegisterBenefactor } from './RegisterBenefactor';
 export { default as ContactUs } from './ContactUs';
+export { default as Donate } from './Donate';

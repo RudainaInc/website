@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { Link } from 'react-router-dom';
 
-
+import jwt_decode  from 'jwt-decode';
+import setAuthToken from './utils/setAuthToken';
+import { setCurrentUser, logoutUser } from './actions/authActions';
 
 import { store } from './store';
 import { Admin } from './components';
@@ -19,27 +22,42 @@ import { Footer } from './components';
 import { RegisterVolunteer } from './components';
 import { RegisterBenefactor } from './components';
 import { ContactUs } from './components';
-
+import { Donate } from './components';
 
 import './App.css';
-
 import ScriptTag from 'react-script-tag';
-class Donate extends Component {
 
-    render() {
-        return(
-            <ScriptTag
-                id="ch_cdn_embed" 
-                src="https://www.canadahelps.org/services/wa/js/apps/donatenow/embed.min.js" 
-                type="text/javascript" 
-                data-cfasync="false" 
-                data-formtype="1" 
-                data-page-id="32254"
-                dangerouslySetInnerHTML={{__html:<div></div>}}
-            />
-        )
+
+if (localStorage.jwtToken) {
+    setAuthToken(localStorage.jwtToken);
+    const decoded = jwt_decode(localStorage.jwtToken);
+    store.dispatch(setCurrentUser(decoded));
+    
+    const currentTime = Date.now()/1000;
+
+    if (decoded.exp < currentTime) {
+        store.dispatch(logoutUser())
+        window.location.href = '/login';
     }
 }
+
+
+// class Donate extends Component {
+
+//     render() {
+//         return(
+//             <ScriptTag
+//                 id="ch_cdn_embed" 
+//                 src="https://www.canadahelps.org/services/wa/js/apps/donatenow/embed.min.js" 
+//                 type="text/javascript" 
+//                 data-cfasync="false" 
+//                 data-formtype="1" 
+//                 data-page-id="32254"
+//                 dangerouslySetInnerHTML={{__html:<div></div>}}
+//             />
+//         )
+//     }
+// }
     
 
 class App extends Component {
@@ -71,7 +89,7 @@ class App extends Component {
                             {routes}
                             <div className="">
                                 <div className="stickToTheRight">
-                                    <button className="donateButton swing"><i className="fa fa-hand-holding-usd"/></button>
+                                    <Link to="/donate" className="donateButton swing"><i className="fa fa-hand-holding-usd"/></Link>
                                 </div>
                             </div>
                             <Footer />

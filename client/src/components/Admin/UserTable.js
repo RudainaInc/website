@@ -1,44 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 
-class UserTable extends Component {
-    constructor(props) {
-        super(props);
-    }
 
-
-    render() {
-        return (
-            <UserTableLayout
-                { ...this.props }
-                expandComponent={this.props.expand}
-                cols = {[
-                    {
-                        value: "First Name",
-                        props: {
-                            dataField: "fname",
-                        }
-                    },{
-                        value: "Last Name",
-                        props: {
-                            dataField: "lname",
-                        }
-                    },{
-                        value: "Email",
-                        props: {
-                            dataField: "email",
-                            isKey: true
-                        }
-                    },{
-                        value: "Status",
-                        props: {
-                            dataField: "status",
-                        }
-                    },
-                ]}
-            />
-        );
-    }
+const UserTable = (props) => {
+    return (
+        <UserTableLayout
+            { ...props }
+            cols = {[
+                {
+                    value: "First Name",
+                    props: {
+                        dataField: "fname",
+                    }
+                },{
+                    value: "Last Name",
+                    props: {
+                        dataField: "lname",
+                    }
+                },{
+                    value: "Email",
+                    props: {
+                        dataField: "email",
+                        isKey: true
+                    }
+                },{
+                    value: "Status",
+                    props: {
+                        dataField: "status",
+                    }
+                },
+            ]}
+        />
+    );
 }
 
 
@@ -71,7 +64,6 @@ const UserTableLayout = ({
                 expandColumnComponent: expandColumnComponent,
                 columnWidth: 50
             }}
-        
         >
             {
                 

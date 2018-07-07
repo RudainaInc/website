@@ -39,14 +39,24 @@ router.post('/registerBenefactor', (req, res) => {
         lname: lname,
         email: email,
         password: password,
+        isBenefactor: true
     });
     
     User
         .findOne({ email })
         .then(user => {
             if (user) {
-                errors.email = 'Email already exists'
-                return res.status(400).json(errors);
+                if (!user.isBenefactor) {
+                    const newBenefactor = new Benefactor({
+                        user: user,
+                        info: "tepm"
+                    });
+                    newBenefactor.save();
+                    return res.json(user);
+                } else {
+                    errors.email = 'You are already a Benefactor'
+                    return res.status(400).json(errors);
+                }
             }
             return bcrypt.genSalt(10);
 
@@ -114,14 +124,24 @@ router.post('/registerVolunteer', (req, res) => {
         lname: lname,
         email: email,
         password: password,
+        isVolunteer: true
     });
     
     User
         .findOne({ email })
         .then(user => {
             if (user) {
-                errors.email = 'Email already exists'
-                return res.status(400).json(errors);
+                if (!user.isVolunteer) {
+                    const newVolunteer = new Volunteer({
+                        user: user,
+                        info: "tepm"
+                    });
+                    newVolunteer.save();
+                    return res.json(user);
+                } else {
+                    errors.email = 'You are already a Volunteer'
+                    return res.status(400).json(errors);
+                }
             }
             return bcrypt.genSalt(10);
 
@@ -187,6 +207,10 @@ router.post('/login', (req, res) => {
                             id: user.id,
                             name: user.name,
                         }
+
+                        
+
+
                         // Sign Token
                         jwt.sign(
                             payload, 

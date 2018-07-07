@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { loginUserData } from '../../actions/authActions';
+import { loginUser } from '../../actions/authActions';
 
 import { TextFieldGroup } from '../common';
 
@@ -33,7 +33,7 @@ class Login extends Component {
             password: this.state.password
         }
 
-        this.props.loginUserData(user);
+        this.props.loginUser(user);
     }
 
     componentDidMount() {
@@ -103,7 +103,7 @@ class Login extends Component {
 }
 
 Login.propTypes = {
-    loginUserData: PropTypes.func.isRequired,
+    loginUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired
 }
@@ -114,4 +114,4 @@ const mapStateToProps = state => ({
 });
 
 
-export default connect(mapStateToProps, { loginUserData })(Login);
+export default connect(mapStateToProps, { loginUser })(Login);

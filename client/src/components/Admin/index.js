@@ -8,6 +8,10 @@ import UserTable from './UserTable';
 import RemoteStoreAlternative from './test';
 
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { logoutUser } from '../../actions/authActions';
+
 class Admin extends Component {
 
     constructor() {
@@ -54,6 +58,12 @@ class Admin extends Component {
 
         this.expandVolunteerComponent = this.expandVolunteerComponent.bind(this)
         this.expandBenefactorComponent = this.expandBenefactorComponent.bind(this)
+    }
+
+    componentDidMount() {
+        if (!this.props.auth.isAuthenticated) {
+          this.props.history.push("/login");
+        }
     }
 
     expandBenefactorComponent (row) {
@@ -138,15 +148,21 @@ class Admin extends Component {
         )
     }
 
+    onLogoutClick(e) {
+        e.preventDefualt;
+        this.props.logoutUser();
+    }
+
     render() {
         return (
             <div className="container">
 
                 <GenericBody
+                    logout={this.onLogoutClick.bind(this)}
                     lables={["Benefactors", "Volunteers", "News", "TaskList", "Calender", "Forum"]}
                     pages={[
-                        <UserTable expand={this.expandBenefactorComponent} data={this.state.benefactors}/>,
-                        <UserTable expand={this.expandVolunteerComponent} data={this.state.volunteers}/>,
+                        <UserTable expandComponent={this.expandBenefactorComponent} data={this.state.benefactors}/>,
+                        <UserTable expandComponent={this.expandVolunteerComponent} data={this.state.volunteers}/>,
                         <RemoteStoreAlternative/>,
                         // <Table 
                         //     lables={["Title", "requried volunteers", "hours", "info", "start date", "end date"]} 
@@ -172,4 +188,8 @@ class Admin extends Component {
     }
 }
 
-export default Admin;
+const mapStateToProps = state => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, {logoutUser})(Admin);
