@@ -205,11 +205,13 @@ router.post('/login', (req, res) => {
                         //User Matched
                         const payload = {
                             id: user.id,
-                            name: user.name,
+                            fname: user.fname,
+                            lname: user.lname,
+                            isAdmin: user.isAdmin,
+                            isBenefactor: user.isBenefactor,
+                            isVolunteer: user.isVolunteer,
+                            isRep: user.isRep,
                         }
-
-                        
-
 
                         // Sign Token
                         jwt.sign(
@@ -240,7 +242,8 @@ router.post('/login', (req, res) => {
 router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
     res.json({
         id: req.user.id,
-        name: req.user.name,
+        fname: req.user.fname,
+        lname: req.user.lname,
         email: req.user.email,
     });
 });

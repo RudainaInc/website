@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import jwt_decode  from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './actions/authActions';
+import { clearCurrentProfile } from './actions/profileActions';
 
 import { store } from './store';
 import { Admin } from './components';
@@ -37,6 +38,7 @@ if (localStorage.jwtToken) {
 
     if (decoded.exp < currentTime) {
         store.dispatch(logoutUser())
+        store.dispatch(clearCurrentProfile())
         window.location.href = '/login';
     }
 }
