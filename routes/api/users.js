@@ -211,20 +211,61 @@ router.post('/login', (req, res) => {
                             isBenefactor: user.isBenefactor,
                             isVolunteer: user.isVolunteer,
                             isRep: user.isRep,
+                            myStatus: false,
                         }
 
-                        // Sign Token
-                        jwt.sign(
-                            payload, 
-                            keys.secretOrKey, 
-                            { expiresIn: 3600 }, 
-                            (err, token) => {
-                                res.json({ 
-                                    seccess: true,
-                                    token: 'Bearer ' + token
-                                });
-                            }
-                        );
+                        if (user.isBenefactor) {
+                            Benefactor
+                            .findOne({ user })
+                            .then( user => {
+                                payload.myStatus = user.status === "Approved" ? true : false;
+                                // Sign Token
+                                jwt.sign(
+                                    payload, 
+                                    keys.secretOrKey, 
+                                    { expiresIn: 3600 }, 
+                                    (err, token) => {
+                                        res.json({ 
+                                            seccess: true,
+                                            token: 'Bearer ' + token
+                                        });
+                                    }
+                                );
+                            })
+                            
+                        } else if (user.isVolunteer) {
+                            Volunteer
+                            .findOne({ user })
+                            .then( user => {
+                                payload.myStatus = user.status === "Approved" ? true : false;
+                            })
+                            // Sign Token
+                            jwt.sign(
+                                payload, 
+                                keys.secretOrKey, 
+                                { expiresIn: 3600 }, 
+                                (err, token) => {
+                                    res.json({ 
+                                        seccess: true,
+                                        token: 'Bearer ' + token
+                                    });
+                                }
+                            );
+                            return;
+                        } else {
+                            // Sign Token
+                            jwt.sign(
+                                payload, 
+                                keys.secretOrKey, 
+                                { expiresIn: 3600 }, 
+                                (err, token) => {
+                                    res.json({ 
+                                        seccess: true,
+                                        token: 'Bearer ' + token
+                                    });
+                                }
+                            );
+                        }
 
                     } else {
                         errors.password = 'Password incorrect'

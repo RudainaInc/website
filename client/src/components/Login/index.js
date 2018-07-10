@@ -38,7 +38,11 @@ class Login extends Component {
 
     componentDidMount() {
         if (this.props.auth.isAuthenticated) {
-          this.props.history.push("/profile");
+            if (this.props.auth.user.isAdmin){
+                this.props.history.push("/admin");
+            } else {
+                this.props.history.push("/profile");
+            }
         }
     }
 

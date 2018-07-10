@@ -10,7 +10,7 @@ import { clearCurrentProfile } from './actions/profileActions';
 
 import { store } from './store';
 import { Admin } from './components';
-import { Profile } from './components';
+import { Profile } from './containers/Tabs';
 import { Header } from './components';
 import { Home } from './components';
 import { Login } from './components';
