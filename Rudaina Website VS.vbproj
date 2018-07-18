@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{3F023494-B2FF-4522-922A-7B3CAABE886D}</ProjectGuid>
+    <ProjectGuid>{CE419373-630F-4CB7-8CE5-3A76A10EF269}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>
     </StartupObject>
-    <RootNamespace>Rudaina_Website</RootNamespace>
+    <RootNamespace>Rudaina_Website_VS</RootNamespace>
     <AssemblyName>ConsoleApplication</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
@@ -110,61 +110,61 @@
     <Content Include="client\src\App.css" />
     <Content Include="client\src\App.js" />
     <Content Include="client\src\App.test.js" />
-    <Content Include="client\src\components\About\index.js" />
-    <Content Include="client\src\components\About\LongTermGoal.js" />
-    <Content Include="client\src\components\About\OurMission.js" />
-    <Content Include="client\src\components\About\OurStory.js" />
-    <Content Include="client\src\components\Admin\index.js" />
-    <Content Include="client\src\components\Admin\test.js" />
-    <Content Include="client\src\components\Admin\UserTable.js" />
-    <Content Include="client\src\components\common\AccountGroup.js" />
-    <Content Include="client\src\components\common\AddressGroup.js" />
-    <Content Include="client\src\components\common\GenericBody.js" />
-    <Content Include="client\src\components\common\index.js" />
-    <Content Include="client\src\components\common\Table.js" />
-    <Content Include="client\src\components\common\TextAreaGroup.js" />
-    <Content Include="client\src\components\common\TextFieldGroup.js" />
-    <Content Include="client\src\components\ContactUs\contactUs.css" />
-    <Content Include="client\src\components\ContactUs\index.js" />
-    <Content Include="client\src\components\Donate\index.js" />
-    <Content Include="client\src\components\Footer\AppElm.js" />
-    <Content Include="client\src\components\Footer\footer.css" />
-    <Content Include="client\src\components\Footer\index.js" />
-    <Content Include="client\src\components\Footer\InfoElm.js" />
-    <Content Include="client\src\components\Footer\SocialElm.js" />
-    <Content Include="client\src\components\Footer\SubFooter.js" />
-    <Content Include="client\src\components\Header\header.css" />
-    <Content Include="client\src\components\Header\index.js" />
-    <Content Include="client\src\components\Home\Basket.js" />
-    <Content Include="client\src\components\Home\home.css" />
-    <Content Include="client\src\components\Home\index.js" />
-    <Content Include="client\src\components\Home\NewsFeed.js" />
-    <Content Include="client\src\components\Home\OurSponsors.js" />
-    <Content Include="client\src\components\Home\Stats.js" />
-    <Content Include="client\src\components\Home\Subscribe.js" />
-    <Content Include="client\src\components\index.js" />
-    <Content Include="client\src\components\Login\index.js" />
-    <Content Include="client\src\components\News\CardElm.js" />
-    <Content Include="client\src\components\News\index.js" />
-    <Content Include="client\src\components\News\news.css" />
-    <Content Include="client\src\components\News\NewsModel.js" />
-    <Content Include="client\src\components\Profile\admin.js" />
-    <Content Include="client\src\components\Profile\index.js" />
-    <Content Include="client\src\components\Profile\UserTable.js" />
-    <Content Include="client\src\components\ProgramServices\Basket.js" />
-    <Content Include="client\src\components\ProgramServices\Birth.js" />
-    <Content Include="client\src\components\ProgramServices\index.js" />
-    <Content Include="client\src\components\ProgramServices\OurApp.js" />
-    <Content Include="client\src\components\ProgramServices\OurCommunity.js" />
-    <Content Include="client\src\components\ProgramServices\SignUpToday.js" />
-    <Content Include="client\src\components\RegisterBenefactor\index.js" />
-    <Content Include="client\src\components\RegisterVolunteer\index.js" />
-    <Content Include="client\src\components\Register\index.js" />
-    <Content Include="client\src\components\Volunteer\index.js" />
-    <Content Include="client\src\components\Volunteer\SignUp.js" />
-    <Content Include="client\src\components\Volunteer\VolunteerToday.js" />
-    <Content Include="client\src\components\Volunteer\WhyWeNeed.js" />
-    <Content Include="client\src\components\Volunteer\WhyYouNeed.js" />
+    <Content Include="client\src\Components\About\index.js" />
+    <Content Include="client\src\Components\About\LongTermGoal.js" />
+    <Content Include="client\src\Components\About\OurMission.js" />
+    <Content Include="client\src\Components\About\OurStory.js" />
+    <Content Include="client\src\Components\Admin\index.js" />
+    <Content Include="client\src\Components\Admin\test.js" />
+    <Content Include="client\src\Components\Admin\UserTable.js" />
+    <Content Include="client\src\Components\common\AccountGroup.js" />
+    <Content Include="client\src\Components\common\AddressGroup.js" />
+    <Content Include="client\src\Components\common\GenericBody.js" />
+    <Content Include="client\src\Components\common\index.js" />
+    <Content Include="client\src\Components\common\Table.js" />
+    <Content Include="client\src\Components\common\TextAreaGroup.js" />
+    <Content Include="client\src\Components\common\TextFieldGroup.js" />
+    <Content Include="client\src\Components\ContactUs\contactUs.css" />
+    <Content Include="client\src\Components\ContactUs\index.js" />
+    <Content Include="client\src\Components\Donate\index.js" />
+    <Content Include="client\src\Components\Footer\AppElm.js" />
+    <Content Include="client\src\Components\Footer\footer.css" />
+    <Content Include="client\src\Components\Footer\index.js" />
+    <Content Include="client\src\Components\Footer\InfoElm.js" />
+    <Content Include="client\src\Components\Footer\SocialElm.js" />
+    <Content Include="client\src\Components\Footer\SubFooter.js" />
+    <Content Include="client\src\Components\Header\header.css" />
+    <Content Include="client\src\Components\Header\index.js" />
+    <Content Include="client\src\Components\Home\Basket.js" />
+    <Content Include="client\src\Components\Home\home.css" />
+    <Content Include="client\src\Components\Home\index.js" />
+    <Content Include="client\src\Components\Home\NewsFeed.js" />
+    <Content Include="client\src\Components\Home\OurSponsors.js" />
+    <Content Include="client\src\Components\Home\Stats.js" />
+    <Content Include="client\src\Components\Home\Subscribe.js" />
+    <Content Include="client\src\Components\index.js" />
+    <Content Include="client\src\Components\Login\index.js" />
+    <Content Include="client\src\Components\News\CardElm.js" />
+    <Content Include="client\src\Components\News\index.js" />
+    <Content Include="client\src\Components\News\news.css" />
+    <Content Include="client\src\Components\News\NewsModel.js" />
+    <Content Include="client\src\Components\Profile\admin.js" />
+    <Content Include="client\src\Components\Profile\index.js" />
+    <Content Include="client\src\Components\Profile\UserTable.js" />
+    <Content Include="client\src\Components\ProgramServices\Basket.js" />
+    <Content Include="client\src\Components\ProgramServices\Birth.js" />
+    <Content Include="client\src\Components\ProgramServices\index.js" />
+    <Content Include="client\src\Components\ProgramServices\OurApp.js" />
+    <Content Include="client\src\Components\ProgramServices\OurCommunity.js" />
+    <Content Include="client\src\Components\ProgramServices\SignUpToday.js" />
+    <Content Include="client\src\Components\RegisterBenefactor\index.js" />
+    <Content Include="client\src\Components\RegisterVolunteer\index.js" />
+    <Content Include="client\src\Components\Register\index.js" />
+    <Content Include="client\src\Components\Volunteer\index.js" />
+    <Content Include="client\src\Components\Volunteer\SignUp.js" />
+    <Content Include="client\src\Components\Volunteer\VolunteerToday.js" />
+    <Content Include="client\src\Components\Volunteer\WhyWeNeed.js" />
+    <Content Include="client\src\Components\Volunteer\WhyYouNeed.js" />
     <Content Include="client\src\containers\index.js" />
     <Content Include="client\src\containers\TabSection\index.js" />
     <Content Include="client\src\containers\TabSection\WebTemplate.js" />
@@ -230,9 +230,12 @@
   <ItemGroup>
     <None Include=".vs\config\applicationhost.config" />
     <None Include=".vs\Rudaina VS\v14\.suo" />
+    <None Include=".vs\Rudaina Website\v14\.suo" />
+    <None Include="client\package-lock.json" />
     <None Include="client\package.json" />
     <None Include="client\public\manifest.json" />
     <None Include="client\README.md" />
+    <None Include="package-lock.json" />
     <None Include="package.json" />
     <None Include="packages\EntityFramework.6.1.3\Content\App.config.transform" />
     <None Include="packages\EntityFramework.6.1.3\Content\Web.config.transform" />
@@ -245,6 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git\" />
+    <Folder Include=".vs\Rudaina Website VS\v14\" />
     <Folder Include="My Project\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
