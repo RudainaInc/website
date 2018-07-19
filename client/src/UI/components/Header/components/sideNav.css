@@ -1,0 +1,20 @@
+.option{
+    font-weight: 300;
+    font-style: 12px;
+    color: grey;
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+
+.option a{
+    text-decoration: none;
+}
+
+.option span{
+    color: white;
+    margin-right: 10px;
+}
+
+#icon{
+    color : red;
+}

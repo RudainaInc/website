@@ -1,0 +1,160 @@
+.footer_{
+    background-color:  #222222; 
+    width: 100%;
+    color : white;
+}
+
+.footer1_2-links ul {
+    padding: 0;
+    display:table;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+
+.footer1_2-links li{
+    display:table-cell;
+    font-size: 2.2rem;
+    padding: .2rem .1rem;
+    color: white;
+}
+
+.footer1_2-links li a{
+    text-decoration: none;
+}
+
+.social{
+    padding-bottom : 3px;
+}
+
+@media only screen and (max-width: 1026px) {
+    .contact-us {
+        display: none;
+    }
+    .footer1_2-links li {
+        font-size: 2rem;
+        width: 30%;
+        color : yellow;
+    }
+    .footer-copyright{
+        font-size: 2rem;
+    }
+    .social {
+        background-color: #4c4c4c;
+    }
+}
+
+.fa {
+    padding: 8px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      text-decoration: none;
+  }
+  
+  .fa-facebook {
+    color: #3B5998;
+    background: white;
+  }
+  
+  .fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    color: #55ACEE;
+    background: white;
+  }
+  
+  .fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    color: #007bb5;
+    background: white;
+  }
+  
+  .fa-linkedin:hover {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    color: #AC35AB;
+    background: white;
+  }
+  
+  .fa-instagram:hover {
+    background: linear-gradient(to right, #F47838 , #AC35AB);
+    color: white;
+  }
+  
+  .footer_social-icons{
+      text-align : center;
+  }
+  .footer_social-icons p{
+      padding : 0px;
+      margin : 0px;
+  }
+  
+
+.footer_social-icons{
+    text-align : center;
+}
+
+.footer_social-icons i{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.footer_social-icons p{
+    padding : 0px;
+    margin : 0px;
+}
+
+.app-download {
+    padding-bottom : 5px;
+}
+
+.app-download li{
+    list-style-type: none; 
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}

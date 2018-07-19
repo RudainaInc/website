@@ -1,2 +1,0 @@
-C:\Users\trevor.cheslock\DOCUMENTS\clone\website\obj\x86\test\Rudaina VS.vbprojResolveAssemblyReference.cache
-C:\Users\trevor.cheslock\DOCUMENTS\clone\website\bin\x86\test\ConsoleApplication.exe.config

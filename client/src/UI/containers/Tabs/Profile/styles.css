@@ -1,0 +1,129 @@
+.section-header {
+    text-align: center;
+    padding-bottom: 1em;
+    margin: 3rem 0rem;
+}
+
+.marginAround{
+    margin: 5px 0;
+}
+
+.page2{
+    background-color: #E8E9E4;
+}
+
+.section-header .text {
+    padding-bottom: 1em;
+    border-bottom: 2px solid red;
+}
+
+.myImage{
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.myImage img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid purple;
+    box-shadow: 0 0 15px purple;
+}
+
+.aboutMe{
+    max-width: 90%;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 10px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid purple;
+}
+
+/**********************************
+        Status Page 
+************************************/
+.loader {
+    text-align: center;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+    100% { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
+}
+
+/***********************************
+        Task List 
+*************************************/
+.section-header {
+    text-align: center;
+    padding-bottom: 1em;
+    margin: 3rem 0rem;
+}
+
+.page2{
+    background-color: #E8E9E4;
+    padding: 5px;
+}
+
+.section-header .text {
+    padding-bottom: 1em;
+    border-bottom: 2px solid red;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+/************************************
+            Settings
+***************************************/
+.settings button{
+    text-align: center;
+    background-color: #ff7f7f;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+

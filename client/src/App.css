@@ -16,6 +16,34 @@
     font-size: 2rem;
 }
 
+.card{
+    margin : 3px;
+    padding : 3px;
+}
+
+.card-title{
+    font-weight : bold;
+    color: linear-gradient(to right, #ffcccc , #b2b2b2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-primary{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    color : #262626;
+    border: 2px red solid;
+}
+
+.btn-primary:hover{
+    color: black;
+    border: 2px #cc0000 solid;
+    background-color: #c0c0c0;
+}
+
 html {
     font-size: 62.5%; 
     box-sizing: border-box;
@@ -26,9 +54,17 @@ body {
     font-weight: 400;
     font-size: 2.2rem;
     line-height: 1.7;
-    color: #000;
-    background-color: #f0f0f0;
+    
+    /* background-color: #f0f0f0; */
     margin: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* full window width */
+}
+
+.container-fluid{
+    width: 70%;
+    background-color: blue;
 }
 
 .big-font {
@@ -120,7 +156,10 @@ body {
     {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-    }
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
 }
 
 .swing:hover
@@ -134,19 +173,10 @@ body {
 /****************************************************
             DONATE BUTTON
 ***************************************************/
-.donate{
-    position: relative;
-}
-
-.topright {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    font-size: 18px;
-}
 
 .stickToTheRight{
-    position: fixed;
+    position:relative;
+    float:right;
     right: 0;
     top: 35%;
 
@@ -158,15 +188,16 @@ body {
 }
 
 .donateButton{
-    background-color: #BB0000;
+    background-color: red;
     border: none;
     color: white;
     height: 100px;
     width: 100px;
     padding: auto;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
+    top : 35%;
+    right : 3px;
+    position: fixed;
     font-size: 60px;
     cursor: pointer;
     margin: 0px 5px;
@@ -178,19 +209,78 @@ body {
 }
 
 .donateButton:hover{
-    background-color: rgb(138, 0, 0);
+    background-color: grey;
+    color: rgb(138, 0, 0);
     text-decoration: none;
-    color: white;
-    transition: transform .10s;
-    transform: scale(0.9);
-    -webkit-transition: transform .10s;
-    -moz-transition: transform .10s;
-    -ms-transition: transform .10s;
-    -o-transition: transform .10s;
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+    -webkit-animation: mymove 5s infinite;
+}
+
+.container{
+    width : 100%;
+}
+
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -9px; left: 40%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -15px;left: 48%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: red;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+@media only screen and (max-width: 1026px) {
+    .willHide {display: none;}
+    .donateButton{
+        background-color: red;
+        border: none;
+        color: white;
+        height: 70px;
+        width: 70px;
+        padding: auto;
+        text-decoration: none;
+        font-size: 45px;
+        cursor: pointer;
+        margin: 0px 5px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .swing:after{
+        top: -9px; left: 37%;
+    }
 }
 
 /***************************************
@@ -234,10 +324,15 @@ body {
 }
 
 .generic-body-template-nav-link {
-    background-color: #BB0000;
+    background-color: #b00;
     color: #f0f0f0;
     font-size: 2.4rem;
 }
+
+.generic-body-template-nav-link a:hover {
+    color: #222222;
+}
+
 
 .generic-body-template-nav a:hover {
     color: #222222;
@@ -252,6 +347,51 @@ body {
     background-color:#222222;
     color: #f0f0f0;
 }
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+@media (max-width: 1026px) {
+    .willHide { display: none; }
+}
+
+@media (min-width: 1026px) {
+    .willShow { display: none; }
+}
+
+
 
 /*=================================================================================*/
 /*=================================================================================*/
@@ -364,131 +504,3 @@ hr.style {
     border-right: 1px solid grey;
 }
  */
-
- .section-header {
-    text-align: center;
-    padding-bottom: 1em;
-    margin: 3rem 0rem;
-}
-
-.marginAround{
-    margin: 5px 0;
-}
-
-.page2{
-    background-color: #E8E9E4;
-}
-
-.section-header .text {
-    padding-bottom: 1em;
-    border-bottom: 2px solid red;
-}
-
-.myImage{
-}
-
-.alignCenter{
-    text-align: center;
-}
-
-.myImage img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid purple;
-    box-shadow: 0 0 15px purple;
-}
-
-.aboutMe{
-    max-width: 90%;
-    background: #FAFAFA;
-    padding: 30px;
-    margin: 10px auto;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
-    border: 6px solid purple;
-}
-
-/**********************************
-        Status Page 
-************************************/
-.loader {
-    text-align: center;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    border-left: 16px solid pink;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
-    100% { transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
-}
-
-/***********************************
-        Task List 
-*************************************/
-.section-header {
-    text-align: center;
-    padding-bottom: 1em;
-    margin: 3rem 0rem;
-}
-
-.page2{
-    background-color: #E8E9E4;
-    padding: 5px;
-}
-
-.section-header .text {
-    padding-bottom: 1em;
-    border-bottom: 2px solid red;
-}
-
-.center{
-    text-align: center;
-    margin: auto;
-    padding: auto;
-}
-
-/************************************
-            Settings
-***************************************/
-.settings button{
-    text-align: center;
-    background-color: #ff7f7f;
-}
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-
-#img-upload{
-    width: 100%;
-}
