@@ -1,4 +1,111 @@
 /*****************************************************************
+                        Header
+*******************************************************************/
+.header{
+    background-color: #f0f0f0;
+    border-bottom: 2.5rem solid #222222;
+    padding: .8rem;
+    font-family: 'Markazi Text', serif;
+}
+
+.imgContainer{
+    height: 14rem;
+    margin : 0px auto;
+    padding : 0px auto;
+}
+
+.header-logo{
+    height: 100%;
+    float: left;
+    margin : 0px auto;
+    padding : 0px auto;
+}
+
+.loginFranciasbutton{
+    font-weight: 700;
+}
+
+.loginFranciasbutton a{
+    color: black;
+}
+
+.loginFranciasbutton li{
+    display: inline-block;
+    padding: .5rem;
+}
+
+.loginFranciasbutton a:hover{
+    text-decoration: none;
+    color: #BB0000;
+    transition: transform .3s;
+    transform: scale(1.1);
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -o-transition: transform .3s;
+}
+
+.navLinks ul{
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    padding-left: 0%;
+}
+
+.navLinks li {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    
+    padding: auto;
+    text-align: center;
+    list-style: none;
+    font-size: 2.5rem;
+    
+    width: 20%;
+}
+
+.navLinks li a {
+    color: black;
+    
+}
+
+.navLinks li a:hover{
+    text-decoration: none;
+    font-weight: 700;
+    color: red;
+}
+
+.navLinks li a.active {
+    font-weight: 700;
+    color: red;
+}
+
+/*
+    New Styles
+*/
+@media (max-width: 1026px) {
+    .willHide { display: none; }
+    .header-logo{
+        width: 100%;
+    }
+    .header{
+        border-bottom: 1.5rem solid #222222;
+    }
+}
+
+@media (min-width: 1026px) {
+    .willShow { display: none; }
+}
+
+.mobileTopHeader i{
+    color : red;
+    margin : 0px auto;
+    padding : 0px auto;
+    cursor : pointer;
+}
+/*****************************************************************
                         Basket
 *******************************************************************/
 .basket-section{
