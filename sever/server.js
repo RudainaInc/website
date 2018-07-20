@@ -38,7 +38,7 @@ app.use('/api/profile', profile);
 app.use('/api/users', users);
 app.use('/api/admin', admin);
 
-Use Build
+// Use Build
 app.use(express.static('build'));
 
 const port = process.env.PORT || 5000;
