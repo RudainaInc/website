@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 
 import TextFieldGroup from '../TextFieldGroup';
 
@@ -9,14 +8,18 @@ const Login = (props: any) => {
         <div className="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
-                    <div className="modal-header">
-                        <h1 className="text-center">LOGIN</h1>
+                    <div className="modal-header text-center">
+                        
+                            <h1 className="text-center w-100" style={{fontSize: "4rem"}}>Log in</h1>
+                        
+                        
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
 
                     <div className="modal-body">
+
                         <form>
 
                             <TextFieldGroup
@@ -36,18 +39,43 @@ const Login = (props: any) => {
                             />
 
                             <hr/>
-                            <input type="submit" className="big-font btn btn-info btn-block mt-4" onClick={onLogin} data-dismiss="modal" />
+                            <div className="nav flex-column nav-pills generic-body-template-nav text-center">
+                                <a 
+                                    className="nav-link generic-body-template-nav-link text-center" 
+                                    onClick={onLogin}
+                                    data-dismiss="modal"
+                                    href="#"
+                                >
+                                    Log in
+                                </a>
+
+                            </div>
+
+
+
+                            <div className="" style={{color: "black"}}>
+                                <p className="text-center" style={{color: "black"}}>Don't Have an Account?</p>
+                            </div>
+
+                            <div className="nav flex-column nav-pills generic-body-template-nav">
+                                <a href='/volunteer' className="nav-link generic-body-template-nav-link text-center" data-dismiss="modal" >Become a volunteer</a>
+                            </div>
+
+                            <div className="" style={{color: "black"}}>
+                                <p className="text-center" style={{color: "black"}}>or</p>
+                            </div>
+
+                            <div className="nav flex-column nav-pills generic-body-template-nav">
+                                <a href='/program_services' className="nav-link generic-body-template-nav-link text-center" data-dismiss="modal" >Become a benefactor</a>
+                            </div>
+   
+
+                            
+                            
+
                         </form>
                     </div>
 
-                    <div className="modal-footer">
-                        <div className="form-group col-md-6">
-                            <Link className="big-font form-control btn btn-info btn-block mt-4" data-dismiss="modal" to='/volunteer'>Become a volunteer</Link>
-                        </div>
-                        <div className="form-group col-md-6">
-                            <Link className="big-font form-control btn btn-info btn-block mt-4" to='/program_services' data-dismiss="modal" >Become a benefactor</Link>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

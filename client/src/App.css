@@ -11,6 +11,17 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
 @import url('https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css');
 
+h2 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 2.5rem;
+}
+
+.red-button-color {
+    background-color: #b00
+}
 
 .test .btn-group-sm {
     font-size: 2rem;
@@ -60,6 +71,10 @@ body {
     margin: 0;
     padding: 0;
     width: 100%; /* full window width */
+}
+
+body :h2 {
+    font-size: 4rem;
 }
 
 .container-fluid{
@@ -304,11 +319,12 @@ body {
 
 .generic-body-template {
     font-size: 2.2rem;
+    min-height: 600px;
+    height: 100%; 
 }
 
 .generic-body-template-text {
-    min-height: 500px;
-    height: 100%; 
+    
     text-align: justify;
     font-size: 2rem;
     color: #000;
@@ -327,6 +343,10 @@ body {
     background-color: #b00;
     color: #f0f0f0;
     font-size: 2.4rem;
+}
+
+.generic-body-template-nav-link :hover {
+    color: #222222;
 }
 
 .generic-body-template-nav-link a:hover {

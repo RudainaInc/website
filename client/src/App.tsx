@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import * as React from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import { Store } from 'redux';
 
 import About from './UI/containers/Tabs/About';
@@ -71,7 +71,7 @@ class App extends React.Component<Props> {
 						<React.Fragment>
 							{routes}
 							<div className="container-fluid">
-                                <button className="donateButton swing"><i className="fas fa-hand-holding-usd"/></button>
+								<Link to="/donate"  className="donateButton swing"><i className="fas fa-hand-holding-usd"/></Link>
                             </div>
 						</React.Fragment>
 					</Router>

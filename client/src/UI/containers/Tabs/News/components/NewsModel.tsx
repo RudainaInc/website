@@ -7,7 +7,7 @@ const CardElm = (props: NewsElm) => {
     const { image, title, content, source } = props;
     return(
 
-        <div className="card" style={{width:"400px"}}>
+        <div className="card" style={{width:"400px", backgroundColor: "#f0f0f0"}}>
             <img className="card-img-top" src={image} alt="Card" style={{width:"100%"}}/>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>

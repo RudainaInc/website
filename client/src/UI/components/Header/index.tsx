@@ -77,6 +77,7 @@ class Header extends React.Component<Props, any> {
                     showing={this.state.showNav}
                     onHideNav={test1}
                     onOpenNav={test2}
+                    isAuthenticated={isAuthenticated}
                 />
                 
                 <div className="mobileTopHeader willShow">

@@ -26,7 +26,7 @@ router.post('/add', upload.single("image"), (req, res) => {
     
     const tempName = Date.now() + '-' + data.image_name;
     const tempPath = req.file.path;
-    const targetPath = "C:/Users/Rudaina/Desktop/server/client/public/others/" + tempName;
+    const targetPath = "../client/public/others/" + tempName;
     fs.rename(tempPath, targetPath, function (err) {
         if (err) throw err;
         console.log('renamed complete');
@@ -50,6 +50,7 @@ router.post('/add', upload.single("image"), (req, res) => {
 router.get('/getRelevantNews', (req, res) => {
     News
     .find( {category: 'relevant'} )
+    .sort({date: -1})
     .then( news => {
         res.json(news);
     });
@@ -58,6 +59,7 @@ router.get('/getRelevantNews', (req, res) => {
 router.get('/getPregnancyNews', (req, res) => {
     News
     .find( {category: 'pregnancy'} )
+    .sort({date: -1})
     .then( news => {
         res.json(news);
     });
@@ -66,6 +68,7 @@ router.get('/getPregnancyNews', (req, res) => {
 router.get('/getCharityNews', (req, res) => {
     News
     .find( {category: 'charity'} )
+    .sort({date: -1})
     .then( news => {
         res.json(news);
     });
@@ -77,5 +80,33 @@ router.get('/all', (req, res) => {
         res.json(news);
     })
 });
+
+router.get('/getLatestNews', (req, res) => {
+    
+    const temp = [];
+
+    News
+    .findOne( {category: 'relevant'} )
+    .sort( {date: -1} )
+    .then( news => {
+        temp.push(news)
+        
+        return News
+                .findOne( {category: 'pregnancy'} )
+                .sort( {date: -1} );
+    }).then( news => {
+        temp.push(news)
+        
+        return News
+                .findOne( {category: 'charity' } )
+                .sort( {date: -1} );
+    }).then( news => {
+        
+        temp.push(news)
+
+        
+        res.json(temp)
+    })
+})
 
 module.exports = router;

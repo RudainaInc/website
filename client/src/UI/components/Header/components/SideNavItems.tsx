@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import './sideNav.css';
 // import FontAwesome from "react-fontawesome";
 
-const SideNavItems = () => {
+const SideNavItems = (props: any) => {
+    const { isAuthenticated } = props;
     const items = [
         {
             icon : "home",
@@ -34,22 +35,24 @@ const SideNavItems = () => {
         {
             icon : "envelope",
             text : "Contact Us",
-            link : "/videos"
+            link : "/contact_us"
         },
-        {
-            icon : "sign-in",
-            text : "Log In",
-            link : "/login"
-        },
-        {
-            icon : "sign-out",
-            text : "Log Out",
-            link : "/logout"
-        }
     ]
 
+    const login = (
+        <div className="option" key="la1">
+            <a className="" href="#" data-toggle="modal" data-target="#exampleModal">Log in</a>
+        </div>
+    )
+
+    const profile = (
+        <div className="option" key="la2">
+            <Link to="/profile">Account</Link>
+        </div>
+    )
+
     const showItems = () => {
-        return items.map((item , i) =>{
+        const la = items.map((item , i) =>{
             return (
                 <div key={i} className="option">
                     <Link to={item.link}>
@@ -59,7 +62,13 @@ const SideNavItems = () => {
                 </div>
             )
         })
+        
+        la.push(isAuthenticated ? profile : login );
+        return la;
     }
+
+    
+    
     
     return (
         <div>

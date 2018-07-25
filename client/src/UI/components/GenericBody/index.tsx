@@ -27,7 +27,7 @@ class GenericBody extends React.Component<any, any> {
 
     public render() {
 
-        const { pages, labels } = this.props;
+        const { pages, labels, logout } = this.props;
         const { width, pageIdx } = this.state;
         const isMobile = width <= 1026;
 
@@ -51,6 +51,19 @@ class GenericBody extends React.Component<any, any> {
                 )   
             }
         )
+
+        if (logout) {
+            labelButtons.push(
+                <a
+                    className="nav-link generic-body-template-nav-link"
+                    onClick={logout}
+                    key="logout"
+                    
+                >
+                    logout
+                </a>
+            )
+        }
 
         if (isMobile) {
             return(

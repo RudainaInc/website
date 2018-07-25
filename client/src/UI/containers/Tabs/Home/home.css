@@ -455,6 +455,7 @@
 .news-feed {
     background-color: #222222;
     border-top: 3px solid #BB0000;
+    padding-bottom: 7rem;
     
 }
 
@@ -489,4 +490,10 @@
 
 .tab-content{
     padding: 0px;
+}
+
+
+.resizeImage{
+    width: 100vw;
+    height : 30px;
 }

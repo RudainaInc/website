@@ -18,7 +18,9 @@ const SideNavigation = (props: any) => {
 
                 }}
             >
-                <SideNavItems/>
+                <SideNavItems
+                    isAuthenticated={props.isAuthenticated}
+                />
             </SideNav>
         </div>
     );

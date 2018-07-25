@@ -33,7 +33,7 @@ class Profile extends React.Component<Props, any> {
 
     constructor(props: Props) {
         super(props);
-        this.onLogoutClick.bind(this);
+        this.onLogoutClick = this.onLogoutClick.bind(this);
     }
 
     public componentDidMount() {
@@ -98,7 +98,6 @@ class Profile extends React.Component<Props, any> {
     }
 
     private onLogoutClick(e: any) {
-        this.props.clearCurrentProfile();
         this.props.logoutUser();
     }
 }
