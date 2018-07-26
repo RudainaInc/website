@@ -83,7 +83,18 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     error={errors.info}
                                     onChange={this.onChange}
                                     lable="Nutritional Information"
-                                />
+                                    />
+
+                                <hr/>
+
+                                <TextAreaGroup2
+                                    name="info"
+                                    placeholder="Is there anything your alergic to? What kind of food do you typically eat?"
+                                    value={this.state.info}
+                                    error={errors.info}
+                                    onChange={this.onChange}
+                                    lable="Nutritional Information"
+                                    />
 
                                 <input type="file" />
 
