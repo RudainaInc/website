@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B8137702-D9E0-4A4C-A718-584E931E386D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>VS_Project</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="client\public\favicon.ico" />
+    <Content Include="client\public\img\1st.JPG" />
+    <Content Include="client\public\img\256x256.png" />
+    <Content Include="client\public\img\2nd tre.JPG" />
+    <Content Include="client\public\img\3rd trimester.JPG" />
+    <Content Include="client\public\img\512x512.png" />
+    <Content Include="client\public\img\app_store_128x128.png" />
+    <Content Include="client\public\img\app_store_256x256.png" />
+    <Content Include="client\public\img\app_store_512x512.png" />
+    <Content Include="client\public\img\basket-remake.png" />
+    <Content Include="client\public\img\basket.jpeg" />
+    <Content Include="client\public\img\basket.jpg" />
+    <Content Include="client\public\img\basket2.jpeg" />
+    <Content Include="client\public\img\basket3.jpeg" />
+    <Content Include="client\public\img\canada_summer_jobs.png" />
+    <Content Include="client\public\img\cs.png" />
+    <Content Include="client\public\img\cs2.png" />
+    <Content Include="client\public\img\donation_cheque.jpg" />
+    <Content Include="client\public\img\footer-logo-bird.jpg" />
+    <Content Include="client\public\img\full-logo.png" />
+    <Content Include="client\public\img\google_play_store.PNG" />
+    <Content Include="client\public\img\government_of_canada.png" />
+    <Content Include="client\public\img\green_energy.png" />
+    <Content Include="client\public\img\green_energy2.png" />
+    <Content Include="client\public\img\i-android.png" />
+    <Content Include="client\public\img\i-ios.png" />
+    <Content Include="client\public\img\index.html" />
+    <Content Include="client\public\img\ios_app_store.PNG" />
+    <Content Include="client\public\img\play_store128x128.png" />
+    <Content Include="client\public\img\play_store_128x128.png" />
+    <Content Include="client\public\img\pubmed.png" />
+    <Content Include="client\public\img\rf-full-logo.png" />
+    <Content Include="client\public\img\Rudiana Logo footer-bird.png" />
+    <Content Include="client\public\img\Rudiana_Logo_footer-bird.png" />
+    <Content Include="client\public\img\tcclogo.png" />
+    <Content Include="client\public\img\user.png" />
+    <Content Include="client\public\img\wi.png" />
+    <Content Include="client\public\img\wi2.png" />
+    <Content Include="client\public\img\wk.png" />
+    <Content Include="client\public\img\wk2.png" />
+    <Content Include="client\public\index.html" />
+    <Content Include="client\public\others\1532393886068-icon.png" />
+    <Content Include="client\public\others\1532396806244-icon.png" />
+    <Content Include="client\public\others\1532396815692-icon.png" />
+    <Content Include="client\public\others\1532396827945-icon.png" />
+    <Content Include="client\src\App.css" />
+    <Content Include="client\src\UI\components\Footer\foot.css" />
+    <Content Include="client\src\UI\components\Footer\footer.css" />
+    <Content Include="client\src\UI\components\Header\components\sideNav.css" />
+    <Content Include="client\src\UI\components\Header\header.css" />
+    <Content Include="client\src\UI\containers\Tabs\Home\home.css" />
+    <Content Include="client\src\UI\containers\Tabs\Profile\components\temp.js" />
+    <Content Include="client\src\UI\containers\Tabs\Profile\styles.css" />
+    <Content Include="sever\config\keys.js" />
+    <Content Include="sever\config\passport.js" />
+    <Content Include="sever\models\Address.js" />
+    <Content Include="sever\models\Benefactor.js" />
+    <Content Include="sever\models\Donate.js" />
+    <Content Include="sever\models\Event.js" />
+    <Content Include="sever\models\News.js" />
+    <Content Include="sever\models\Product.js" />
+    <Content Include="sever\models\Profile.js" />
+    <Content Include="sever\models\Task.js" />
+    <Content Include="sever\models\User.js" />
+    <Content Include="sever\models\Volunteer.js" />
+    <Content Include="sever\routes\api\admin.js" />
+    <Content Include="sever\routes\api\events.js" />
+    <Content Include="sever\routes\api\news.js" />
+    <Content Include="sever\routes\api\policy.js" />
+    <Content Include="sever\routes\api\profile.js" />
+    <Content Include="sever\routes\api\users.js" />
+    <Content Include="sever\server.js" />
+    <Content Include="sever\validation\is-empty.js" />
+    <Content Include="sever\validation\login.js" />
+    <Content Include="sever\validation\register.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="client\images.d.ts" />
+    <TypeScriptCompile Include="client\src\App.test.tsx" />
+    <TypeScriptCompile Include="client\src\App.tsx" />
+    <TypeScriptCompile Include="client\src\index.tsx" />
+    <TypeScriptCompile Include="client\src\registerServiceWorker.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\actions\adminActions.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\actions\authActions.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\actions\newsActions.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\actions\profileActions.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\actions\types.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\reducers\adminReducer.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\reducers\authReducer.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\reducers\errorsReducer.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\reducers\index.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\reducers\newsReducer.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\reducers\profileReducer.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\store\index.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\store\store.ts" />
+    <TypeScriptCompile Include="client\src\Types\admin.ts" />
+    <TypeScriptCompile Include="client\src\Types\News.ts" />
+    <TypeScriptCompile Include="client\src\UI\components\AccountGroup\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\AddressGroup\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Footer\components\AppElm.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Footer\components\Footer2.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Footer\components\SocialElm.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Footer\components\SubFooter.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Footer\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\GenericBody\DeskView.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\GenericBody\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\GenericBody\MobileView.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Header\components\react-sidenav.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Header\components\sideNav.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Header\components\SideNavItems.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Header\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\Header\Login.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\index.ts" />
+    <TypeScriptCompile Include="client\src\UI\components\SelectFieldGroup\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\TextAreaGroup2\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\TextAreaGroup\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\TextFieldGroup\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\index.ts" />
+    <TypeScriptCompile Include="client\src\UI\containers\TabSection\index.ts" />
+    <TypeScriptCompile Include="client\src\UI\containers\TabSection\WebTemplate.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\LongTermGoal.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurMission.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurStory.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\components\Calender.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\components\Donate.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\components\GenTable.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\components\NewsTable.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\components\TaskList.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Contact\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\components\DonatePage.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\components\MoneyPage.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\NewsFeed.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\OurSponsors.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\Stats.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\Subscribe.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\News\components\NewsModel.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\News\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Profile\components\Calender.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Profile\components\Forum.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Profile\components\MyProfile.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Profile\components\Settings.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Profile\components\Status.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Profile\components\TaskList.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Profile\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\components\Basket.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\components\Birth.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\components\OurApp.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\components\OurCommunity.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\components\SignUpToday.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\RegisterBenefactor\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\RegisterVolunteer\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Volunteer\components\SignUp.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Volunteer\components\VolunteerToday.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Volunteer\components\WhyUs.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Volunteer\components\WhyYou.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Volunteer\index.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="client\package-lock.json" />
+    <None Include="client\package.json" />
+    <None Include="client\public\manifest.json" />
+    <None Include="client\README.md" />
+    <None Include="client\src\haha.scss" />
+    <None Include="client\tsconfig.json" />
+    <None Include="client\tsconfig.prod.json" />
+    <None Include="client\tsconfig.test.json" />
+    <None Include="client\tslint.json" />
+    <None Include="sever\files\2ead89b979d010205e332bdeb6afaa7a" />
+    <None Include="sever\files\5152762fcac3e96795406f20558697e4" />
+    <None Include="sever\files\70f348b523e644c486442de759e8ee18" />
+    <None Include="sever\files\cd63aa07d1a263ae96293360c0725ce2" />
+    <None Include="sever\LICENSE" />
+    <None Include="sever\package.json" />
+    <None Include="sever\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
+    <Folder Include=".vs\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
