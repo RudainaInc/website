@@ -7,7 +7,6 @@ import TabSection from '../../TabSection';
 import { AccountGroup } from '../../../components';
 import { AddressGroup } from '../../../components';
 import { TextAreaGroup } from '../../../components';
-import { TextAreaGroup2 } from '../../../components';
 
 class RegisterBenefactor extends React.Component<any, any> {
 
