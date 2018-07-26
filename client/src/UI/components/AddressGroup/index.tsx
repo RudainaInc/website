@@ -135,6 +135,34 @@ const AddressGroup = ({
 
             </div>
 
+
+            <div className="form-row">
+
+                <div className="col-md-6">
+                    <TextFieldGroup
+                        type="text"
+                        placeholder="Are You In School"
+
+                        name="school"
+                        value={values.phone}
+                        onChange={onChange}
+                        error={errors.phone}
+                        />
+                </div>
+
+                <div className="form-group col-md-6">
+                    <TextFieldGroup
+                        type="text"
+                        placeholder="How Many Weeks Are you?"
+                        name="weeks"
+                        value={values.dob}
+                        onChange={onChange}
+                        error={errors.dob}
+                        />
+                </div>
+
+            </div>
+
             
         </div>
     )

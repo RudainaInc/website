@@ -176,7 +176,7 @@
     <TypeScriptCompile Include="client\src\UI\components\Header\Login.tsx" />
     <TypeScriptCompile Include="client\src\UI\components\index.ts" />
     <TypeScriptCompile Include="client\src\UI\components\SelectFieldGroup\index.tsx" />
-    <TypeScriptCompile Include="client\src\UI\components\TextAreaGroup2\file1.tsx" />
+    <TypeScriptCompile Include="client\src\UI\components\TextAreaGroup2\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\components\TextAreaGroup\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\components\TextFieldGroup\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\index.ts" />
