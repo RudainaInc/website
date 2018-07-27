@@ -4,7 +4,7 @@ import { registerBenefactorUser } from '../../../../StateManager/actions/authAct
 
 import TabSection from '../../TabSection';
 
-import { AccountGroup } from '../../../components';
+import { AccountGroup, SelectFieldGroup } from '../../../components';
 import { AddressGroup } from '../../../components';
 import { TextAreaGroup } from '../../../components';
 
@@ -76,15 +76,131 @@ class RegisterBenefactor extends React.Component<any, any> {
 
                                 <hr/>
 
-                                <TextAreaGroup
+                                {/* <TextAreaGroup
                                     name="info"
                                     placeholder="Is there anything your alergic to? What kind of food do you typically eat?"
                                     value={this.state.info}
                                     error={errors.info}
                                     onChange={this.onChange}
                                     lable="Nutritional Information"
-                                    />
+                                /> */}
 
+                                <SelectFieldGroup
+                                    name="one"
+                                    lable="Are you currently attending full-time school?"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Yes", "Yes"],
+                                        ["No", "No"]
+                                        
+                                    ]}
+                                />
+                                  <SelectFieldGroup
+                                    name="two"
+                                    lable="Will you be attending full time school when the baby is born?"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Yes", "Yes"],
+                                        ["No", "No"]
+                                        
+                                    ]}
+                                />
+                                   <SelectFieldGroup
+                                    name="three"
+                                    lable="Are you single? "
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Yes", "Yes"],
+                                        ["No", "No"]
+                                        
+                                    ]}
+                                />
+                                    <SelectFieldGroup
+                                    name="four"
+                                    lable="What is your status in Canada?"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Canadian Citizen", "Canadian Citizen"],
+                                        ["Permanent Resident", "Permanent Resident"],
+                                        ["Refugee", "Refugee"],
+                                        ["Not Canadian", "Not Canadian"]
+                                        
+                                    ]}
+                                />
+                                    <SelectFieldGroup
+                                    name="five"
+                                    lable="How many times do you ex every week?"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["0", "0"],
+                                        ["1", "1"],
+                                        ["2", "2"],
+                                        ["3", "3"],
+                                        ["4", "4"],
+                                        ["5", "5"],
+                                        ["6", "6"],
+                                        ["8", "7"]
+                                        
+                                        
+                                    ]}
+                                />
+                                    <SelectFieldGroup
+                                    name="six"
+                                    lable="Do you have any special dietary requirement (vegetarian, vegan, allergies)?"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Yes", "Yes"],
+                                        ["No", "No"]
+                                        
+                                    ]}
+                                    
+                                />
+                                <TextAreaGroup
+                                    name="info"
+                                    placeholder="If Yes, Please Specify"
+
+                                />
+
+                                 <SelectFieldGroup
+                                    name="seven"
+                                    lable="Do you smoke?"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Yes", "Yes"],
+                                        ["No", "No"],
+                                        ["Occasionally", "Occasionally"]
+                                        
+                                    ]}
+                                />
+                                    <SelectFieldGroup
+                                    name="eight"
+                                    lable="Do you smoke?"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Yes", "Yes"],
+                                        ["No", "No"],
+                                        ["Occasionally", "Occasionally"]
+                                        
+                                    ]}
+                                />
+                                    <SelectFieldGroup
+                                    name="testtt"
+                                    lable="By Clicking Sign up, You agree to the .Terms and Services. of Rudaina Foundation"
+                                    value=""
+                                    options={[
+                                        ["Select One", "Select One"],
+                                        ["Yes", "Yes"],
+                                        ["No", "No"]
+                                    ]}
+                                />
 
                                 <input type="file" />
 
