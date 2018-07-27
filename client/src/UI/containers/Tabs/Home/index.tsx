@@ -141,9 +141,9 @@ class Funding extends React.Component<Props, State> {
                                         
                                     <div className="basket-container">
                                         <div id="carousel" style={{transform: "rotateY("+this.state.currdeg+"deg)" }}>
-                                            <div className="basket-container-item a"><img src="img/basket.jpeg" alt=""/></div>
-                                            <div className="basket-container-item b"><img src="img/basket2.jpeg" alt=""/></div>
-                                            <div className="basket-container-item c"><img src="img/basket3.jpeg" alt=""/></div>
+                                            <div className="basket-container-item a"><img src="img/1st.jpeg" alt=""/></div>
+                                            <div className="basket-container-item b"><img src="img/2nd tri.jpeg" alt=""/></div>
+                                            <div className="basket-container-item c"><img src="img/3rd trimester.jpeg" alt=""/></div>
                                         </div>
                                     </div>
 
