@@ -90,7 +90,8 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     lable="Are you currently attending full-time school?"
                                     value=""
                                     options={[
-                                        ["", "Select One"],
+                                        ["Please Select One", "Please Select One"],
+                                        ["", ""],
                                         ["Yes", "Yes"],
                                         ["No", "No"],
                                         
