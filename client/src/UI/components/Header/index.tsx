@@ -97,7 +97,7 @@ class Header extends React.Component<Props, any> {
                                 {isAuthenticated ? profile : login }
 
                                 <div className="col-md-6">
-                                    <Link to="/" className="left">Françias</Link>
+                                    <Link to="/" className="left">Français</Link>
                                 </div>
                             </div>
                         </div>

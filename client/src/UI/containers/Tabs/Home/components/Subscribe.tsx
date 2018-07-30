@@ -42,7 +42,7 @@ class Subscribe extends React.Component<{}, any> {
             <div className="subscribe">
                 <div className="container">
                     <div className="section-header">
-                        <span className="text" >Subsribe Now</span>
+                        <span className="text" >Subscribe Now</span>
                     </div>
 
                     <div className="row">
