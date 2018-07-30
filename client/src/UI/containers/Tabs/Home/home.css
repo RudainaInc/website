@@ -138,8 +138,8 @@
 .basket-container-item img {
     position: absolute;
     background: #000;
-    width: 50rem;
-    height: 40rem;
+    height: 300px;
+  	width: 300px;
     font-size: .5rem;
     text-align: center;
     color: #FFF;
@@ -149,6 +149,16 @@
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.basket-container-item img:hover {
+  width: 100rem;
+  height: 80rem;
 }
 
 .a {
