@@ -144,9 +144,14 @@ const AddressGroup = ({
                         placeholder="Are You In School"
 
                         name="school"
-                        value={values.phone}
+                        value={values.prov}
                         onChange={onChange}
-                        error={errors.phone}
+                        options={[
+                            ["", "Please Select"],
+                            ["Yes", "Yes"],
+                            ["No", "No"],
+                        ]}
+                        error={errors.school}
                         />
                 </div>
 

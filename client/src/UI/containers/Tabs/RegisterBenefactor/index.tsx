@@ -88,9 +88,10 @@ class RegisterBenefactor extends React.Component<any, any> {
                                 <SelectFieldGroup
                                     name="one"
                                     lable="Are you currently attending full-time school?"
-                                    value=""
+                                    value={values.one}
+                                    onChange={onChange}
                                     options={[
-                                        ["Select One", "Select One"],
+                                        ["", "Select One"],
                                         ["Yes", "Yes"],
                                         ["No", "No"]
                                         
