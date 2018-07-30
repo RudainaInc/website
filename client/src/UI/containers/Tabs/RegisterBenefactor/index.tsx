@@ -93,7 +93,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     options={[
                                         ["", "Select One"],
                                         ["Yes", "Yes"],
-                                        ["No", "No"]
+                                        ["No", "No"],
                                         
                                     ]}
                                 />
@@ -104,7 +104,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     options={[
                                         ["Select One", "Select One"],
                                         ["Yes", "Yes"],
-                                        ["No", "No"]
+                                        ["No", "No"],
                                         
                                     ]}
                                 />
@@ -115,7 +115,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     options={[
                                         ["Select One", "Select One"],
                                         ["Yes", "Yes"],
-                                        ["No", "No"]
+                                        ["No", "No"],
                                         
                                     ]}
                                 />
@@ -128,7 +128,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                         ["Canadian Citizen", "Canadian Citizen"],
                                         ["Permanent Resident", "Permanent Resident"],
                                         ["Refugee", "Refugee"],
-                                        ["Not Canadian", "Not Canadian"]
+                                        ["Not Canadian", "Not Canadian"],
                                         
                                     ]}
                                 />
@@ -145,7 +145,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                         ["4", "4"],
                                         ["5", "5"],
                                         ["6", "6"],
-                                        ["8", "7"]
+                                        ["8", "7"],
                                         
                                         
                                     ]}
@@ -157,7 +157,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     options={[
                                         ["Select One", "Select One"],
                                         ["Yes", "Yes"],
-                                        ["No", "No"]
+                                        ["No", "No"],
                                         
                                     ]}
                                     
@@ -176,7 +176,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                         ["Select One", "Select One"],
                                         ["Yes", "Yes"],
                                         ["No", "No"],
-                                        ["Occasionally", "Occasionally"]
+                                        ["Occasionally", "Occasionally"],
                                         
                                     ]}
                                 />
@@ -188,7 +188,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                         ["Select One", "Select One"],
                                         ["Yes", "Yes"],
                                         ["No", "No"],
-                                        ["Occasionally", "Occasionally"]
+                                        ["Occasionally", "Occasionally"],
                                         
                                     ]}
                                 />
@@ -199,7 +199,7 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     options={[
                                         ["Select One", "Select One"],
                                         ["Yes", "Yes"],
-                                        ["No", "No"]
+                                        ["No", "No"],
                                     ]}
                                 />
 
