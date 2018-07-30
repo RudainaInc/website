@@ -143,6 +143,7 @@ const AddressGroup = ({
                         type="text"
                         placeholder="Are You In School"
                         name="school"
+                        value=""
                         onChange={onChange}
                         options={[
                             ["", "Please Select"],
@@ -158,7 +159,7 @@ const AddressGroup = ({
                         type="text"
                         placeholder="How Many Weeks Are you?"
                         name="weeks"
-                        value={values.dob}
+                        value=""
                         onChange={onChange}
                         error={errors.dob}
                         />
