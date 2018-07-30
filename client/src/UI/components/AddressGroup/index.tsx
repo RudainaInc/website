@@ -142,9 +142,7 @@ const AddressGroup = ({
                     <TextFieldGroup
                         type="text"
                         placeholder="Are You In School"
-
                         name="school"
-                        value={values.prov}
                         onChange={onChange}
                         options={[
                             ["", "Please Select"],
