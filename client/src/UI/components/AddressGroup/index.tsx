@@ -135,9 +135,6 @@ const AddressGroup = ({
 
             </div>
 
-            </div>
-
-            
         </div>
     )
 }
