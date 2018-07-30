@@ -89,7 +89,6 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     name="one"
                                     lable="Are you currently attending full-time school?"
                                     value=""
-                                    onChange={onChange}
                                     options={[
                                         ["", "Select One"],
                                         ["Yes", "Yes"],
