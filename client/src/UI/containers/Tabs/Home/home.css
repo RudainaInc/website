@@ -117,7 +117,9 @@
     
     
 }
-
+.basket-section:hover {
+  width: 60rem;
+}
 
 .basket-container {
     margin: 0 auto;
@@ -128,7 +130,10 @@
     
     
 }
-
+.basket-container:hover {
+  width: 100rem;
+  height: 80rem;
+}
 #carousel {
     height: 100%;
     width: 100%;
