@@ -78,9 +78,28 @@ router.post('/registerBenefactor', (req, res) => {
             const pcode = req.body.pcode;
             const phone = req.body.phone;
 
+            const { 
+                dietaryInfo,
+                studentStatus,
+                studentBirth,
+                singleStatus,
+                residencyStatus,
+                exerciseCount,
+                dietaryRequirement,
+                smokeStatus 
+            } = req.body;
+
             const newBenefactor = new Benefactor({
                 user: user,
-                info: "tepm"
+                
+                dietaryInfo,
+                studentStatus,
+                studentBirth,
+                singleStatus,
+                residencyStatus,
+                exerciseCount,
+                dietaryRequirement,
+                smokeStatus
             });
 
             const newAddress = new Address({

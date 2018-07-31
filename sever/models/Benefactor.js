@@ -3,10 +3,31 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const BenefactorSchema = new Schema({
-    info: {
+    dietaryInfo: {
         type: String,
-        required: true
     },
+    studentStatus: {
+        type: String,
+    },
+    studentBirth: {
+        type: String,
+    },
+    singleStatus: {
+        type: String,
+    },
+    residencyStatus: {
+        type: String,
+    },
+    exerciseCount: {
+        type: String,
+    },
+    dietaryRequirement: {
+        type: String,
+    },
+    smokeStatus: {
+        type: String,
+    },
+
     user: {
         type: Schema.Types.ObjectId,
         ref: 'users'

@@ -77,7 +77,6 @@ class RegisterBenefactor extends React.Component<any, any> {
                                     errors={errors}
                                 />
                                 <hr/>
-
                                 <AddressGroup
                                     values={this.state.contact}
                                     onChange={this.onContactChange}
@@ -85,7 +84,6 @@ class RegisterBenefactor extends React.Component<any, any> {
                                 />
 
                                 <hr/>
-
                                 <BenefactorInfo
                                     values={this.state.info}
                                     onChange={this.onInfoChange}
