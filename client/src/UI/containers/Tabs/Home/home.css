@@ -82,6 +82,9 @@
     color: red;
 }
 
+.willhide {
+    background-color: #f0f0f0;
+}
 /*
     New Styles
 */
@@ -118,8 +121,8 @@
 
 .basket-container {
     margin: 0 auto;
-    width: 50rem;
-    height: 40rem;
+    width: 25rem;
+    height: 20rem;
     position: relative;
     perspective: 100rem;
     
@@ -138,29 +141,30 @@
 .basket-container-item img {
     position: absolute;
     background: #000;
-    height: 300px;
-  	width: 300px;
+    width: 25rem;
+    height: 20rem;
     font-size: .5rem;
     text-align: center;
-    color: #FFF;
+    color: #F0F0F0;
     opacity: 0.9;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-          transition: all 1s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
-
 .basket-container-item img:hover {
-  width: 100rem;
-  height: 80rem;
+    -webkit-transform:scale(1.5);
+    -moz--transform:scale(1.5);
+    -ms--transform:scale(1.5);
+    -o--transform:scale(1.5);
+    transform:scale(1.5);
 }
-
 .a {
     transform: rotateY(0deg) translateZ(250px);
 }
@@ -327,7 +331,7 @@
     color: #999;
     position: absolute;
     top: 38%;
-    right: -2em;
+    right: 0%;
     font-size: 1.5em;
 }
 

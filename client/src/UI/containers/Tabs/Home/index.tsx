@@ -54,19 +54,19 @@ class Funding extends React.Component<Props, State> {
             animating: false,
             items: [
                 {
-                    src : "../img/1st.jpeg",
+                    src : "../img/1st.jpg",
                     altText: 'Slide 1',
                     caption: 'Slide 1',
                     header: 'Slide 1 Header'
                 },
                 {
-                    src : "../img/2nd tre.jpeg",
+                    src : "../img/2nd tre.jpg",
                     altText: 'Slide 2',
                     caption: 'Slide 2',
                     header: 'Slide 2 Header'
                 },
                 {
-                    src : "../img/3rd trimester.jpeg",
+                    src : "../img/3rd trimester.jpg",
                     altText: 'Slide 3',
                     caption: 'Slide 3',
                     header: 'Slide 3 Header'
@@ -123,14 +123,6 @@ class Funding extends React.Component<Props, State> {
 
                         <div className="container">
 
-                         <Carousel
-                            next={this.next}
-                            previous={this.previous}
-                            className="resizeImage"
-                        >
-                            {slides}
-                                
-                        </Carousel>
 
                             <div>
                                 <div className="section-header">
@@ -141,9 +133,9 @@ class Funding extends React.Component<Props, State> {
                                         
                                     <div className="basket-container">
                                         <div id="carousel" style={{transform: "rotateY("+this.state.currdeg+"deg)" }}>
-                                            <div class="basket-container-item a"><img src="img/1st.JPG" alt=""/></div>
-                                            <div class="basket-container-item b"><img src="img/2nd tre.JPG" alt=""/></div>
-                                            <div class="basket-container-item c"><img src="img/3rd trimester.JPG" alt=""/></div>
+                                            <div className="basket-container-item a"><img src="img/1st.JPG" alt=""/></div>
+                                            <div className="basket-container-item b"><img src="img/2nd tre.JPG" alt=""/></div>
+                                            <div className="basket-container-item c"><img src="img/3rd trimester.JPG" alt=""/></div>
                                         </div>
                                     </div>
 
