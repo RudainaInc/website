@@ -151,6 +151,9 @@ class Header extends React.Component<Props, any> {
         prev[name] = value;
         this.setState(prev);
     }
+
+
+
 }
 
 const mapStateToProps = (state: any): IStateProps => {

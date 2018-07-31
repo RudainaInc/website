@@ -5,7 +5,7 @@ import TextFieldGroup from '../TextFieldGroup';
 const Login = (props: any) => {
     const { email, password, onInputChange, onLogin } = props;
     return (
-        <div className="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="loginModal" role="dialog" aria-hidden="true">
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                     <div className="modal-header text-center">
@@ -43,7 +43,6 @@ const Login = (props: any) => {
                                 <a 
                                     className="nav-link generic-body-template-nav-link text-center" 
                                     onClick={onLogin}
-                                    data-dismiss="modal"
                                     href="#"
                                 >
                                     Log in
