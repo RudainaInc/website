@@ -54,19 +54,19 @@ class Funding extends React.Component<Props, State> {
             animating: false,
             items: [
                 {
-                    src : "../img/1st.jpeg",
+                    src : "../img/1st.jpg",
                     altText: 'Slide 1',
                     caption: 'Slide 1',
                     header: 'Slide 1 Header'
                 },
                 {
-                    src : "../img/2nd tre.jpeg",
+                    src : "../img/2nd tre.jpg",
                     altText: 'Slide 2',
                     caption: 'Slide 2',
                     header: 'Slide 2 Header'
                 },
                 {
-                    src : "../img/3rd trimester.jpeg",
+                    src : "../img/3rd trimester.jpg",
                     altText: 'Slide 3',
                     caption: 'Slide 3',
                     header: 'Slide 3 Header'
