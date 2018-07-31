@@ -96,14 +96,7 @@ class Header extends React.Component<Props, any> {
                                 
                                 {isAuthenticated ? profile : login }
 
-                                <script>
-                                    $('[lang="fr"]').hide();
-
-                                    $('#switch-lang').click(function() {
-                                        $('[lang="fr"]').toggle();
-                                    $('[lang="en"]').toggle();
-                                    });
-                                </script>
+                               
 
                                 <div className="col-md-6">
                                     <Link to="/" className="left"><button id="switch-lang">Français</button></Link>
