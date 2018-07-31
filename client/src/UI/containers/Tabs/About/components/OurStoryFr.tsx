@@ -6,7 +6,7 @@ const OurStoryFr = () => {
         <div>
 
             <h2 className="news-section_name">
-                Our Stroy
+                Notre Histoire
             </h2>
             <hr className="style"/>
 

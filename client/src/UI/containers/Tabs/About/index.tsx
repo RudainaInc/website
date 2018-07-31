@@ -2,7 +2,9 @@ import * as React from 'react';
 import TabSection from '../../TabSection';
 
 import LongTermGoal from "./components/LongTermGoal";
+import LongTermGoalFr from "./components/LongTermGoalFr";
 import OurMission from './components/OurMission';
+import OurMissionFr from './components/OurMission';
 import OurStory from './components/OurStory';
 import OurStoryFr from './components/OurStoryFr';
 
@@ -15,13 +17,13 @@ class About extends React.Component {
 
         const content = isFr ? (
             <GenericBody
-                labels={["Our Mission", "Long Term", "Our Stroy"]}
-                pages={[<OurMission key={0}/>, <LongTermGoal key={1}/>, <OurStoryFr key={2}/>]}
+                labels={["Notre Mission", "Long Terme", "Notre Histoire"]}
+                pages={[<OurMissionFr key={0}/>, <LongTermGoalFr key={1}/>, <OurStoryFr key={2}/>]}
                 icons={["","",""]}
             />
         ) : (
             <GenericBody
-                labels={["Our Mission", "Long Term", "Our Stroy"]}
+                labels={["Our Mission", "Long Term", "Our Story"]}
                 pages={[<OurMission key={0}/>, <LongTermGoal key={1}/>, <OurStory key={2}/>]}
                 icons={["","",""]}
             />

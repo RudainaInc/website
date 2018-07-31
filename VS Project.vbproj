@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{B8137702-D9E0-4A4C-A718-584E931E386D}</ProjectGuid>
+    <ProjectGuid>{C190153E-516D-451B-82B5-9E1C4A966436}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>
     </StartupObject>
@@ -184,9 +184,12 @@
     <TypeScriptCompile Include="client\src\UI\containers\index.ts" />
     <TypeScriptCompile Include="client\src\UI\containers\TabSection\index.ts" />
     <TypeScriptCompile Include="client\src\UI\containers\TabSection\WebTemplate.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurMissionFr.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\LongTermGoalFr.ts" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\LongTermGoal.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurMission.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurStory.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurStoryFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\components\Calender.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Admin\components\Donate.tsx" />
@@ -218,6 +221,7 @@
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\components\OurCommunity.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\components\SignUpToday.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\ProgramServices\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\RegisterBenefactor\components\BenefactorInfo.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\RegisterBenefactor\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\RegisterVolunteer\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Volunteer\components\SignUp.tsx" />
