@@ -6,7 +6,7 @@ import TabSection from '../../TabSection';
 
 import { AccountGroup, SelectFieldGroup } from '../../../components';
 import { AddressGroup } from '../../../components';
-import { TextAreaGroup } from '../../../components';
+import BenefactorInfo from './components/BenefactorInfo';
 
 class RegisterBenefactor extends React.Component<any, any> {
 
@@ -32,7 +32,16 @@ class RegisterBenefactor extends React.Component<any, any> {
                 phone: '',
             },
 
-            info: "",
+            info: {
+                dietaryInfo: '',
+                studentStatus: '',
+                studentBirth: '',
+                singleStatus: '',
+                residencyStatus: '',
+                exerciseCount: '',
+                dietaryRequirement: '',
+                smokeStatus: '',
+            },
 
             errors: {}
         };
@@ -42,6 +51,7 @@ class RegisterBenefactor extends React.Component<any, any> {
         this.onChange = this.onChange.bind(this);
         this.onAccountChange = this.onAccountChange.bind(this);
         this.onContactChange = this.onContactChange.bind(this);
+        this.onInfoChange = this.onInfoChange.bind(this);
     }
 
 
@@ -76,123 +86,13 @@ class RegisterBenefactor extends React.Component<any, any> {
 
                                 <hr/>
 
-                                {/* <TextAreaGroup
-                                    name="info"
-                                    placeholder="Is there anything your alergic to? What kind of food do you typically eat?"
-                                    value={this.state.info}
-                                    error={errors.info}
-                                    onChange={this.onChange}
-                                    lable="Nutritional Information"
-                                /> */}
-
+                                <BenefactorInfo
+                                    values={this.state.info}
+                                    onChange={this.onInfoChange}
+                                    errors={errors}
+                                />
+                                   
                                 <SelectFieldGroup
-                                    name="one"
-                                    lable="Are you currently attending full-time school?"
-                                    value=""
-                                    options={[
-                                        ["Please Select One", "Please Select One"],
-                                        ["", ""],
-                                        ["Yes", "Yes"],
-                                        ["No", "No"],
-                                        
-                                    ]}
-                                />
-                                  <SelectFieldGroup
-                                    name="two"
-                                    lable="Will you be attending full time school when the baby is born?"
-                                    value=""
-                                    options={[
-                                        ["Select One", "Select One"],
-                                        ["Yes", "Yes"],
-                                        ["No", "No"],
-                                        
-                                    ]}
-                                />
-                                   <SelectFieldGroup
-                                    name="three"
-                                    lable="Are you single? "
-                                    value=""
-                                    options={[
-                                        ["Select One", "Select One"],
-                                        ["Yes", "Yes"],
-                                        ["No", "No"],
-                                        
-                                    ]}
-                                />
-                                    <SelectFieldGroup
-                                    name="four"
-                                    lable="What is your status in Canada?"
-                                    value=""
-                                    options={[
-                                        ["Select One", "Select One"],
-                                        ["Canadian Citizen", "Canadian Citizen"],
-                                        ["Permanent Resident", "Permanent Resident"],
-                                        ["Refugee", "Refugee"],
-                                        ["Not Canadian", "Not Canadian"],
-                                        
-                                    ]}
-                                />
-                                    <SelectFieldGroup
-                                    name="five"
-                                    lable="How many times do you ex every week?"
-                                    value=""
-                                    options={[
-                                        ["Select One", "Select One"],
-                                        ["0", "0"],
-                                        ["1", "1"],
-                                        ["2", "2"],
-                                        ["3", "3"],
-                                        ["4", "4"],
-                                        ["5", "5"],
-                                        ["6", "6"],
-                                        ["8", "7"],
-                                        
-                                        
-                                    ]}
-                                />
-                                    <SelectFieldGroup
-                                    name="six"
-                                    lable="Do you have any special dietary requirement (vegetarian, vegan, allergies)?"
-                                    value=""
-                                    options={[
-                                        ["Select One", "Select One"],
-                                        ["Yes", "Yes"],
-                                        ["No", "No"],
-                                        
-                                    ]}
-                                    
-                                />
-                                <TextAreaGroup
-                                    name="info"
-                                    placeholder="If Yes, Please Specify"
-
-                                />
-
-                                 <SelectFieldGroup
-                                    name="seven"
-                                    lable="Do you smoke?"
-                                    value=""
-                                    options={[
-                                        ["Select One", "Select One"],
-                                        ["Yes", "Yes"],
-                                        ["No", "No"],
-                                        ["Occasionally", "Occasionally"],
-                                        
-                                    ]}
-                                />
-                                    <SelectFieldGroup
-                                    name="eight"
-                                    lable="Do you smoke?"
-                                    value=""
-                                    options={[
-                                        ["Select One", "Select One"],
-                                        ["Yes", "Yes"],
-                                        ["No", "No"],
-                                        ["Occasionally", "Occasionally"],
-                                        
-                                    ]}
-                                />
-                                    <SelectFieldGroup
                                     name="testtt"
                                     lable="By Clicking Sign up, You agree to the .Terms and Services. of Rudaina Foundation"
                                     value=""
@@ -236,23 +136,19 @@ class RegisterBenefactor extends React.Component<any, any> {
         this.setState({ account });
     }
 
+    private onInfoChange(e: any) {
+        const info = {...this.state.info}
+        info[e.target.name] = e.target.value
+        this.setState({ info });
+    }
+
     private onSubmit(e: any) {
         e.preventDefault();
 
         const newUser = {
-            fname: this.state.account.fname,
-            lname: this.state.account.lname,
-            email: this.state.account.email,
-            password: this.state.account.password,
-            password2: this.state.account.password2,
-
-            addr: this.state.contact.addr,
-            unit: this.state.contact.unit,
-            city: this.state.contact.city,
-            prov: this.state.contact.prov,
-            pcode: this.state.contact.pcode,
-            phone: this.state.contact.phone,
-
+            ...this.state.account,
+            ...this.state.contact,
+            ...this.state.info,
         };
         
         this.props.registerBenefactorUser(newUser, this.props.history);
