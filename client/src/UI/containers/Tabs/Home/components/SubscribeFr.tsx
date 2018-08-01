@@ -42,7 +42,7 @@ class SubscribeFr extends React.Component<{}, any> {
             <div className="subscribe">
                 <div className="container">
                     <div className="section-header">
-                        <span className="text" >Subscribe Now</span>
+                        <span className="text" >Subscribe Now french</span>
                     </div>
 
                     <div className="row">

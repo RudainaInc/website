@@ -20,7 +20,7 @@ const StatsFr = () => {
                 <div className="content-box">
                     <div className="content-title content-title-white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
                         <div className="section-header">
-                            <span className="text white" >We Never Stop Helping!</span>
+                            <span className="text white" >We Never Stop Helping! french</span>
                         </div>
                         <div className="content-title-underline"/>
                     </div>

@@ -30,7 +30,7 @@ const NewsFeedFr = (props: any) => {
 
             <div className="news-feed">
                 <div className="section-header" style={{ padding: "0px" }}>
-                    <span className="text white" >News Feed</span>
+                    <span className="text white" >News Feed french</span>
                 </div>
                 <div className="container">
                     <div className="row">
