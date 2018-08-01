@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{C190153E-516D-451B-82B5-9E1C4A966436}</ProjectGuid>
+    <ProjectGuid>{1EBC7748-D0DF-4359-96AD-098C646F12E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>
     </StartupObject>
@@ -149,6 +149,7 @@
     <TypeScriptCompile Include="client\src\registerServiceWorker.ts" />
     <TypeScriptCompile Include="client\src\StateManager\actions\adminActions.ts" />
     <TypeScriptCompile Include="client\src\StateManager\actions\authActions.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\actions\langActions.ts" />
     <TypeScriptCompile Include="client\src\StateManager\actions\newsActions.ts" />
     <TypeScriptCompile Include="client\src\StateManager\actions\profileActions.ts" />
     <TypeScriptCompile Include="client\src\StateManager\actions\types.ts" />
@@ -156,6 +157,7 @@
     <TypeScriptCompile Include="client\src\StateManager\reducers\authReducer.ts" />
     <TypeScriptCompile Include="client\src\StateManager\reducers\errorsReducer.ts" />
     <TypeScriptCompile Include="client\src\StateManager\reducers\index.ts" />
+    <TypeScriptCompile Include="client\src\StateManager\reducers\langReducer.ts" />
     <TypeScriptCompile Include="client\src\StateManager\reducers\newsReducer.ts" />
     <TypeScriptCompile Include="client\src\StateManager\reducers\profileReducer.ts" />
     <TypeScriptCompile Include="client\src\StateManager\store\index.ts" />
@@ -184,10 +186,10 @@
     <TypeScriptCompile Include="client\src\UI\containers\index.ts" />
     <TypeScriptCompile Include="client\src\UI\containers\TabSection\index.ts" />
     <TypeScriptCompile Include="client\src\UI\containers\TabSection\WebTemplate.tsx" />
-    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurMissionFr.tsx" />
-    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\LongTermGoalFr.ts" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\LongTermGoal.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\LongTermGoalFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurMission.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurMissionFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurStory.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\components\OurStoryFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\About\index.tsx" />
@@ -201,6 +203,10 @@
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\components\DonatePage.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\components\MoneyPage.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\index.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\SubscribeFr.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\StatsFr.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\OurSponsorsFr.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\NewsFeedFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\NewsFeed.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\OurSponsors.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\Stats.tsx" />
