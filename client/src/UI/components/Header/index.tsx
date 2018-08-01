@@ -5,6 +5,8 @@ import { Link, NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { loginUser } from '../../../StateManager/actions/authActions'
 
+import { changeLang } from '../../../StateManager/actions/langActions'
+
 import SideNavigation from './components/sideNav';
 
 import Login from './Login';
@@ -14,9 +16,11 @@ import './header.css'
 interface IStateProps {
     auth: any;
     errors: any,
+    lang: string,
 }
 
 interface IProps {
+    changeLang: (lang: string) => (dispatch: any) => void;
     loginUser: (userData: any) => (dispatch: any) => void;
 }
 
@@ -36,6 +40,8 @@ class Header extends React.Component<Props, any> {
             onInputChange: this.onInputChange,
             onLogin: this.onLogin,
         }
+
+        this.handleLangChange = this.handleLangChange.bind(this);
     }
 
     public toggleSideNav = (action: any) => {
@@ -53,6 +59,7 @@ class Header extends React.Component<Props, any> {
     public render() {
 
         const { isAuthenticated } = this.props.auth;
+        const { lang } = this.props;
 
         const login = (
             <div className="showRightBorder col-md-6">
@@ -99,7 +106,17 @@ class Header extends React.Component<Props, any> {
                                
 
                                 <div className="col-md-6">
-                                    <Link to="/" className="left"><button id="switch-lang">Français</button></Link>
+
+                                    <a 
+                                        className="left"
+                                        onClick={this.handleLangChange} 
+                                        id="fr"
+                                        href="#"
+                                    >
+                                        { lang==='fr'?'English':'Français'}
+                                    </a>
+
+                                    {/* <Link to="/" className="left"><button id="switch-lang">Français</button></Link> */}
                                 </div>
                             </div>
                         </div>
@@ -154,6 +171,16 @@ class Header extends React.Component<Props, any> {
         this.setState(prev);
     }
 
+    private handleLangChange(e: any) {
+        e.preventDefault();
+        const { lang } = this.props;
+        const isFr = lang==='fr'?'en':'fr' 
+        this.props.changeLang(isFr);
+        // tslint:disable-next-line:no-console
+        console.log("hello");
+        
+    }
+
 
 
 }
@@ -162,7 +189,8 @@ const mapStateToProps = (state: any): IStateProps => {
     return {
         auth: state.auth,
         errors: state.errors,
+        lang: state.lang,
     };
 }
 
-export default connect(mapStateToProps, { loginUser } )(Header);
+export default connect(mapStateToProps, { changeLang, loginUser } )(Header);

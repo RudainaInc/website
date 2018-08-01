@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
+
 import TabSection from '../../TabSection';
 
 import LongTermGoal from "./components/LongTermGoal";
@@ -10,10 +12,18 @@ import OurStoryFr from './components/OurStoryFr';
 
 import { GenericBody } from '../../../components';
 
-class About extends React.Component {
+interface IStateProps {
+    lang: string;
+}
+
+type Props = IStateProps
+
+class About extends React.Component<Props> {
    public render() {
 
-        const isFr = true;
+        const { lang } = this.props;
+
+        const isFr = lang==='fr'?true:false;
 
         const content = isFr ? (
             <GenericBody
@@ -41,4 +51,11 @@ class About extends React.Component {
     }
 }
 
-export default About;
+const mapStateToProps = (state: any): IStateProps => {
+    return {
+        lang: state.lang,
+    };
+}
+
+
+export default connect( mapStateToProps, {} )(About);
