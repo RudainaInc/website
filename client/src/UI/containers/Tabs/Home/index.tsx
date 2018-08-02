@@ -185,11 +185,22 @@ class Funding extends React.Component<Props, State> {
                         </Carousel>
                         
                     </div>
+                    const { lang } = this.props;
+
+                    const isFr = lang==='fr'?true: false;
+
+                    const content = isFr?(
 
                     <NewsFeed a={this.state.a} b={this.state.b} c={this.state.c}/>
                     <OurSponsors/>
                     <Stats/>
                     <Subscribe/>
+                    ): (
+                    <NewsFeedFr a={this.state.a} b={this.state.b} c={this.state.c}/>
+                    <OurSponsorsFr/>
+                    <StatsFr/>
+                    <SubscribeFr/>
+                 )
                 </div>
 
          </TabSection>
@@ -231,6 +242,7 @@ const mapStateToProps = (state: any): IStateProps => {
     return {
     ...state,
     isOffline: true,
+    lang: state.lang,
     };
 }
 
