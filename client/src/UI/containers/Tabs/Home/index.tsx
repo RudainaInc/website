@@ -108,11 +108,7 @@ class Funding extends React.Component<Props, State> {
      const { items } = this.state
 
      const slides = items.map( (x: any) => {
-         const { lang } = this.props;
-
-         const isFr = lang === 'fr' ? true : false;
-
-         const content = isFr ? (
+         
                    return (
                 <CarouselItem 
                     onExiting={this.onExiting}
@@ -198,92 +194,6 @@ class Funding extends React.Component<Props, State> {
                 </div>
 
          </TabSection>
-     ) : (
-              return (
-         <CarouselItem
-             onExiting={this.onExiting}
-             onExited={this.onExited}
-             key={x.src}
-             >
-             <img src={x.src} alt="test" />
-             <CarouselCaption captionText={x.caption} captionHeader={x.caption} />
-         </CarouselItem>
-     )
-    })
-
-    return (
-             <TabSection>
-         <div className="home">
-
-             <div className="willHide">
-
-                 <div className="container">
-
-
-                     <div>
-                         <div className="section-header">
-                             <span className="text" >The Various Baskets We Offer</span>
-                         </div>
-
-                         <div className="basket-section">
-
-                             <div className="basket-container">
-                                 <div id="carousel" style={{ transform: "rotateY(" + this.state.currdeg + "deg)" }}>
-                                     <div className="basket-container-item a"><img src="img/1st.JPG" alt=""/></div>
-                                     <div className="basket-container-item b"><img src="img/2nd tre.JPG" alt=""/></div>
-                                     <div className="basket-container-item c"><img src="img/3rd trimester.JPG" alt=""/></div>
-                                 </div>
-                             </div>
-
-                             <div className="willHide">
-                                 <div id='n' onClick={this.onChange} className="basket-next-button"><i id='n' className="fa fa-angle-double-right"/></div>
-                                 <div id='p' onClick={this.onChange} className="basket-prev-button"><i id='p' className="fa fa-angle-double-left"/></div>
-                             </div>
-
-                             <div className="willShow ">
-                                 <div className="row ">
-                                     <div className="col-6 ">
-                                         <i id='n' onClick={this.onChange} className="fas fa-arrow-circle-left right"/>
-                                     </div>
-                                     <div className="col-6 ">
-                                         <i id='p' onClick={this.onChange} className="fas fa-arrow-circle-right left"/>
-                                     </div>
-                                 </div>
-                             </div>
-
-
-
-                         </div>
-                     </div>
-                 </div>
-             </div>
-
-             <div className="willShow">
-                 <div className="section-header">
-                     <span className="text" >The Various Baskets We Offer</span>
-
-                 </div>
-
-
-                 <Carousel
-                     next={this.next}
-                     previous={this.previous}
-                     className="resizeImage"
-                     >
-                     {slides}
-
-                 </Carousel>
-
-             </div>
-
-             <NewsFeed a={this.state.a} b={this.state.b} c={this.state.c}/>
-             <OurSponsors/>
-             <Stats/>
-             <Subscribe/>
-         </div>
-
-     </TabSection>
-             )
         )
     }
 
@@ -322,7 +232,6 @@ const mapStateToProps = (state: any): IStateProps => {
     return {
     ...state,
     isOffline: true,
-    lang: state.lang,
     };
 }
 
