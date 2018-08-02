@@ -187,12 +187,12 @@ class Funding extends React.Component<Props, State> {
                     </div>
                    
                     <NewsFeed a={this.state.a} b={this.state.b} c={this.state.c}/>
-                    <OurSponsors/>
-                    <Stats/>
-                    <Subscribe/>
                     <NewsFeedFr a={this.state.a} b={this.state.b} c={this.state.c}/>
+                    <OurSponsors/>
                     <OurSponsorsFr/>
+                    <Stats/>
                     <StatsFr/>
+                    <Subscribe/>
                     <SubscribeFr/>
                  
                 </div>
