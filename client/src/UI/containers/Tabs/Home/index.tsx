@@ -108,7 +108,12 @@ class Funding extends React.Component<Props, State> {
      const { items } = this.state
 
      const slides = items.map( (x: any) => {
-            return (
+         const { lang } = this.props;
+
+         const isFr = lang === 'fr' ? true : false;
+
+         const content = isFr ? (
+                   return (
                 <CarouselItem 
                     onExiting={this.onExiting}
                     onExited={this.onExited}
@@ -122,11 +127,6 @@ class Funding extends React.Component<Props, State> {
 
      return (
 
-     const { lang } = this.props;
-
-     const isFr = lang === 'fr' ? true : false;
-
-     const content = isFr ? (
             <TabSection>
                 <div className="home">
 
@@ -199,6 +199,19 @@ class Funding extends React.Component<Props, State> {
 
          </TabSection>
      ) : (
+              return (
+         <CarouselItem
+             onExiting={this.onExiting}
+             onExited={this.onExited}
+             key={x.src}
+             >
+             <img src={x.src} alt="test" />
+             <CarouselCaption captionText={x.caption} captionHeader={x.caption} />
+         </CarouselItem>
+     )
+    })
+
+    return (
              <TabSection>
          <div className="home">
 
