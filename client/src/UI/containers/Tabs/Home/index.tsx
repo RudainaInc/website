@@ -12,6 +12,7 @@ import Stats from './components/Stats';
 import StatsFr from './components/StatsFr';
 import Subscribe from './components/Subscribe';
 import SubscribeFr from './components/SubscribeFr';
+
 import NewsFeed from './components/NewsFeed';
 import NewsFeedFr from './components/NewsFeedFr';
 
