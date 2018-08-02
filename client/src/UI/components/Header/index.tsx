@@ -126,24 +126,28 @@ class Header extends React.Component<Props, any> {
                     <div className="navLinks willHide">
                         <ul>
                             <li className="showLeftBorder showRightBorder ">
-                                <NavLink className="navLink" exact={true} to="/">HOME</NavLink>
+                                <NavLink className="navLink" exact={true} to="/">
+                                    { lang === 'fr' ? 'Accueil' : 'HOME'}</NavLink>
                             </li>
                             
                             <li className="showRightBorder">
                                 <NavLink to="/about">
-                                    { lang === 'fr' ? 'ABOUT' : 'FRENCHNESS'}</NavLink>
+                                    { lang === 'fr' ? 'À propos' : 'ABOUT'}</NavLink>
                             </li>
                             
                             <li className="showRightBorder">
-                                <NavLink to="/news">NEWS</NavLink>
+                                <NavLink to="/news">
+                                    { lang === 'fr' ? 'Actualités' : 'NEWS'}</NavLink>
                             </li>
                             
                             <li className="showRightBorder">
-                                <NavLink to="/program_services">PROGRAMS</NavLink>
+                                <NavLink to="/program_services">
+                                    { lang === 'fr' ? 'Programmes' : 'PROGRAMS'}</NavLink>
                             </li>
                             
                             <li className="showRightBorder">
-                                <NavLink to="/volunteer">VOLUNTEER</NavLink>
+                                <NavLink to="/volunteer">
+                                    { lang === 'fr' ? 'Bénévolat' : 'VOLUNTEER'}</NavLink>
                             </li>
                         </ul>
                     </div>
