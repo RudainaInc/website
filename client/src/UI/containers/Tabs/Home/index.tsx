@@ -7,12 +7,12 @@ import axios from 'axios';
 import './home.css'
 
 import OurSponsors from './components/OurSponsors';
-import Stats from './components/Stats';
-import Subscribe from './components/Subscribe';
-import NewsFeed from './components/NewsFeed';
 import OurSponsorsFr from './components/OurSponsorsFr';
+import Stats from './components/Stats';
 import StatsFr from './components/StatsFr';
+import Subscribe from './components/Subscribe';
 import SubscribeFr from './components/SubscribeFr';
+import NewsFeed from './components/NewsFeed';
 import NewsFeedFr from './components/NewsFeedFr';
 
 import { Carousel, CarouselCaption, CarouselItem }  from 'reactstrap';
