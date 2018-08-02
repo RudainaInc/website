@@ -130,7 +130,8 @@ class Header extends React.Component<Props, any> {
                             </li>
                             
                             <li className="showRightBorder">
-                                <NavLink to="/about">ABOUT</NavLink>
+                                <NavLink to="/about">
+                                    { lang === 'fr' ? 'ABOUT' : 'FRENCHNESS'}</NavLink>
                             </li>
                             
                             <li className="showRightBorder">
