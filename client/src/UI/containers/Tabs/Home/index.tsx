@@ -320,14 +320,10 @@ class Funding extends React.Component<Props, State> {
 
 const mapStateToProps = (state: any): IStateProps => {
     return {
-        ...state,
-        isOffline: true,
+    ...state,
+    isOffline: true,
+    lang: state.lang,
     };
 }
 
-const mapStateToProps = (state: any): IStateProps => {
-    return {
-        lang: state.lang,
-    };
-}
 export default connect(mapStateToProps)(Funding);
