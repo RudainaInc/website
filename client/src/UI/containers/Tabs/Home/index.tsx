@@ -13,7 +13,6 @@ import NewsFeed from './components/NewsFeed';
 import OurSponsorsFr from './components/OurSponsorsFr';
 import StatsFr from './components/StatsFr';
 import SubscribeFr from './components/SubscribeFr';
-import NewsFeed from './components/NewsFeedFr';
 import NewsFeedFr from './components/NewsFeedFr';
 
 import { Carousel, CarouselCaption, CarouselItem }  from 'reactstrap';
