@@ -37,7 +37,7 @@ export const registerVolunteerUser = (userData: any, history: any) => (dispatch:
 }
 
 
-export const loginUser = (userData: any) => (dispatch: any) => {
+export const loginUser = (userData: any, history: any) => (dispatch: any) => {
     axios
         .post('/api/users/login', userData)
         .then(res => {
@@ -47,6 +47,7 @@ export const loginUser = (userData: any) => (dispatch: any) => {
             setAuthToken(token);
             const decoded = jwt_decode(token);
             dispatch(setCurrentUser(decoded));
+            history.push('/profile')
 
         })
         .catch(err =>
@@ -60,7 +61,7 @@ export const loginUser = (userData: any) => (dispatch: any) => {
 export const logoutUser = () => (dispatch: any) => {
     localStorage.removeItem('jwtToken');
     setAuthToken(false);
-    return setCurrentUser({});
+    return dispatch(setCurrentUser({}));
 }
 
 

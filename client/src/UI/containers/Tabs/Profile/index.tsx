@@ -44,6 +44,16 @@ class Profile extends React.Component<Props, any> {
         }
     }
 
+    public componentDidUpdate() {
+        if (!this.props.auth.isAuthenticated) {
+            this.props.history.push("/");
+        } else {
+            this.props.getCurrentProfile();
+        }
+    }
+
+
+
     public render() {
 
         const { user } = this.props.auth;
@@ -98,6 +108,7 @@ class Profile extends React.Component<Props, any> {
     }
 
     private onLogoutClick(e: any) {
+        e.preventDefault()
         this.props.logoutUser();
     }
 }

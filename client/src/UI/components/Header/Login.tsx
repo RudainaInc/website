@@ -44,6 +44,7 @@ const Login = (props: any) => {
                                     className="nav-link generic-body-template-nav-link text-center" 
                                     onClick={onLogin}
                                     href="#"
+                                    data-dismiss="modal"
                                 >
                                     Log in
                                 </a>

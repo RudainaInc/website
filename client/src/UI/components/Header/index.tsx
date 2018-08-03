@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, RouteComponentProps, withRouter } from 'react-router-dom';
 
 
 import { connect } from 'react-redux';
@@ -21,10 +21,10 @@ interface IStateProps {
 
 interface IProps {
     changeLang: (lang: string) => (dispatch: any) => void;
-    loginUser: (userData: any) => (dispatch: any) => void;
+    loginUser: (userData: any, history: any) => (dispatch: any) => void;
 }
 
-type Props = IStateProps & IProps;
+type Props = IStateProps & IProps & RouteComponentProps<{}>;
 
 class Header extends React.Component<Props, any> {
 
@@ -63,7 +63,7 @@ class Header extends React.Component<Props, any> {
 
         const login = (
             <div className="showRightBorder col-md-6">
-                <a className="right" data-toggle="modal" data-target="#exampleModal">Log in</a>
+                <a className="right" href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
             </div>
         )
 
@@ -165,7 +165,7 @@ class Header extends React.Component<Props, any> {
             password: this.state.password
         }
 
-        this.props.loginUser(user)
+        this.props.loginUser(user, this.props.history);
     }
 
     private onInputChange(e: React.FormEvent<HTMLInputElement>) {
@@ -194,8 +194,8 @@ const mapStateToProps = (state: any): IStateProps => {
     return {
         auth: state.auth,
         errors: state.errors,
-        lang: state.lang,
+        lang: state.lang
     };
 }
 
-export default connect(mapStateToProps, { changeLang, loginUser } )(Header);
+export default connect(mapStateToProps, { changeLang, loginUser } )(withRouter<Props>(Header));
