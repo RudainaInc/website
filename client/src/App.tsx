@@ -51,16 +51,16 @@ class App extends React.Component<Props> {
 		const routes = (
             <Switch>
                 <Route exact={true} path='/' component={Home}/>
-                <Route path='/about' component={About}/>
-                <Route path='/news' component={News}/>
-                <Route path='/program_services' component={ProgramServices}/>
-                <Route path='/volunteer' component={Volunteer}/>
-                <Route path='/admin' component={Admin}/>
-                <Route path='/profile' component={Profile}/>
-                <Route path='/register_vounteer' component={RegisterVolunteer}/>
-                <Route path='/register_benefactor' component={RegisterBenefactor}/>
-                <Route path='/contact_us' component={Contact}/>
-                <Route path='/donate' component={Donate}/>
+                <Route exact={true} path='/about' component={About}/>
+                <Route exact={true} path='/news' component={News}/>
+                <Route exact={true} path='/program_services' component={ProgramServices}/>
+                <Route exact={true} path='/volunteer' component={Volunteer}/>
+                <Route exact={true} path='/admin' component={Admin}/>
+                <Route exact={true} path='/profile' component={Profile}/>
+                <Route exact={true} path='/register_vounteer' component={RegisterVolunteer}/>
+                <Route exact={true} path='/register_benefactor' component={RegisterBenefactor}/>
+                <Route exact={true} path='/contact_us' component={Contact}/>
+                <Route exact={true} path='/donate' component={Donate}/>
             </Switch>
 		);
 		
