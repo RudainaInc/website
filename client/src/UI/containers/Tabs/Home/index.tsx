@@ -105,7 +105,8 @@ class Funding extends React.Component<Props, State> {
     
     public render() {
 
-     const { items } = this.state
+     const { items } = this.state;
+     const { lang } = this.props;
 
      const slides = items.map( (x: any) => {
          
@@ -187,8 +188,7 @@ class Funding extends React.Component<Props, State> {
                         
                     </div>
                    
-                    <NewsFeed a={this.state.a} b={this.state.b} c={this.state.c}/>
-                    <NewsFeedFr a={this.state.a} b={this.state.b} c={this.state.c}/>
+                    { lang === 'fr' ? <NewsFeed a={this.state.a} b={this.state.b} c={this.state.c}/> : <NewsFeedFr a={this.state.a} b={this.state.b} c={this.state.c}/> }
                     <OurSponsors/>
                     <OurSponsorsFr/>
                     <Stats/>
@@ -235,8 +235,9 @@ class Funding extends React.Component<Props, State> {
 
 const mapStateToProps = (state: any): IStateProps => {
     return {
-    ...state,
-    isOffline: true,
+        ...state,
+        isOffline: true,
+        lang: state.lang
     };
 }
 
