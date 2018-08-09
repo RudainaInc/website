@@ -17,6 +17,8 @@ import RegisterBenefactor from './UI/containers/Tabs/RegisterBenefactor';
 import RegisterVolunteer from './UI/containers/Tabs/RegisterVolunteer';
 import Volunteer from './UI/containers/Tabs/Volunteer';
 
+import Example from './UI/containers/Tabs/Example';
+
 
 import * as jwt_decode from 'jwt-decode';
 import { setCurrentUser } from '../../client/src/StateManager/actions/authActions';
@@ -61,6 +63,7 @@ class App extends React.Component<Props> {
                 <Route exact={true} path='/register_benefactor' component={RegisterBenefactor}/>
                 <Route exact={true} path='/contact_us' component={Contact}/>
                 <Route exact={true} path='/donate' component={Donate}/>
+				<Route exact={true} path='/example' component={Example}/>
             </Switch>
 		);
 		
