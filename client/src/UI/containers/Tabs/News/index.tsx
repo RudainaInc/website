@@ -85,8 +85,8 @@ class News extends React.Component<Props> {
 
 const mapStateToProps = (state: any): NewsState =>  {
     return {
-        ...state.news
-lang: state.lang,
+        ...state.news,
+        lang: state.lang,
     }
 }
 
