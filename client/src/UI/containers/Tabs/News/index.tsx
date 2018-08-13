@@ -15,7 +15,7 @@ interface IState {
     getCharityNews: () => (dispatch: any) => void,
     getPregnancyNews: () => (dispatch: any) => void, 
     getRelevantNews: () => (dispatch: any) => void,
-    lang: string;,
+    lang: string,
 }
 
 type Props = IState & NewsState;
