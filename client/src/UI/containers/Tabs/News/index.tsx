@@ -31,9 +31,7 @@ class News extends React.Component<Props> {
     }
 
     public render() {
-        const { relevantNews, pregnancyNews, charityNews } = this.props;
-
-        const { lang } = this.props;
+        const { relevantNews, pregnancyNews, charityNews, lang } = this.props;
 
         const isFr = lang === 'fr' ? true : false;
 
