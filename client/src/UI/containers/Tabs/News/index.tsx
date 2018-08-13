@@ -36,11 +36,7 @@ class News extends React.Component<Props> {
 
         const isFr = lang === 'fr' ? true : false;
 
-        return (
-            <TabSection>
-                <div className="container">
-
-                    const content = isFr ? ( 
+        const content = isFr ? ( 
                     <GenericBody
                         labels={["Relevant News French", "Pregnancy News French", "Charity News French"]}
                         pages={[
@@ -77,6 +73,10 @@ class News extends React.Component<Props> {
                         ]}
                         />
                     );
+
+                    return (
+                        <TabSection>
+                            <div className="container">
 
                 </div>
             </TabSection>
