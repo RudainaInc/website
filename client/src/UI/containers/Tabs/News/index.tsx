@@ -33,12 +33,17 @@ class News extends React.Component<Props> {
     public render() {
         const { relevantNews, pregnancyNews, charityNews } = this.props;
 
+        const { lang } = this.props;
+
+        const isFr = lang === 'fr' ? true : false;
+
         return (
             <TabSection>
                 <div className="container">
 
+                    const content = isFr?(
                     <GenericBody
-                        labels={["Relevant News", "Pregnancy News", "Charity News"]}
+                        labels={["Relevant News French", "Pregnancy News French", "Charity News French"]}
                         pages={[
                             <NewsModel
                                 data={relevantNews}
@@ -53,7 +58,26 @@ class News extends React.Component<Props> {
                                 key={2}
                             />,
                         ]}
-                    />
+                        />
+                    ): (
+                    <GenericBody
+                        labels={["Relevant News", "Pregnancy News", "Charity News"]}
+                        pages={[
+                            <NewsModel
+                                data={relevantNews}
+                                key={0}
+                                />,
+                            <NewsModel
+                                data={pregnancyNews}
+                                key={1}
+                                />,
+                            <NewsModel
+                                data={charityNews}
+                                key={2}
+                                />,
+                        ]}
+                        />
+                    );
 
                 </div>
             </TabSection>
@@ -64,6 +88,7 @@ class News extends React.Component<Props> {
 const mapStateToProps = (state: any): NewsState =>  {
     return {
         ...state.news
+lang: state.lang,
     }
 }
 

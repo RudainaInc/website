@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VS Project", "VS Project.vbproj", "{1EBC7748-D0DF-4359-96AD-098C646F12E3}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VS Project", "VS Project.vbproj", "{858DC3E3-6A51-4A7A-8E7C-A32747422B88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1EBC7748-D0DF-4359-96AD-098C646F12E3}.Debug|x86.ActiveCfg = Debug|x86
-		{1EBC7748-D0DF-4359-96AD-098C646F12E3}.Debug|x86.Build.0 = Debug|x86
-		{1EBC7748-D0DF-4359-96AD-098C646F12E3}.Release|x86.ActiveCfg = Release|x86
-		{1EBC7748-D0DF-4359-96AD-098C646F12E3}.Release|x86.Build.0 = Release|x86
+		{858DC3E3-6A51-4A7A-8E7C-A32747422B88}.Debug|x86.ActiveCfg = Debug|x86
+		{858DC3E3-6A51-4A7A-8E7C-A32747422B88}.Debug|x86.Build.0 = Debug|x86
+		{858DC3E3-6A51-4A7A-8E7C-A32747422B88}.Release|x86.ActiveCfg = Release|x86
+		{858DC3E3-6A51-4A7A-8E7C-A32747422B88}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

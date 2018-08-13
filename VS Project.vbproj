@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{1EBC7748-D0DF-4359-96AD-098C646F12E3}</ProjectGuid>
+    <ProjectGuid>{858DC3E3-6A51-4A7A-8E7C-A32747422B88}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>
     </StartupObject>
@@ -203,14 +203,15 @@
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\components\DonatePage.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\components\MoneyPage.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Donate\index.tsx" />
-    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\SubscribeFr.tsx" />
-    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\StatsFr.tsx" />
-    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\OurSponsorsFr.tsx" />
-    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\NewsFeedFr.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Example\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\NewsFeed.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\NewsFeedFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\OurSponsors.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\OurSponsorsFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\Stats.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\StatsFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\Subscribe.tsx" />
+    <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\components\SubscribeFr.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\Home\index.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\News\components\NewsModel.tsx" />
     <TypeScriptCompile Include="client\src\UI\containers\Tabs\News\index.tsx" />

@@ -134,7 +134,6 @@ class Funding extends React.Component<Props, State> {
 
                             <div>
                                 <div className="section-header">
-                                    <span className="text" >The Various Baskets We Offer</span>
                                 </div>
                                 
                                 <div className="basket-section">
@@ -172,7 +171,7 @@ class Funding extends React.Component<Props, State> {
 
                     <div className="willShow">
                         <div className="section-header">
-                            <span className="text" >The Various Baskets We Offer</span>
+                         { lang === 'fr' ? <span className="text" >The Various Baskets We Offer</span> : <span className="text" >The Various Baskets We Offer</span>}
                             
                         </div>
 
