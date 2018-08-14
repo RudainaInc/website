@@ -15,10 +15,13 @@ interface IState {
     getCharityNews: () => (dispatch: any) => void,
     getPregnancyNews: () => (dispatch: any) => void, 
     getRelevantNews: () => (dispatch: any) => void,
-    lang: string,
 }
 
-type Props = IState & NewsState;
+interface IStateProps {
+    lang: string;
+}
+
+type Props = IState & NewsState & IStateProps;
 
 class News extends React.Component<Props> {
 
@@ -34,7 +37,7 @@ class News extends React.Component<Props> {
     public render() {
         const { relevantNews, pregnancyNews, charityNews, lang } = this.props;
 
-        const isFr = lang === 'fr' ? true : false;
+        const isFr = lang ==='fr'?true:false;
 
         const content = isFr ? ( 
                     <GenericBody
@@ -87,8 +90,12 @@ class News extends React.Component<Props> {
 const mapStateToProps = (state: any): NewsState =>  {
     return {
         ...state.news,
-        lang: state.lang,
     }
 }
 
+const mapStateToProps = (state: any): IStateProps => {
+    return {
+        lang: state.lang,
+    };
+}
 export default connect( mapStateToProps, { getCharityNews, getPregnancyNews, getRelevantNews })(News);
