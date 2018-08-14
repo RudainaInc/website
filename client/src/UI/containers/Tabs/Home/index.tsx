@@ -134,6 +134,7 @@ this.onExited = this.onExited.bind(this);
 
                         <div>
                             <div className="section-header">
+                                <span className="text" >The Various Baskets We Offer</span>
                             </div>
 
                             <div className="basket-section">
@@ -171,7 +172,7 @@ this.onExited = this.onExited.bind(this);
 
                 <div className="willShow">
                     <div className="section-header">
-                        { lang === 'fr' ? <span className="text" >The Various Baskets We Offer</span> : <span className="text" >The Various Baskets We Offer</span>}
+                        <span className="text" >The Various Baskets We Offer</span>
 
                     </div>
 
@@ -188,9 +189,9 @@ this.onExited = this.onExited.bind(this);
                 </div>
 
                 { lang === 'fr' ? <NewsFeedFr a={this.state.a} b={this.state.b} c={this.state.c}/> : <NewsFeed a={this.state.a} b={this.state.b} c={this.state.c}/>}
-                { lang === 'fr' ? <OurSponsorsFr/> : <OurSponsors/>}
-                { lang === 'fr' ? <StatsFr/> : <Stats/>}
-                { lang === 'fr' ? <SubscribeFr/> : <Subscribe/>}
+                { lang === 'fr' ? <OurSponsors/> : <OurSponsorsFr/>}
+                { lang === 'fr' ? <Stats/> : <StatsFr/>}
+                { lang === 'fr' ? <Subscribe/> : <SubscribeFr/>}
 
             </div>
 
