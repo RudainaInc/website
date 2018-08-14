@@ -9,7 +9,7 @@ type Props = any;
 
 type State = any;
 
-class Contact extends React.Component<any, any> {
+class Example extends React.Component<any, any> {
 
     constructor(props: any) {
         super(props);
