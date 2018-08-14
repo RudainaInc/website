@@ -1,6 +1,8 @@
 import * as React from 'react';
 import TabSection from '../../TabSection';
 
+import { TextAreaGroup, TextFieldGroup } from '../../../components';
+
 import { GenericBody } from '../../../components';
 
 type Props = any;
