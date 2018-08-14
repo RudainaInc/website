@@ -5,8 +5,11 @@ import { TextAreaGroup, TextFieldGroup } from '../../../components';
 
 import { GenericBody } from '../../../components';
 
+type Props = any;
+
+type State = any;
+
 const exp1 = (
-    <div>
         <form id="contact-form" method="post" action="">
 
             <div className="controls">
@@ -17,9 +20,6 @@ const exp1 = (
                             type="text"
                             name="fname"
                             placeholder="First Name"
-                            value={this.state.fname}
-                            onChange={this.onChange}
-                            error={errors.fname}
                             lable="First Name*"
                             />
                     </div>
@@ -28,9 +28,6 @@ const exp1 = (
                             type="text"
                             name="lname"
                             placeholder="Last Name"
-                            value={this.state.lname}
-                            onChange={this.onChange}
-                            error={errors.lname}
                             lable="Last Name*"
                             />
                     </div>
@@ -42,9 +39,6 @@ const exp1 = (
                             type="email"
                             name="email"
                             placeholder="Email Address"
-                            value={this.state.email}
-                            onChange={this.onChange}
-                            error={errors.email}
                             lable="Email*"
                             />
                     </div>
@@ -53,9 +47,6 @@ const exp1 = (
                             type="tel"
                             name="phone"
                             placeholder="Please enter your phone"
-                            value={this.state.phone}
-                            onChange={this.onChange}
-                            error={errors.phone}
                             lable="Phone(Optional)"
                             />
                     </div>
@@ -69,9 +60,6 @@ const exp1 = (
                                 name="message"
                                 className="form-control"
                                 placeholder="Message for me *"
-                                value={this.state.message}
-                                onChange={this.onChange}
-
                                 label="Message *"
                                 />
 
@@ -83,8 +71,7 @@ const exp1 = (
                 </div>
             </div>
 
-        </form>
-    </div>
+        </form> 
 )
 
 const exp2 = (
@@ -95,27 +82,9 @@ const exp2 = (
 
 class Example extends React.Component<Props, State> {
 
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            message: '',
-            fname: '',
-            lname: '',
-            phone: '',
-            email: '',
-            errors: {}
-        }
-
-        this.onChange = this.onChange.bind(this);
-        // this.onSubmit = this.onSubmit.bind(this);
-    }
-
-    public onChange(e: any) {
-        this.setState({ [e.target.name]: e.target.value });
-    }
 
     public render() {
-        const { errors } = this.state;
+
         return (
             <TabSection>
 
@@ -125,7 +94,6 @@ class Example extends React.Component<Props, State> {
                         pages={[exp1, exp2]}
                         />
                 </div>
-
             </TabSection>
         )
 
