@@ -80,7 +80,7 @@ class News extends React.Component<Props> {
                     return (
                         <TabSection>
                             <div className="container">
-
+                                { content }
                 </div>
             </TabSection>
         );
