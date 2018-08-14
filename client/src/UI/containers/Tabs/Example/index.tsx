@@ -5,10 +5,6 @@ import { TextAreaGroup, TextFieldGroup } from '../../../components';
 
 import { GenericBody } from '../../../components';
 
-type Props = any;
-
-type State = any;
-
 const exp1 = (
     <div>
         <form id="contact-form" method="post" action="">
