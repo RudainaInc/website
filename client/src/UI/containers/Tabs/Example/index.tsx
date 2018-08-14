@@ -9,6 +9,24 @@ type Props = any;
 
 type State = any;
 
+class Contact extends React.Component<any, any> {
+
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            message: '',
+            fname: '',
+            lname: '',
+            phone: '',
+            email: '',
+            errors: {}
+        }
+
+        this.onChange = this.onChange.bind(this);
+        // this.onSubmit = this.onSubmit.bind(this);
+    }
+}
+
 const exp1 = (
     <div>
         <form id="contact-form" method="post" action="">
