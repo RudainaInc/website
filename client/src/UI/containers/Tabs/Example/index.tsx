@@ -87,7 +87,7 @@ const exp1 = (
                 </div>
             </div>
 
-        </form> 
+        </form>
     </div>
 )
 
@@ -98,6 +98,7 @@ const exp2 = (
 )
 
 class Example extends React.Component<Props, State> {
+
     constructor(props: any) {
         super(props);
         this.state = {
@@ -118,7 +119,7 @@ class Example extends React.Component<Props, State> {
     }
 
     public render() {
-
+        const { errors } = this.state;
         return (
             <TabSection>
 
@@ -128,6 +129,7 @@ class Example extends React.Component<Props, State> {
                         pages={[exp1, exp2]}
                         />
                 </div>
+
             </TabSection>
         )
 
