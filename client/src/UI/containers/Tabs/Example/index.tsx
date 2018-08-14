@@ -9,24 +9,6 @@ type Props = any;
 
 type State = any;
 
-class Example extends React.Component<any, any> {
-
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            message: '',
-            fname: '',
-            lname: '',
-            phone: '',
-            email: '',
-            errors: {}
-        }
-
-        this.onChange = this.onChange.bind(this);
-        // this.onSubmit = this.onSubmit.bind(this);
-    }
-}
-
 const exp1 = (
     <div>
         <form id="contact-form" method="post" action="">
@@ -116,7 +98,24 @@ const exp2 = (
 )
 
 class Example extends React.Component<Props, State> {
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            message: '',
+            fname: '',
+            lname: '',
+            phone: '',
+            email: '',
+            errors: {}
+        }
 
+        this.onChange = this.onChange.bind(this);
+        // this.onSubmit = this.onSubmit.bind(this);
+    }
+
+    public onChange(e: any) {
+        this.setState({ [e.target.name]: e.target.value });
+    }
 
     public render() {
 
