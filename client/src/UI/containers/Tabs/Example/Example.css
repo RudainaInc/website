@@ -1,6 +1,5 @@
 ﻿.form-style-10{
-    width:450px;
-    padding:30px;
+    width:100%;
     margin:40px auto;
     background: #FFF;
     border-radius: 10px;
@@ -25,7 +24,7 @@
     -moz-border-radius: 10px 10px 0 0;
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-    font: normal 30px 'Bitter', serif;
+    font: normal 25px 'Bitter', serif;
     -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
     box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
