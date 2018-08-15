@@ -115,6 +115,7 @@
     <Content Include="client\src\UI\components\Footer\footer.css" />
     <Content Include="client\src\UI\components\Header\components\sideNav.css" />
     <Content Include="client\src\UI\components\Header\header.css" />
+    <Content Include="client\src\UI\containers\Tabs\Example\Example.css" />
     <Content Include="client\src\UI\containers\Tabs\Home\home.css" />
     <Content Include="client\src\UI\containers\Tabs\Profile\components\temp.js" />
     <Content Include="client\src\UI\containers\Tabs\Profile\styles.css" />
