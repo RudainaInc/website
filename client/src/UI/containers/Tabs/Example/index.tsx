@@ -11,21 +11,21 @@ type State = any;
 
 const exp1 = (
 
-       <div class="form-style-10">
+       <div className="form-style-10">
             <h1>Contact Us</h1>
         <form>
-            <div class="section"><span>1</span>Contact Information</div>
-            <div class="inner-wrap">
+            <div className="section"><span>1</span>Contact Information</div>
+            <div className="inner-wrap">
                 <label>Your Full Name <input type="text" name="field1" /></label>
                 <label>Email Address <input type="email" name="field3" /></label>
                 <label>Phone Number <input type="number" name="field3" /></label>
             </div>
 
-            <div class="section"><span>2</span>Message</div>
-            <div class="inner-wrap">
+            <div className="section"><span>2</span>Message</div>
+            <div className="inner-wrap">
                 <textarea name="field4" placeholder="Type your Message"></textarea>
             </div>
-            <div class="button-section">
+            <div className="button-section">
                 <input type="submit" name="Sign Up" />
             </div>
         </form>
