@@ -29,6 +29,7 @@ const exp1 = (
                 <input type="submit" name="Sign Up" />
             </div>
         </form>
+        </div>
 )
 
 const exp2 = (
