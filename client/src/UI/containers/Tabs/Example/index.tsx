@@ -23,7 +23,7 @@ const exp1 = (
 
             <div class="section"><span>2</span>Message</div>
             <div class="inner-wrap">
-                <textarea name="field3" placeholder="Type your Message"></textarea>
+                <textarea name="field4" placeholder="Type your Message"></textarea>
             </div>
             <div class="button-section">
                 <input type="submit" name="Sign Up" />
