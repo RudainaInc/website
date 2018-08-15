@@ -11,7 +11,7 @@ type State = any;
 
 const exp1 = (
 
-       <div className="form-style-10">
+       <div id="form-style-10">
             <h1>Contact Us</h1>
         <form>
             <div className="section"><span>1</span>Contact Information</div>
