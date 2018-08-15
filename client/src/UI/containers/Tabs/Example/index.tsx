@@ -1,7 +1,7 @@
 import * as React from 'react';
 import TabSection from '../../TabSection';
 
-import './Example.css'
+import './Example.css';
 
 import { GenericBody } from '../../../components';
 
