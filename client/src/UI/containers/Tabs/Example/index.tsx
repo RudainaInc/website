@@ -12,7 +12,7 @@ type State = any;
 const exp1 = (
 
        <div class="form-style-10">
-            <h1>Contact Us</span></h1>
+            <h1>Contact Us</h1>
         <form>
             <div class="section"><span>1</span>Contact Information</div>
             <div class="inner-wrap">
