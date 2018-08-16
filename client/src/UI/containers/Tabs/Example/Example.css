@@ -1,7 +1,7 @@
 ﻿.form-style-10{
     width:90%;
     margin:40px;
-    background: #FFF;
+    background: #F8F8F8;
 }
 .form-style-10 .inner-wrap{
     padding: 30px;
@@ -59,6 +59,7 @@
 
 .form-style-10 .section{
     font: normal 20px 'Bitter', serif;
+	padding-left: 30px;
     color: #A60002;
 }
 .form-style-10 .section span {
