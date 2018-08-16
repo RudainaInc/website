@@ -1,6 +1,6 @@
 ﻿.form-style-10{
     width:90%;
-    margin:40px;
+    margin:20px;
     background: #F8F8F8;
 }
 .form-style-10 .inner-wrap{
@@ -12,7 +12,6 @@
 .form-style-10 h1{
     background: #A60002;
     padding: 20px 30px 15px 30px;
-
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     color: #fff;
