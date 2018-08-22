@@ -189,9 +189,9 @@ this.onExited = this.onExited.bind(this);
                 </div>
 
                 { lang === 'fr' ? <NewsFeedFr a={this.state.a} b={this.state.b} c={this.state.c}/> : <NewsFeed a={this.state.a} b={this.state.b} c={this.state.c}/>}
-                { lang === 'fr' ? <OurSponsors/> : <OurSponsorsFr/>}
-                { lang === 'fr' ? <Stats/> : <StatsFr/>}
-                { lang === 'fr' ? <Subscribe/> : <SubscribeFr/>}
+                { lang === 'fr' ? <OurSponsorsFr/> : <OurSponsors/>}
+                { lang === 'fr' ? <StatsFr/> : <Stats/>}
+                { lang === 'fr' ? <SubscribeFr/> : <Subscribe/>}
 
             </div>
 
